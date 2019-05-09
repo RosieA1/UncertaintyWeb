@@ -50,6 +50,9 @@ This section looks at the steps to ensure that analysts and policy makers unders
 
 <br>
 
+<div style="clear: both;"></div>
+
+
 ## Understanding the problem 
 
 <br>
