@@ -1,0 +1,19 @@
+name: "my-website"
+navbar: 
+  title: "Uncertainty Group"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Executive Summary"
+      href: exec.html
+    - text: "Asking the right question"
+      href: chapter_1.html
+    - text: "Sources of uncertainty"
+      href: chapter_2.html
+    - text: "Conducting uncertainty analysis"
+      href: chapter_3.html
+    - text: "Presenting and communicating uncertainty"
+      href: chapter_4.html
+output:
+  html_document:
+    theme: yeti
