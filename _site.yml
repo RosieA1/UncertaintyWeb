@@ -4,6 +4,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Introduction"
+      href: introduction.html
     - text: "Executive Summary"
       href: exec.html
     - text: "Asking the right question"
