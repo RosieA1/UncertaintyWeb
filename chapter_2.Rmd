@@ -44,9 +44,10 @@ Try to identify and record all the potential sources of uncertainty in your anal
 
 <br>
 
-<div class = "leftA">
-Classifications of uncertainty
-</div>
+
+<div style="clear: both;"></div>
+
+## Classifications of uncertainty
 
 <div class = "rightA"> 
 It is useful to distinguish between distinct classifications of uncertainty. Firstly, understanding the characteristics of different classifications of uncertainty by type can help you to identify sources of uncertainty in your own analysis.  Further, categorising the types of uncertainty in an analytical problem provides a framework for the next steps of analysis. Once uncertainty has been identified, you should then ask: can you quantify the uncertainty, and can you reduce it?
@@ -84,9 +85,9 @@ knitr::include_graphics("images/coin_toss.png")
 
 <br><br><br>
 
-<div class = "leftA">
-Sources of uncertainty
-</div>
+<div style="clear: both;"></div>
+
+## Sources of uncertainty
 
 <div class = "rightA">
 The data that feeds into your analysis project will have been previously specified, defined, and collected. In some cases, you will do this yourself, but more commonly you will draw on data sources collected by others. Having chosen your data sources for your project the following checklist (Table 2.2) can be used to help identify and quantify any sources of uncertainty.
@@ -139,7 +140,7 @@ knitr::include_graphics("images/Uncertainty4.png")
 
 <br> 
 
-<div class= "leftB">
+<div class= "rightA">
 Considering the assumptions you're making in your analysis is critical to any uncertainty analysis
 </div>
 
@@ -147,9 +148,11 @@ Considering the assumptions you're making in your analysis is critical to any un
 Table 2.3: Assumptions
 </div>
 
-| <b>Consider where you have used assumptions</b> |Assumptions are used when we have incomplete knowledge. All models will require some assumptions, so you need to ensure that assumptions are robust and consistently understood.  There should be an assumptions log.  Where did the assumptions come from?  How were they generated and why?  What is the impact if they are wrong, and how often are they reviewed? |
-| <b>What assumptions are outside the scope of the model?</b> | There are often parameters outside of the scope of the model that have been implicitly assumed. For example, models may assume no substantial policy changes in related areas. These assumptions provide the context in which the modelling results are appropriate.  You need to be aware of the limitations that these assumptions impose on analytical results.  |
-| <b>Assess the quality of each assumption </b> |Assumptions should be based on robust evidence. The less evidence to support an assumption the more uncertain it will be. High quality assumptions will be underpinned by robust data, while low quality assumptions may simply be an opinion or may be supported by a poor data source |
-| <b>Assess the impact of each assumption </b> | The importance of an assumption is measured by its effect on the on the analytical output. The higher the impact of an assumption the more uncertain results will be. Critical assumptions will drastically affect the results, while less importance assumptions may only have a marginal effect on results. More weight should be given to gathering evidence to improve the quality of critical assumptions. |
-| <b>What don’t you know? (unknown unknowns) </b> | Some uncertainties can’t be captured in an assumption as we don’t have perfect insight. However, effort should be made to identify all possible uncertainties, turning unknown unknowns into known unknowns, and capture these as assumptions. The assumptions log will convey the boundary of what has been included. |
+|  |  |
+| ----------- | ------------------------------ |
+| <b> Consider where you have used assumptions</b> | Assumptions are used when we have incomplete knowledge. All models will require some assumptions, so you need to ensure that assumptions are robust and consistently understood.  There should be an assumptions log.  Where did the assumptions come from?  How were they generated and why?  What is the impact if they are wrong, and how often are they reviewed? <br><br> |
+| <b>What assumptions are outside the scope of the model?</b> | There are often parameters outside of the scope of the model that have been implicitly assumed. For example, models may assume no substantial policy changes in related areas. These assumptions provide the context in which the modelling results are appropriate.  You need to be aware of the limitations that these assumptions impose on analytical results. <br><br>  |
+| <b>Assess the quality of each assumption </b> |Assumptions should be based on robust evidence. The less evidence to support an assumption the more uncertain it will be. High quality assumptions will be underpinned by robust data, while low quality assumptions may simply be an opinion or may be supported by a poor data source <br><br> |
+| <b>Assess the impact of each assumption </b> | The importance of an assumption is measured by its effect on the on the analytical output. The higher the impact of an assumption the more uncertain results will be. Critical assumptions will drastically affect the results, while less importance assumptions may only have a marginal effect on results. More weight should be given to gathering evidence to improve the quality of critical assumptions. <br><br> |
+| <b>What don’t you know? (unknown unknowns) </b> | Some uncertainties can’t be captured in an assumption as we don’t have perfect insight. However, effort should be made to identify all possible uncertainties, turning unknown unknowns into known unknowns, and capture these as assumptions. The assumptions log will convey the boundary of what has been included. <br><br> |
 
