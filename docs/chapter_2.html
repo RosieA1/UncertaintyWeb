@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>    Sources of uncertainty</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Uncertainty Group</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="introduction.html">Introduction</a>
+</li>
+<li>
+  <a href="exec.html">Executive Summary</a>
+</li>
+<li>
+  <a href="chapter_1.html">Asking the right question</a>
+</li>
+<li>
+  <a href="chapter_2.html">Sources of uncertainty</a>
+</li>
+<li>
+  <a href="chapter_3.html">Conducting uncertainty analysis</a>
+</li>
+<li>
+  <a href="chapter_4.html">Presenting and communicating uncertainty</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore"><br><br><br> Sources of uncertainty</h1>
+
+</div>
+
+
+<style type="text/css">
+
+#TOC {
+margin-top: 100px;
+}
+
+.leftA{
+float: left;
+width: 100%;
+font-weight: bold;
+}
+
+.rightA{
+float:right;
+width: 75%;
+}
+
+.leftB{
+float: left;
+width: 23%;
+}
+</style>
+<p><br></p>
+<div class="rightA">
+<p>Uncertainty can feed through into analysis from many different sources. Each step in data collection, data processing and modelling is likely to bring added uncertainty.</p>
+</div>
+<p><br></p>
+<div class="rightA">
+<p>Try to identify and record all the potential sources of uncertainty in your analysis at an early stage. Early identification of uncertainty is important, if you overlook a potential source of uncertainty this could reduce the usefulness and impact of your subsequent analysis.</p>
+</div>
+<p><br></p>
+<div class="leftA">
+<p>Classifications of uncertainty</p>
+</div>
+<div class="rightA">
+<p>It is useful to distinguish between distinct classifications of uncertainty. Firstly, understanding the characteristics of different classifications of uncertainty by type can help you to identify sources of uncertainty in your own analysis. Further, categorising the types of uncertainty in an analytical problem provides a framework for the next steps of analysis. Once uncertainty has been identified, you should then ask: can you quantify the uncertainty, and can you reduce it?</p>
+</div>
+<div class="rightA">
+<p>A common classification divides uncertainty into aleatory, epistemic and ontological types. We explain these in the table below.</p>
+</div>
+<div class="leftA">
+Table 2.1: Classifications of Uncertainty
+</h4>
+</div>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="25%" />
+<col width="27%" />
+<col width="31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Classification</th>
+<th>Aleatory - “known knowns”</th>
+<th>Epistemic - “known unknowns”</th>
+<th>Ontological - “unknown unknowns”</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><b>Definition</b></td>
+<td>Known knowns are things we know that we know. Aleatory uncertainty refers to the inherent uncertainty that is always present due to underlying probabilistic variability. Since we are aware of aleatory uncertainty and can estimate average values and variation, we usually regard it as a ‘known known’</td>
+<td>Known unknowns are things that we know we don’t know. Epistemic uncertainty comes from a lack of knowledge about the (complex) system we are trying to model. Assumptions are used to plug these gaps in the absence of information.</td>
+<td>Unknown unknowns are things that we don’t know we don’t know. Ontological uncertainty usually comes from factors or situations that we have not previously experienced and therefore cannot consider because we simply don’t know where to look in the first instance.</td>
+</tr>
+<tr class="even">
+<td><b>Can it be quantified? </b></td>
+<td>We can quantify aleatory uncertainty. We usually characterise this type of uncertainty using a probability distribution function (PDF). A PDF gives all the possible values that a variable can have and assigns a probability of occurrence to each. As analysts, the challenge for us is to derive the PDF.</td>
+<td>Epistemic uncertainty can be quantified (but isn’t always) – e.g. through sensitivity analysis. These techniques quantify the uncertainty by altering assumptions and observing the impact on modelling outputs. They will work if the range of assumptions tested covers the range of unknown variables.</td>
+<td>Ontological uncertainty cannot be quantified. We cannot identify unknowable unknowns, so there are no actions we can take to quantify them. What we can do is be clear about the sources of uncertainty we have included, so that any others subsequently identified would likely add to that uncertainty.</td>
+</tr>
+<tr class="odd">
+<td><b> Can it be reduced? </b></td>
+<td>This type of uncertainty cannot be completely removed. We can sometimes reduce it through data smoothing or increasing the size of a sample, but there will always be some random variability.</td>
+<td>Epistemic uncertainty is reducible. Epistemic uncertainty can be reduced by gathering information to lessen the gaps in our knowledge. Using new data sources, expanding our data collection or conducting research can remove the need for assumptions or refine their ranges.</td>
+<td>This type of uncertainty is not reducible. However, ontological uncertainty can usually be separated into “unknowable unknowns” and “knowable unknowns”. Horizon scanning can help identify knowable unknowns. Once they are identified they become epistemic uncertainties.</td>
+</tr>
+<tr class="even">
+<td><b> Example </b></td>
+<td>Tossing a coin is an example of aleatory uncertainty. We can observe the possible outcomes (heads or tails) and the probability of each occurring (50:50), therefore create a PDF. However, prior to the coin being tossed we cannot reduce the uncertainty in outcomes.</td>
+<td>Taking our coin toss example, we don’t know whether the coin is fair in the first instance. We may assume the coins is fair and will give a 50% probability of each outcome. Once we start to toss the coin, we start to gather information on its fairness. The longer we toss the coin the better our information gets and the greater the reduction in epistemic uncertainty.</td>
+<td>Unknown unknown are often future events or circumstances that we cannot predict. An example could be the introduction of a new technology that was previously unheard of. If the new technology affects the operation of a system, previous analysis is no longer reliable as it didn’t account for this change.</td>
+</tr>
+</tbody>
+</table>
+<div class="leftA">
+<p>Sources of uncertainty</p>
+</div>
+<div class="rightA">
+<p>In this section, we set out some considerations to help you think about sources of uncertainty, and how you might quantify the size and impact of uncertainty at distinct stages of the analysis process.</p>
+<p>To gain a full picture of the impact of uncertainty on your analysis it is important to think through what you know about the size and distribution of uncertainties, and how you might include this information in your analysis. The list is not exhaustive. Rather, it is intended as an aid to critical thinking about practical steps you can take to quantify uncertainty.</p>
+<p>Usually, it is not possible to quantify exactly the level of uncertainty in your analysis. Where measurement is difficult or incomplete, think about what you can say about the reliability of your measures and what might be missing.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+<div id="specifying-and-collecting-data" class="section level2">
+<h2>Specifying and collecting data</h2>
+<p><br></p>
+<div class="leftB">
+<p>Think about what you are measuring and how it is defined</p>
+</div>
+<div class="rightA">
+<p>The data that feeds into your analysis project will have been previously specified, defined and collected. In some cases, you will do this yourself, but more commonly you will draw on data sources collected by others.</p>
+</div>
+<div class="rightA">
+<p>How well do the definitions and concepts in the data you want to use fit with what you are trying to measure? Differences between groups can mean that data captured for one purpose is inappropriate for another. For example, you might estimate the number of unemployed people using a benefit claimant count from an administrative data source. These measures capture different concepts. In this situation, think about how the measures differ, how the concepts they capture differ and how you can adjust for this. The data should match the subjects you are interested in.</p>
+</div>
+<div class="leftB">
+<p>How well does what you can actually measure compare with your analysis objective?</p>
+</div>
+<div class="rightA">
+<p>Once you have identified a source of data which best matches the concepts you want to analyse, you need to investigate how that data was gathered and how this meets your needs.</p>
+</div>
+<div class="leftB">
+<p>Where to the data come from and how were they collected?</p>
+</div>
+<div class="rightA">
+<p>You should assess how rigorous the collection process is, and whether quality assurance is sufficiently robust to meet your needs.</p>
+</div>
+<div class="rightA">
+<p>Are there issues with how the collection was set up? For example, poorly designed survey questions or coding tools to capture responses may lead to ambiguity, inconsistency and bias in responses. Some concepts are hard to measure, and it can be difficult for data subjects to give useful answers.</p>
+</div>
+<div class="rightA">
+<p>Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured. For example, National Statistics must go through strict quality control and these processes must be fully documented.</p>
+</div>
+<div class="rightA">
+<p>You will often find that there is more than one source of data available for your analysis. You will need to decide which sources meet your needs most effectively. Do the sources give similar outcomes? If not, why might that be? Can you use one source to validate another?</p>
+</div>
+<div class="leftB">
+<p>Is there more than one data source?</p>
+</div>
+<div class="rightA">
+<p>Ideally, the data should cover the period that you are interested in exactly. However, often the data you can obtain is captured before or after the target period or covers it only partially.</p>
+</div>
+<div class="leftB">
+<p>What time period does the data cover?</p>
+</div>
+<div class="rightA">
+<p>Consider how much impact this might have. If the measure is broadly stable and changes slowly, this is more likely to be useful than a very volatile source which changes rapidly if only available outside the time of interest. Consider using smoothing or estimation methods to reduce volatility.</p>
+</div>
+<div class="rightA">
+<p>Statistical sources often come with supporting information about accuracy and reliability. You can use this information to feed into your estimation of uncertainty. You can often find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about uncertainty.</p>
+</div>
+<div class="leftB">
+<p>Is there information about bias and uncertainty already available?</p>
+</div>
+<div class="rightA">
+<p>In the absence of direct measure of variance, be aware that small sample sizes will increase the margin of error in your results.</p>
+</div>
+<div class="rightA">
+<p>Are there known biases or uncertainties in the data that you can quantify and potentially correct? For example, is there information about systematic missingness or under-reporting that you have data on or can correct through external validation or weighting?</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="data-processing" class="section level2">
+<h2>Data Processing</h2>
+<p><br></p>
+<div class="leftB">
+<p>Data processing may introduce new uncertainty or errors</p>
+</div>
+<div class="rightA">
+<p>Data processing is the collation and manipulation of data to produce meaningful information. You must preserve the integrity of data when you process it, but you should also think about whether pre-processing by others might have an impact. Errors can arise because of inconsistent approaches to coding and editing, or arbitrary decisions by data entry teams about how to treat missing values.</p>
+</div>
+<div class="rightA">
+<p>Coding is a process in which data is categorised to facilitate analysis. It can cause problems when the coding classification does not match the concept you are measuring, or coding is inconsistent across different data sets. For example, data may use a coding for age range that cover 15-25 or 25-35-year olds. If you are looking to assess the impact on 20-30-year olds, neither code matches your concept. This would introduce uncertainty into your analysis.</p>
+</div>
+<div class="leftB">
+<p>Are there coding differences?</p>
+</div>
+<div class="rightA">
+<p>Adjustments to the weights of survey responses are used to make survey results representative of a wider population. Make sure you understand how such adjustments have been applied and ensure that calibration does not conflict with your application.</p>
+</div>
+<div class="leftB">
+<p>How have surveys been calibrated?</p>
+</div>
+<div class="rightA">
+<p>An outlier is a data point that is distant from other observations. Outliers can arise because of coding or measurement errors, but also because of genuinely unusual outcomes. How certain are you are that outlying data points are valid? Have outliers already been treated or removed before you got the data? The choice of how to deal with an outlier will differ in each piece of analysis, but you should always consider how the retention or exclusion of an outlier will affect your results. Truncation or removal of outliers will typically introduce bias but this may be tolerated in exchange for reduced variance.</p>
+</div>
+<div class="leftB">
+<p>How have extreme values been processed?</p>
+</div>
+<div class="rightA">
+<p>Imputation is the process of replacing missing data with substituted values, either based on a relationship with other variables or copied from a similar record. However imputed values can introduce systematic errors (bias) to a data set. How robust are the assumptions? Is there any evidence of a systematic impact? If the changes introduced by imputation are random there is much less cause for concern, as this usually leads to a moderate increase in variance but be aware that this is rarely reflected in measures of variance.</p>
+</div>
+<div class="leftB">
+<p>Has data been imputed?</p>
+</div>
+<div class="rightA">
+<p>Combining datasets can increase their value and identify new relationships between variables, but data linkage can result in two types of errors: false positive matches and false negative matches.</p>
+</div>
+<div class="leftB">
+<p>How have datasets been matched and linked?</p>
+</div>
+<div class="rightA">
+<p>A false positive match is where two records are linked together, when they are not the same. A false negative match is where two records are not linked together, when they do in fact belong to the same entity (person, business, etc). You should consider the possibility of these errors and the cause for their occurrence. What do you know about false positives and negatives, match rates, and missingness? Is there a risk that unwanted structure (for example a falsely increased correlation) has been introduced by matching and linking?</p>
+</div>
+<div class="leftB">
+<p>What do you know about the linking process and its outcomes?</p>
+</div>
+<div class="rightA">
+<p>Disclosure control is a set of methods to ensure that no person or organisation is identifiable from the results of analysis. This protects the confidentiality of subjects of research. In almost all cases this will mean a loss of accuracy which may reduce the usefulness of the data.</p>
+</div>
+<div class="leftB">
+<p>How has disclosure control been applied?</p>
+</div>
+<div class="rightA">
+<p>How was disclosure control done and what are the impacts? Well-designed anonymisation should usually result in loss of detail with no systematic impact - but poorly designed disclosure control can introduce structural effects. In some cases, the exclusion of data can lead to systematic errors (biases) in results. Where data has been suppressed, it should be clearly caveated so that you can make decisions about the suitability of the data source.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="specification-of-the-model" class="section level2">
+<h2>Specification of the model</h2>
+<p><br></p>
+<div class="leftB">
+<p>Consider the modelling methodology you have chosen</p>
+</div>
+<div class="rightA">
+<p>Model specification is the process of selecting an appropriate functional form for the model and choosing which variables to include. The specification will cover both theoretical and applied properties of the model.</p>
+</div>
+<div class="rightA">
+<p>There are often several methods for modelling the same problem. Approaches will have different benefits and limitations, and there may be uncertainty as to which approach will produce the most accurate results. Is there consensus on how you should approach the problem? Consider using experts to steer and agree a consensus if the approach is new or untested. If there is no consensus (for example experts disagree about the best approach) are there multiple valid approaches and are they consistent in their findings?</p>
+</div>
+<div class="leftB">
+<p>Are there multiple approaches?</p>
+</div>
+<div class="rightA">
+<p>In most cases there will be a theory that serves as the foundation of a model. This can be anything from a detailed economic theory to a simple relationship between two variables.</p>
+</div>
+<div class="leftB">
+<p>What is the theoretical underpinning?</p>
+</div>
+<div class="rightA">
+<p>Is the theoretical underpin sensible, given the research problem? What does the approach tell you about uncertainty? Some models are underpinned by statistical theory that allows you to estimate uncertainty given certain assumptions. Can you quantify the uncertainty in the parameters and goodness of fit?</p>
+</div>
+<div class="rightA">
+<p>When constructing a mathematical function to best fit a data set, it is possible that multiple specifications of the function can provide a good fit. This can result in uncertainty over the best approach to use, so you should consider how different fitting approaches change analytical results.</p>
+</div>
+<div class="leftB">
+<p>What function is used to fit the model, and how stable are the results?</p>
+</div>
+<div class="rightA">
+<p>You should also explore how stable the model fit is from a single model. Do you get the same or similar outcomes on different runs? Consider undertaking a sensitivity analysis or simulation study to quantify likely variation across multiple runs.</p>
+</div>
+<div class="rightA">
+<p>As described earlier, the model won’t contain everything. What doesn’t the model capture? This might include policy changes, missing indicators, unknown unknowns, shocks, or assumptions about steady states (the world stays broadly the same).</p>
+</div>
+<div class="leftB">
+<p>What does the model not cover?</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="assumptions" class="section level2">
+<h2>Assumptions</h2>
+<p><br></p>
+<div class="leftB">
+<p>Consider where you have used assumptions</p>
+</div>
+<div class="rightA">
+<p>Assumptions are used when we have incomplete knowledge. All models will require some assumptions, so you need to ensure that assumptions are robust and consistently understood. There should be an assumptions log. Where did the assumptions come from? How were they generated and why? What is the impact if they are wrong, and how often are they reviewed?</p>
+</div>
+<div class="rightA">
+<p>There are often parameters outside of the scope of the model that have been implicitly assumed. For example, models may assume no substantial policy changes in related areas. These assumptions provide the context in which the modelling results are appropriate. You need to be aware of the limitations that these assumptions impose on analytical results.</p>
+</div>
+<div class="leftB">
+<p>What assumptions are outside the scope of the model?</p>
+</div>
+<div class="rightA">
+<p>Assumptions should be based on robust evidence. The less evidence to support an assumption the more uncertain it will be. High quality assumptions will be underpinned by robust data, low quality assumptions may simply be an opinion or may be supported by a poor data source.</p>
+</div>
+<div class="leftB">
+<p>Assess the quality of each assumption</p>
+</div>
+<div class="rightA">
+<p>The importance of an assumption is measured by its effect on the on the analytical output. The higher the impact of an assumption the more uncertain results will be. Critical assumptions will drastically affect the results, while less importance assumptions may only have a marginal effect on results. More weight should be given to gathering evidence to improve the quality of critical assumptions.</p>
+</div>
+<div class="leftB">
+<p>Assess the impact of each assumption</p>
+</div>
+<div class="rightA">
+<p>Some uncertainties can’t be captured in an assumption as we don’t have perfect insight. However, effort should be made to identify all possible uncertainties, turning unknown unknowns into known unknown, and capture these as assumptions. The assumptions log will convey the boundary of what has been included.</p>
+</div>
+<div class="leftB">
+<p>What don’t you know? (unknown unknowns)</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="applying-model-results" class="section level2">
+<h2>Applying model results</h2>
+<p><br></p>
+<div class="leftB">
+<p>Consider what question you are answering</p>
+</div>
+<div class="rightA">
+<p>A model is developed to answer a specific set of questions. When interpreting the results, we need to ensure that the model is applicable to the question being asked.</p>
+</div>
+<div class="rightA">
+<p>A model will be limited by the assumptions it makes (see scope of model section above). These assumptions must hold for the model outputs to be robust. When applying modelling results you should first consider whether any of the assumptions are violated by deploying the model to address the problem you have.</p>
+</div>
+<div class="leftB">
+<p>What are the limits of the model?</p>
+</div>
+<div class="rightA">
+<p>When a model is expanded beyond its original scope, this does not necessarily mean that outputs become irrelevant. Consider how the assumptions limit the model in the new context and assess whether these can be changed to make the outputs fit for purpose. If it is possible to change the assumptions, you will need to revisit how these feeds through into quality and impact assessments. You might also find that you need to make additional assumptions and assess their impact.</p>
+</div>
+<div class="leftB">
+<p>Can you expand the use of the model?</p>
+</div>
+<div class="rightA">
+<p>Many models will be frequently re-run, such as annual or quarterly forecasts. Some data and assumptions may be retained across a period, while others may need to be changed each time the model is used. You will need to consider whether there are limitations in the model that require re-calibration each time the model is used.</p>
+</div>
+<div class="leftB">
+<p>When does the model need to be re-calibrated?</p>
+</div>
+<div class="rightA">
+<p>It can be very helpful to see how well a forecasting or projection model has performed by comparing its outputs with subsequent known outcomes. What do you know about how well the model typically performs</p>
+</div>
+<div class="leftB">
+<p>What do you know about past performance?</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="general-approaches-for-quantifying-uncertainty-in-a-single-parameter" class="section level2">
+<h2>General approaches for quantifying uncertainty in a single parameter</h2>
+<p><br></p>
+<div class="rightA">
+<p>In the previous section we highlight ways to think about the size and distribution of uncertainty coming from specific sources. This section brings together those methods and generalises them into approaches that can be applied to any source of uncertainty. In most cases, the approach to uncertainty quantification will be limited by the data and time available to you.</p>
+</div>
+<div class="rightA">
+<p>A probability distribution describes the probability of occurrences of different outcomes. Generally there are two types of probability distribution, discrete distributions where the set of possible outcomes is distinct, and continuous distributions where the possible outcomes can take any number.</p>
+</div>
+<div class="leftB">
+<p>Can you create a probability distribution?</p>
+</div>
+<div class="rightA">
+<p>Consider whether you have information on the underlying distribution of the parameter. Often data from other sources will be provided with confidence intervals (or standard errors, etc) that can be used to quantify uncertainty. Where such information is not provided, you may be able to approximate these with knowledge of the sample size and design.</p>
+</div>
+<div class="rightA">
+<p>Distributions can also be created using the errors terms from previous models. Consider the performance of previous forecasts against outturn results. The distribution of previous errors can provide the uncertainty distribution for the current forecast.</p>
+</div>
+<div class="rightA">
+<p>If no quantitative data on the underlying population is available, you may be able to elicit this information from experts. Such approaches as the Delphi Method ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.</p>
+</div>
+<div class="rightA">
+<p>A range is similar to a probability distribution, it considers the possible outcomes but does not consider the probability of each outcome occurring. If there are data or resource limitations a range can be a simple way to illustrate the uncertainty in a parameter.</p>
+</div>
+<div class="leftB">
+<p>Can you create a range? </h5left></p>
+</div>
+<div class="rightA">
+<p>Historical data can be used to quantify a range. Consider how the parameter has changed over a suitable time period, the maximum and minimum values could provide a sensible range. When using historical data be aware that you will only be able to assess ‘business as usual’ uncertainty, if there are future shocks to the system this may fall outside your historic range.</p>
+</div>
+<div class="rightA">
+<p>For parameters that have been the subject of academic studies a literature review can be used to create a range. Consider why different studies may result in different outcomes, and which studies are the most suitable for your concept.</p>
+</div>
+<div class="rightA">
+<p>If no quantitative data is available, consider whether there are relevant policy constraints that will limit your range. Judgement from experts can be also be used to create sensible ranges.</p>
+</div>
+<div class="rightA">
+<p>In some situations it will not be possible to create a probability distribution or a range. In these cases a qualitative assessment of uncertainty should be made. This is still useful to analysts and customers to consider the magnitude of uncertainty.</p>
+</div>
+<div class="leftB">
+<p>If not, make a qualitative assessment </h5left></p>
+</div>
+<div class="rightA">
+<p>This can be done by the analysts or using expert judgement. A simple approach to qualitatively assessing uncertainty is to RAG rate the likelihood and impact of uncertainty in your parameters. This qualitatively assessment should be considered when thinking about the analytical results. If data is categorised as highly uncertain and having a large impact on results, then final outputs will be subject to large uncertainty.</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
