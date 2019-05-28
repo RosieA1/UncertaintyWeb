@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> Sources of uncertainty
+title: <br><br><br> Defining and Identifying Uncertainty
 output:
   html_document:
     toc: true
@@ -56,8 +56,17 @@ It is useful to distinguish between distinct classifications of uncertainty. Fir
 A common classification divides uncertainty into aleatory, epistemic and ontological types.  We explain these in the table below.
 </div>
 
+
+```{r fig.align="center", echo=FALSE, out.width='100%'}
+
+knitr::include_graphics("images/maxresdefault.png")
+
+```
+
+<br><br>
+
 <div class = "leftA">
-Table 2.1: Classifications of Uncertainty </h4>
+Table 2.1: Classifications of Uncertainty
 </div>
 
 | Classification  | Aleatory - "known knowns" | Epistemic - "known unknowns" | Ontological - "unknown unknowns" |
@@ -67,222 +76,62 @@ Table 2.1: Classifications of Uncertainty </h4>
 | <b> Can it be reduced? </b> | This type of uncertainty cannot be completely removed.  We can sometimes reduce it through data smoothing or increasing the size of a sample, but there will always be some random variability. | Epistemic uncertainty is reducible. Epistemic uncertainty can be reduced by gathering information to lessen the gaps in our knowledge.  Using new data sources, expanding our data collection or conducting research can remove the need for assumptions or refine their ranges. | This type of uncertainty is not reducible. However, ontological uncertainty can usually be separated into "unknowable unknowns" and "knowable unknowns". Horizon scanning can help identify knowable unknowns.  Once they are identified they become epistemic uncertainties. |
 | <b> Example </b> | Tossing a coin is an example of aleatory uncertainty. We can observe the possible outcomes (heads or tails) and the probability of each occurring (50:50), therefore create a PDF. However, prior to the coin being tossed we cannot reduce the uncertainty in outcomes. | Taking our coin toss example, we don't know whether the coin is fair in the first instance. We may assume the coins is fair and will give a 50% probability of each outcome. Once we start to toss the coin, we start to gather information on its fairness. The longer we toss the coin the better our information gets and the greater the reduction in epistemic uncertainty. | Unknown unknown are often future events or circumstances that we cannot predict. An example could be the introduction of a new technology that was previously unheard of. If the new technology affects the operation of a system, previous analysis is no longer reliable as it didn't account for this change. |
 
+```{r fig.align="center", echo=FALSE, out.width='100%'}
+
+knitr::include_graphics("images/coin_toss.png")
+
+```
+
+<br><br><br>
+
 <div class = "leftA">
 Sources of uncertainty
 </div>
 
 <div class = "rightA">
-In this section, we set out some considerations to help you think about sources of uncertainty, and how you might quantify the size and impact of uncertainty at distinct stages of the analysis process.
-
-To gain a full picture of the impact of uncertainty on your analysis it is important to think through what you know about the size and distribution of uncertainties, and how you might include this information in your analysis.  The list is not exhaustive.  Rather, it is intended as an aid to critical thinking about practical steps you can take to quantify uncertainty.
-
-Usually, it is not possible to quantify exactly the level of uncertainty in your analysis.  Where measurement is difficult or incomplete, think about what you can say about the reliability of your measures and what might be missing.
-</div>
-
-<div style="clear: both;"></div>
-
-## Specifying and collecting data
-
-<br>
-
-<div class = "leftB">
-Think about what you are measuring and how it is defined
+The data that feeds into your analysis project will have been previously specified, defined, and collected. In some cases, you will do this yourself, but more commonly you will draw on data sources collected by others. Having chosen your data sources for your project the following checklist (Table 2.2) can be used to help identify and quantify any sources of uncertainty.
 </div>
 
 <div class = "rightA">
-The data  that feeds into your analysis project will have been previously specified, defined and collected. In some cases, you will do this yourself, but more commonly you will draw on data sources collected by others.
+To gain a full picture of the impact of uncertainty on your analysis you should think through what you know about the size and distribution of uncertainties, and how you might include this information in your analysis.  The list is not exhaustive. Rather, it is intended as an aid to critical thinking about practical steps you can take to quantify uncertainty. 
 </div>
 
 <div class = "rightA">
-How well do the definitions and concepts in the data you want to use fit with what you are trying to measure? Differences between groups can mean that data captured for one purpose is inappropriate for another. For example, you might estimate the number of unemployed people using a benefit claimant count from an administrative data source. These measures capture different concepts. In this situation, think about how the measures differ, how the concepts they capture differ and how you can adjust for this. The data should match the subjects you are interested in.
+Usually, it is not possible to quantify exactly the level of uncertainty in your analysis.  Where measurement is difficult or incomplete, think about what you can say about the reliability of your measures and what might be missing. 
 </div>
 
-<div class = "leftB">
-How well does what you can actually measure compare with your analysis objective?
+```{r fig.align="center", echo=FALSE, out.width='100%'}
+
+knitr::include_graphics("images/brain.png")
+
+```
+
+<div class = "leftA">
+Table 2.2: Sources of uncertainty
 </div>
 
-<div class = "rightA">
-Once you have identified a source of data which best matches the concepts you want to analyse, you need to investigate how that data was gathered and how this meets your needs.
-</div>
+| <b>Data Origin Checklist</b> |  | <b>Approaches for understanding uncertainty</b> |
+| --------------------- | ------------------------- | ---------------------------- |
+|<b> Where do the data come from and how were they collected? </b> | How well do the definitions and concepts in the data you have chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another | Think about how the measures differ, how the concepts they capture differ and how you can adjust for this. |
+|<b> How well does your data source compare with your analysis objective?</b> | How rigorous was the data collection process? <br><br> Was the data owner’s quality assurance sufficiently robust? <br><br> Would respondents have fully understood the question intent? <br><br> For example, poorly designed survey questions or coding tools to capture responses may lead to ambiguity, inconsistency and bias in responses. <br><br> Some datasets are subject to regulation and compliance with standards or other codes of practice.  In such cases, quality should be well documented and assured like in National Statistics | Check for documentation and QA of the dataset. |
+|<b> Is there more than one data source? </b> | | You might be able to use one source to validate another or use it to help quantify the uncertainty. |
+|<b> What period does the data cover?  </b> | More uncertainty will occur if either the data don’t match the time period of interest and/or if the data are volatile. | If your data are volatile, consider using smoothing or estimation methods.|
+|<b> At what stage did you obtain the data? </b> |For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. <br><br> For raw data that you have collated, processed and cleaned yourself you will already have a good understanding of any issues. ||
+|<b>Are there coding differences? E.g. age groups that don’t align? </b>| Coding can cause problems when the coding classification does not match your target concept or coding is inconsistent across different data sets. | You could include additional analysis on more groups to assess the impact on your analysis. |
+|<b>How have missing values been treated? Have they been imputed? </b> | Treatment of missing values may be done through imputation – where values are substituted either based on a relationship with other variables or copied from a similar record. Be aware that this is rarely reflected in measures of variance and could cause systemic issues in the data. ||
+|<b>How have surveys been calibrated? </b>| Adjustments to the weights of survey responses are used to make survey results representative of a wider population. | Make sure you understand any adjustments and ensure it doesn’t conflict with your analysis. |
+|<b>How have extreme values been processed? </b>| Extreme values or outliers can arise because of coding or measurement errors, but also because of genuinely unusual outcomes. <br><br> How certain are you are that outlying data points are valid? <br><br> Have outliers already been treated or removed before you got the data? The choice of how to deal with an outlier will differ in each piece of analysis. | Consider how the retention or exclusion of an outlier will affect your results. Truncation or removal of outliers will typically introduce bias but this may be tolerated in exchange for reduced variance. |
+|<b>How have datasets been matched and linked? </b> |Combining datasets can increase their value and identify new relationships between variables, but data linkage can result in two types of errors: false positive matches and false negative matches. | What do you know about the impacts of data linking on your analysis? |
+|<b>How has disclosure control been applied? </b> | In most cases, disclosure control will mean a loss of accuracy which may reduce the usefulness of the data.  <br><br> How was disclosure control done and what are the impacts? Welldesigned anonymisation should usually result in loss of detail with no systematic impact - but poorly designed disclosure control can introduce structural effects or biases in results. | Check for caveats around disclosure control that could introduce uncertainty in your data. |
+|<b> What do you know about bias and uncertainty in the data? <b>| Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertainty. <br><br> In the absence of direct measure of variance, be aware that small sample sizes will increase the margin of error in your results. <br><br> Is your data inherently volatile? | Are there known biases or uncertainties in the data that you can quantify and potentially correct? For example, is there information about systematic causes of missing data entries or under-reporting that you have data on or can correct through external validation or weighting? |
 
-<div class = "leftB">
-Where to the data come from and how were they collected?
-</div>
 
-<div class = "rightA">
-You should assess how rigorous the collection process is, and whether quality assurance is sufficiently robust to meet your needs.
-</div>
+```{r fig.align="center", echo=FALSE, out.width='100%'}
 
-<div class = "rightA">
-Are there issues with how the collection was set up? For example, poorly designed survey questions or coding tools to capture responses may lead to ambiguity, inconsistency and bias in responses. Some concepts are hard to measure, and it can be difficult for data subjects to give useful answers.
-</div>
+knitr::include_graphics("images/Uncertainty4.png")
 
-<div class = "rightA">
-Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured. For example, National Statistics must go through strict quality control and these processes must be fully documented.
-</div>
+```
 
-<div class = "rightA">
-You will often find that there is more than one source of data available for your analysis. You will need to decide which sources meet your needs most effectively. Do the sources give similar outcomes? If not, why might that be? Can you use one source to validate another?
-</div>
-
-<div class = "leftB">
-Is there more than one data source?
-</div>
-
-<div class = "rightA">
-Ideally, the data should cover the period that you are interested in exactly. However, often the data you can obtain is captured before or after the target period or covers it only partially.
-</div>
-
-<div class = "leftB">
-What time period does the data cover?
-</div>
-
-<div class = "rightA">
-Consider how much impact this might have. If the measure is broadly stable and changes slowly, this is more likely to be useful than a very volatile source which changes rapidly if only available outside the time of interest. Consider using smoothing or estimation methods to reduce volatility.
-</div>
-
-<div class = "rightA">
-Statistical sources often come with supporting information about accuracy and reliability.  You can use this information to feed into your estimation of uncertainty. You can often find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about uncertainty.
-</div>
-
-<div class = "leftB">
-Is there information about bias and uncertainty already available?
-</div>
-
-<div class = "rightA">
-In the absence of direct measure of variance, be aware that small sample sizes will increase the margin of error in your results.
-</div>
-
-<div class = "rightA">
-Are there known biases or uncertainties in the data that you can quantify and potentially correct? For example, is there information about systematic missingness or under-reporting that you have data on or can correct through external validation or weighting?
-</div>
-
-<div style="clear: both;"></div>
-
-## Data Processing
-
-<br>
-
-<div class = "leftB">
-Data processing may introduce new uncertainty or errors
-</div>
-
-<div class = "rightA">
-Data processing is the collation and manipulation of data to produce meaningful information. You must preserve the integrity of data when you process it, but you should also think about whether pre-processing by others might have an impact. Errors can arise because of inconsistent approaches to coding and editing, or arbitrary decisions by data entry teams about how to treat missing values.
-</div>
-
-<div class = "rightA">
-Coding is a process in which data is categorised to facilitate analysis. It can cause problems when the coding classification does not match the concept you are measuring, or coding is inconsistent across different data sets. For example, data may use a coding for age range that cover 15-25 or 25-35-year olds. If you are looking to assess the impact on 20-30-year olds, neither code matches your concept. This would introduce uncertainty into your analysis.
-</div>
-
-<div class = "leftB">
-Are there coding differences?
-</div>
-
-<div class = "rightA">
-Adjustments to the weights of survey responses are used to make survey results representative of a wider population. Make sure you understand how such adjustments have been applied and ensure that calibration does not conflict with your application.
-</div>
-
-<div class = "leftB">
-How have surveys been calibrated?
-</div>
-
-<div class = "rightA">
-An outlier is a data point that is distant from other observations. Outliers can arise because of coding or measurement errors, but also because of genuinely unusual outcomes. How certain are you are that outlying data points are valid? Have outliers already been treated or removed before you got the data? The choice of how to deal with an outlier will differ in each piece of analysis, but you should always consider how the retention or exclusion of an outlier will affect your results. Truncation or removal of outliers will typically introduce bias but this may be tolerated in exchange for reduced variance.
-</div>
-
-<div class = "leftB">
-How have extreme values been processed?
-</div>
-
-<div class = "rightA">
-Imputation is the process of replacing missing data with substituted values, either based on a relationship with other variables or copied from a similar record. However imputed values can introduce systematic errors (bias) to a data set. How robust are the assumptions? Is there any evidence of a systematic impact? If the changes introduced by imputation are random there is much less cause for concern, as this usually leads to a moderate increase in variance but be aware that this is rarely reflected in measures of variance.
-</div>
-
-<div class = "leftB">
-Has data been imputed?
-</div>
-
-<div class = "rightA">
-Combining datasets can increase their value and identify new relationships between variables, but data linkage can result in two types of errors: false positive matches and false negative matches.
-</div>
-
-<div class = "leftB">
-How have datasets been matched and linked?
-</div>
-
-<div class = "rightA">
-A false positive match is where two records are linked together, when they are not the same. A false negative match is where two records are not linked together, when they do in fact belong to the same entity (person, business, etc). You should consider the possibility of these errors and the cause for their occurrence. What do you know about false positives and negatives, match rates, and missingness? Is there a risk that unwanted structure (for example a falsely increased correlation) has been introduced by matching and linking?
-</div>
-
-<div class = "leftB">
-What do you know about the linking process and its outcomes?
-</div>
-
-<div class = "rightA">
-Disclosure control is a set of methods to ensure that no person or organisation is identifiable from the results of analysis. This protects the confidentiality of subjects of research. In almost all cases this will mean a loss of accuracy which may reduce the usefulness of the data.
-</div>
-
-<div class = "leftB">
-How has disclosure control been applied?
-</div>
-
-<div class = "rightA">
-How was disclosure control done and what are the impacts? Well-designed anonymisation should usually result in loss of detail with no systematic impact - but poorly designed disclosure control can introduce structural effects. In some cases, the exclusion of data can lead to systematic errors (biases) in results. Where data has been suppressed, it should be clearly caveated so that you can make decisions about the suitability of the data source.
-</div>
-
-<div style="clear: both;"></div>
-
-## Specification of the model 
-
-<br>
-
-<div class= "leftB">
-Consider the modelling methodology you have chosen
-</div>
-
-<div class = "rightA">
-Model specification is the process of selecting an appropriate functional form for the model and choosing which variables to include. The specification will cover both theoretical and applied properties of the model.
-</div>
-
-<div class = "rightA">
-There are often several methods for modelling the same problem. Approaches will have different benefits and limitations, and there may be uncertainty as to which approach will produce the most accurate results. Is there consensus on how you should approach the problem? Consider using experts to steer and agree a consensus if the approach is new or untested. If there is no consensus (for example experts disagree about the best approach) are there multiple valid approaches and are they consistent in their findings?
-</div>
-
-<div class= "leftB">
-Are there multiple approaches?
-</div>
-
-<div class = "rightA">
-In most cases there will be a theory that serves as the foundation of a model. This can be anything from a detailed economic theory to a simple relationship between two variables.
-</div>
-
-<div class= "leftB">
-What is the theoretical underpinning?
-</div>
-
-<div class = "rightA">
-Is the theoretical underpin sensible, given the research problem? What does the approach tell you about uncertainty? Some models are underpinned by statistical theory that allows you to estimate uncertainty given certain assumptions. Can you quantify the uncertainty in the parameters and goodness of fit?
-</div>
-
-<div class = "rightA">
-When constructing a mathematical function to best fit a data set, it is possible that multiple specifications of the function can provide a good fit. This can result in uncertainty over the best approach to use, so you should consider how different fitting approaches change analytical results.
-</div>
-
-<div class= "leftB">
-What function is used to fit the model, and how stable are the results?
-</div>
-
-<div class = "rightA">
-You should also explore how stable the model fit is from a single model. Do you get the same or similar outcomes on different runs? Consider undertaking a sensitivity analysis or simulation study to quantify likely variation across multiple runs.
-</div>
-
-<div class = "rightA">As described earlier, the model won't contain everything. What doesn't the model capture? This might include policy changes, missing indicators, unknown unknowns, shocks, or assumptions about steady states (the world stays broadly the same).
-</div>
-
-<div class= "leftB">
-What does the model not cover?
-</div>
 
 <div style="clear: both;"></div>
 
@@ -291,149 +140,16 @@ What does the model not cover?
 <br> 
 
 <div class= "leftB">
-Consider where you have used assumptions 
+Considering the assumptions you're making in your analysis is critical to any uncertainty analysis
 </div>
 
-<div class = "rightA">
-Assumptions are used when we have incomplete knowledge. All models will require some assumptions, so you need to ensure that assumptions are robust and consistently understood. There should be an assumptions log. Where did the assumptions come from? How were they generated and why? What is the impact if they are wrong, and how often are they reviewed? 
+<div class = "leftA">
+Table 2.3: Assumptions
 </div>
 
-<div class = "rightA">
-There are often parameters outside of the scope of the model that have been implicitly assumed. For example, models may assume no substantial policy changes in related areas. These assumptions provide the context in which the modelling results are appropriate. You need to be aware of the limitations that these assumptions impose on analytical results.
-</div>
+| <b>Consider where you have used assumptions</b> |Assumptions are used when we have incomplete knowledge. All models will require some assumptions, so you need to ensure that assumptions are robust and consistently understood.  There should be an assumptions log.  Where did the assumptions come from?  How were they generated and why?  What is the impact if they are wrong, and how often are they reviewed? |
+| <b>What assumptions are outside the scope of the model?</b> | There are often parameters outside of the scope of the model that have been implicitly assumed. For example, models may assume no substantial policy changes in related areas. These assumptions provide the context in which the modelling results are appropriate.  You need to be aware of the limitations that these assumptions impose on analytical results.  |
+| <b>Assess the quality of each assumption </b> |Assumptions should be based on robust evidence. The less evidence to support an assumption the more uncertain it will be. High quality assumptions will be underpinned by robust data, while low quality assumptions may simply be an opinion or may be supported by a poor data source |
+| <b>Assess the impact of each assumption </b> | The importance of an assumption is measured by its effect on the on the analytical output. The higher the impact of an assumption the more uncertain results will be. Critical assumptions will drastically affect the results, while less importance assumptions may only have a marginal effect on results. More weight should be given to gathering evidence to improve the quality of critical assumptions. |
+| <b>What don’t you know? (unknown unknowns) </b> | Some uncertainties can’t be captured in an assumption as we don’t have perfect insight. However, effort should be made to identify all possible uncertainties, turning unknown unknowns into known unknowns, and capture these as assumptions. The assumptions log will convey the boundary of what has been included. |
 
-<div class= "leftB">
-What assumptions are outside the scope of the model? 
-</div>
-
-<div class = "rightA">
-Assumptions should be based on robust evidence. The less evidence to support an assumption the more uncertain it will be. High quality assumptions will be underpinned by robust data, low quality assumptions may simply be an opinion or may be supported by a poor data source.
-</div>
-
-<div class= "leftB">
-Assess the quality of each assumption
-</div>
-
-<div class = "rightA">
-The importance of an assumption is measured by its effect on the on the analytical output. The higher the impact of an assumption the more uncertain results will be. Critical assumptions will drastically affect the results, while less importance assumptions may only have a marginal effect on results. More weight should be given to gathering evidence to improve the quality of critical assumptions.
-</div>
-
-<div class= "leftB">
-Assess the impact of each assumption
-</div>
-
-<div class = "rightA">
-Some uncertainties can't be captured in an assumption as we don't have perfect insight. However, effort should be made to identify all possible uncertainties, turning unknown unknowns into known unknown, and capture these as assumptions. The assumptions log will convey the boundary of what has been included.
-</div>
-
-<div class= "leftB">
-What don't you know? (unknown unknowns)
-</div>
-
-<div style="clear: both;"></div>
-
-## Applying model results 
-
-<br> 
-
-<div class= "leftB">
-Consider what question you are answering
-</div>
-
-<div class = "rightA">
-A model is developed to answer a specific set of questions. When interpreting the results, we need to ensure that the model is applicable to the question being asked.
-</div>
-
-<div class = "rightA">
-A model will be limited by the assumptions it makes (see scope of model section above). These assumptions must hold for the model outputs to be robust. When applying modelling results you should first consider whether any of the assumptions are violated by deploying the model to address the problem you have.
-</div>
-
-<div class= "leftB">
-What are the limits of the model?
-</div>
-
-<div class = "rightA">
-When a model is expanded beyond its original scope, this does not necessarily mean that outputs become irrelevant. Consider how the assumptions limit the model in the new context and assess whether these can be changed to make the outputs fit for purpose. If it is possible to change the assumptions, you will need to revisit how these feeds through into quality and impact assessments. You might also find that you need to make additional assumptions and assess their impact.
-</div>
-
-<div class= "leftB">
-Can you expand the use of the model?
-</div>
-
-<div class = "rightA">
-Many models will be frequently re-run, such as annual or quarterly forecasts. Some data and assumptions may be retained across a period, while others may need to be changed each time the model is used. You will need to consider whether there are limitations in the model that require re-calibration each time the model is used.
-</div>
-
-<div class= "leftB">
-When does the model need to be re-calibrated?
-</div>
-
-<div class = "rightA">
-It can be very helpful to see how well a forecasting or projection model has performed by comparing its outputs with subsequent known outcomes. What do you know about how well the model typically performs
-</div>
-
-<div class= "leftB">
-What do you know about past performance?
-</div>
-
-<div style="clear: both;"></div>
-
-## General approaches for quantifying uncertainty in a single parameter
-
-<br>
-
-<div class = "rightA">
-In the previous section we highlight ways to think about the size and distribution of uncertainty coming from specific sources. This section brings together those methods and generalises them into approaches that can be applied to any source of uncertainty. In most cases, the approach to uncertainty quantification will be limited by the data and time available to you.
-</div>
-
-<div class = "rightA">
-A probability distribution describes the probability of occurrences of different outcomes. Generally there are two types of probability distribution, discrete distributions where the set of possible outcomes is distinct, and continuous distributions where the possible outcomes can take any number.
-</div>
-
-<div class= "leftB">
-Can you create a probability distribution?
-</div>
-
-<div class = "rightA">
-Consider whether you have information on the underlying distribution of the parameter. Often data from other sources will be provided with confidence intervals (or standard errors, etc) that can be used to quantify uncertainty. Where such information is not provided, you may be able to approximate these with knowledge of the sample size and design.
-</div>
-
-<div class = "rightA">
-Distributions can also be created using the errors terms from previous models. Consider the performance of previous forecasts against outturn results. The distribution of previous errors can provide the uncertainty distribution for the current forecast.
-</div>
-
-<div class = "rightA">
-If no quantitative data on the underlying population is available, you may be able to elicit this information from experts. Such approaches as the Delphi Method ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.
-</div>
-
-<div class = "rightA">
-A range is similar to a probability distribution, it considers the possible outcomes but does not consider the probability of each outcome occurring. If there are data or resource limitations a range can be a simple way to illustrate the uncertainty in a parameter.
-</div>
-
-<div class= "leftB">
-Can you create a range? </h5left>
-</div>
-
-<div class = "rightA">
-Historical data can be used to quantify a range. Consider how the parameter has changed over a suitable time period, the maximum and minimum values could provide a sensible range. When using historical data be aware that you will only be able to assess 'business as usual' uncertainty, if there are future shocks to the system this may fall outside your historic range.
-</div>
-
-<div class = "rightA">
-For parameters that have been the subject of academic studies a literature review can be used to create a range. Consider why different studies may result in different outcomes, and which studies are the most suitable for your concept.
-</div>
-
-<div class = "rightA">
-If no quantitative data is available, consider whether there are relevant policy constraints that will limit your range. Judgement from experts can be also be used to create sensible ranges.
-</div>
-
-<div class = "rightA">
-In some situations it will not be possible to create a probability distribution or a range. In these cases a qualitative assessment of uncertainty should be made. This is still useful to analysts and customers to consider the magnitude of uncertainty.
-</div>
-
-<div class= "leftB">
-If not, make a qualitative assessment </h5left>
-</div>
-
-<div class = "rightA">
-This can be done by the analysts or using expert judgement. A simple approach to qualitatively assessing uncertainty is to RAG rate the likelihood and impact of uncertainty in your parameters. This qualitatively assessment should be considered when thinking about the analytical results. If data is categorised as highly uncertain and having a large impact on results, then final outputs will be subject to large uncertainty.
-</div>
