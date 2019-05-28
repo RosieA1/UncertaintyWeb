@@ -36,9 +36,11 @@ width: 23%;
 We now consider how to choose <i>what</i> messages about uncertainty we shouuld communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively.
 </div>
 
-<div class = "leftA"> 
-Deciding what to communicate
-</div>
+<div style="clear: both;"></div>
+ 
+## Deciding what to communicate
+
+<br>
 
 <div class = "rightA">
 The analysis of uncertainty is often complex. Presenting this in its entirety could overwhelm the recipient and may mean they do not take away the key messages. We need to choose carefully which messages about uncertainty to communicate to decision makers – ensuring they receive enough information to understand the key points, without receiving so much that it clouds the central issue. <br><br> You should also consider the onward communication of your message to ensure that when your work is passed on to others its core message and integrity are maintained.
