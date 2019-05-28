@@ -11,7 +11,7 @@
 
 
 
-<title>    Download pdf</title>
+<title>    Asking the right question</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -418,13 +418,145 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore"><br><br><br> Download pdf</h1>
+<h1 class="title toc-ignore"><br><br><br> Asking the right question</h1>
 
 </div>
 
 
-<p>You can download pdf versions of each chapter by going to this <a href="https://github.com/RosieA1/UncertaintyWeb/tree/master/PDF_chapters">link</a>, clicking on the chapter you wish to download and then clicking the download button</p>
-<p><img src="images/Download_demo.png" width="100%" style="display: block; margin: auto;" /></p>
+<style type="text/css">
+
+#TOC {
+margin-top: 100px;
+}
+
+.leftA{
+float: left;
+width: 100%;
+font-weight: bold;
+}
+
+.rightA{
+float:right;
+width: 75%;
+}
+
+.leftB{
+float: left;
+width: 23%;
+}
+</style>
+<p><br></p>
+<div class="rightA">
+<p>This section looks at the steps to ensure that analysts and policy makers understand the question being asked, how output ranges will be used, and how we can appropriately incorporate uncertainty into the analysis.</p>
+</div>
+<p><br></p>
+<div class="leftA">
+<p>Agreeing what the question is</p>
+</div>
+<p><br></p>
+<div class="rightA">
+<p>Before any analysis begins we should work hard to define the precise “exam question”.</p>
+</div>
+<p><br></p>
+<div style="clear: both;">
+
+</div>
+<div id="understanding-the-problem" class="section level2">
+<h2>Understanding the problem</h2>
+<p><br></p>
+<div class="leftB">
+<p>Clarify what the real question is</p>
+</div>
+<div class="rightA">
+<p>It is important to ensure that the question is correctly framed to address the problem. For example, are we really interested in ‘how much money will my policy save?’, or should we be asking ‘what is the likelihood that this policy would save more than £x?’.</p>
+</div>
+<p><br></p>
+<div class="rightA">
+<p>As well as clearly identifying the overarching question to answer, we should also ensure that any sub-questions to support the analysis are appropriately thought through. For example - in an education context we may be interested in uncertainty on both an academic and a financial year basis.</p>
+</div>
+<div class="leftB">
+<p>Identify the important sub-questions</p>
+</div>
+<p><br></p>
+<div class="leftA">
+<p>Appropriate use of outputs</p>
+</div>
+<div class="rightA">
+<p>Once the question and sub-questions have been agreed, analysts and decision makers should discuss how the outputs are intended to be used. Understanding the role of the analysis in the broader decision-making context is important as it will help to inform which uncertainty techniques are appropriate and proportionate.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="how-will-output-ranges-be-used" class="section level2">
+<h2>How will output ranges be used?</h2>
+<p><br></p>
+<div class="leftB">
+<p>Discuss how the outputs will be used</p>
+</div>
+<div class="rightA">
+<p>Will the ultimate decision be made solely on the basis of the uncertainty analysis, or is it a part of the bigger picture informing the decision? The more influential the uncertainty analysis is, and the more that hinges on the decision, the more important it is to build in robust uncertainty analysis.</p>
+</div>
+<p><br></p>
+<div class="rightA">
+<p>If the output is to be fed into ‘downstream’ models, then it is important to understand the requirements of the downstream model. For example, if scenarios are used to illustrate uncertainty, then these may not be suitable for a ‘downstream’ Monte Carlo simulation.</p>
+</div>
+<div class="leftB">
+<p>Are there dependent models drawing on the analysis?</p>
+</div>
+<p><br></p>
+<div class="leftA">
+<p>Incorporating uncertainty into analysis</p>
+</div>
+<div class="rightA">
+<p>Now that we know what the question is and the context in which the outputs will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to take the decision maker to the end of the process right at the start. What is it conceptually that they <i>would like</i> to be able to say? This is important as it frames the way in which the analysis will work.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="what-information-do-we-need-from-the-decision-maker-to-appropriately-incorporate-uncertainty-analysis" class="section level2">
+<h2>What information do we need from the decision maker to appropriately incorporate uncertainty analysis?</h2>
+<div class="leftB">
+<p>Explain how the uncertainty can be used to better inform decisions</p>
+</div>
+<div class="rightA">
+<p>Help the decision maker to understand how any information around the uncertainty of analysis supplied can be used to support a better informed decision. Avoid giving misleading assurances on what the uncertainty analysis can achieve. It is unlikely that all sources of uncertainty will be quantifiable and/or with robust underpinning evidence.</p>
+</div>
+<div class="rightA">
+<p>There are many techniques that can be used to model uncertainty, not all of which will be appropriate for a given piece of analysis. A poor choice of technique may give misleading results. If there is a high degree of uncertainty, more detailed techniques may be misleading or imply spurious accuracy.</p>
+</div>
+<div class="leftB">
+<p>Avoid misleading results of spurious accuracy by choosing the appropriate technique</p>
+</div>
+<div class="rightA">
+<p>Discuss with the decision maker what level of uncertainty is acceptable. Do they want to know how wrong the forecast would need to be in order to change or rethink the policy? Or are they simply interested in an output “range”? If so, what does that “range” actually mean?</p>
+</div>
+<div class="rightA">
+<p>Consider the purpose of the analysis, the decision being made and how the analysis is intended to be used. Your analysis may vary depending on whether this is a policy, operational or financial decision.</p>
+</div>
+<div class="rightA">
+<p>It may help to look at the problem with the decision maker using an example: an answer to the question of how much a policy would save may be £3m, with uncertainty analysis giving a broad range of £0.5-5.5m. The analyst should discuss with the decision maker how they want to be able to frame the analysis, for example: <br> <i>“A range of £0.5-5.5m”, or <br> “The estimated savings are £3m, with analysis showing a 90% likelihood that savings will be between £1-5m”, or <br> “Analysis shows that there is an 80% likelihood that the savings will be greater than £2m”, or <br> “The policy needs to have X amount of takeup in order to break even”</i></p>
+</div>
+<div class="leftB">
+<p>Discuss examples of how the decision maker may want to think about uncertainty</p>
+</div>
+<div class="rightA">
+<p>For an operational decision, is it important to quantify the impact of the uncertainty (i.e. if we’re out by 1,000, this could cost us an additional…)? While an in-depth assessment of uncertainty may be useful when informing policy decisions, it may be unnecessary when the analysis is being used for high level monitoring.</p>
+</div>
+<div class="rightA">
+<p>It may be that operational decision makers do not want to see a range of results, but instead want to plan to a certain level of confidence, such as 65% or 95% rather than 50%. For example, when planning the number of schools, prison places or GPs we’ll need over the next 5 years, it may be more appropriate to plan to a higher level of confidence than 50%.</p>
+</div>
+<div class="rightA">
+<p>For financial decisions, decision makers may be interested in understanding the likelihood of receiving a certain level of income, or that the risks and opportunities materialise. However, the analysis would need to go hand in hand with financial risk management to mitigate the risks materialising or crystallise the opportunities.</p>
+</div>
+<div class="rightA">
+<p>Your analysis could be used to provide advice to customers on how a system is driven, and how each of the parameters interacts and impacts on the final output. Through scenario/sensitivity testing, you can find the dependencies and significances of the model parameters, interpreting how these affect the final output.</p>
+</div>
+<div class="leftB">
+<p>Analysis could advise customer on system drivers or resource planning</p>
+</div>
+</div>
 
 
 

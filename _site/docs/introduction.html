@@ -11,7 +11,7 @@
 
 
 
-<title>    Download pdf</title>
+<title>    Introduction</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -263,92 +260,6 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -356,16 +267,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -418,18 +319,144 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore"><br><br><br> Download pdf</h1>
+<h1 class="title toc-ignore"><br><br><br> Introduction</h1>
 
 </div>
 
 
-<p>You can download pdf versions of each chapter by going to this <a href="https://github.com/RosieA1/UncertaintyWeb/tree/master/PDF_chapters">link</a>, clicking on the chapter you wish to download and then clicking the download button</p>
-<p><img src="images/Download_demo.png" width="100%" style="display: block; margin: auto;" /></p>
+<style type="text/css">
 
+#TOC {
+margin-top: 100px;
+}
 
+.leftA{
+float: left;
+width: 100%;
+font-weight: bold;
+}
+
+.rightA{
+float:right;
+width: 75%;
+}
+
+.leftB{
+float: left;
+width: 23%;
+}
+</style>
+<div style="clear: both;">
 
 </div>
+<p><br></p>
+<div class="leftB">
+<p>Uncertainty analysis: understanding what you don’t know</p>
 </div>
+<div class="rightA">
+<p>Uncertainty is unavoidable when making forecasts of future events or impacts of policies. Our knowledge of the present is typically incomplete; and we can’t be sure what will happen in the future. We can reduce uncertainty due to lack of knowledge by obtaining more information, or asking experts for advice. However, we can’t eliminate uncertainty entirely, so we must find ways to describe and communicate it.</p>
+</div>
+<div class="rightA">
+<p>There is a difference between uncertainty and risks. In public policy, risk typically refers to the likelihood of a future unplanned event or unintended consequence that can be assigned a numeric probability. Forecasts of risk, like other forecasts, are themselves subject to uncertainty. For example, the UK Met Office forecasts the risk of rain (“probability of precipitation”) over a five-day period for specific locations using a mathematical computer model of the atmosphere. This forecast is uncertain because the initial state of the atmosphere is not perfectly known, and because small perturbations can lead to large weather changes. This uncertainty is described using a range from running several forecasts from equally likely initial conditions.</p>
+</div>
+<div class="rightA">
+<p>In policy making, taking account of uncertainty and being seen to do so is important for public trust. We must not pretend that the consequences of a policy or decision are certain; they are always uncertain to some degree. For each option, a range of outcomes are possible. Implying certainty about one particular outcome can damage public trust when things turn out differently.</p>
+</div>
+<div class="leftB">
+<p>Why does it matter?</p>
+</div>
+<div class="rightA">
+<p>Red River Flood, Grand Forks USA, 1997</p>
+</div>
+<div class="leftB">
+<p>Example</p>
+</div>
+<div class="rightA">
+<p>The National Weather Service (NWS) predicted, 2 months in advance, the Red River to crest 49 feet.</p>
+</div>
+<div class="leftB">
+<p>Analysis</p>
+</div>
+<div class="rightA">
+<p>In response, the levees were built to handle a flood of 51 feet</p>
+</div>
+<div class="leftB">
+<p>Decision</p>
+</div>
+<div class="rightA">
+<p>The actual flood level was 54 feet</p>
+</div>
+<div class="leftB">
+<p>Result</p>
+</div>
+<div class="rightA">
+<p>Had the NWS communicated their uncertainty (+/- 9 feet) the several $billion damages could have been avoided</p>
+</div>
+<div class="leftB">
+<p>Uncertainty</p>
+</div>
+<div style="clear: both;">
+
+</div>
+<img src="introduction_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" />
+<div class="leftB">
+<p>Is this toolkit for you?</p>
+</div>
+<div class="rightA">
+<p>This toolkit is aimed at all analysts, whether you are new to the Government or an experienced analyst looking to develop the way you communicate uncertainty to stakeholders.</p>
+</div>
+<div class="rightA">
+<p>This document sits alongside the Aqua Book guidance on quality analysis. The Aqua Book should be read first as it describes the principles of uncertainty analysis and the processes that should be used in considering it. This is a supplementary document providing additional information for identifying, estimating and communicating uncertainty in analysis to support policy decisions.</p>
+</div>
+<div class="rightA">
+<p>We have also provided a one-page summary of key messages for analysts that can also be shared with policy customers</p>
+</div>
+<div class="rightA">
+<ol style="list-style-type: decimal">
+<li>Understanding the policy context</li>
+<li>Sources of uncertainty</li>
+<li>Conducting uncertainty analysis</li>
+<li>Presenting and communicating uncertainty</li>
+</ol>
+</div>
+<div class="leftB">
+<p>Toolkit contents</p>
+</div>
+<div class="rightA">
+<p>Before conducting any uncertainty analysis, it is important to check that you understand how the analysis will be used. What type of decision is being made? Is it a financial, operational, policy or other type of decision? This will frame how you approach the analysis and how you communicate it to your customers.</p>
+</div>
+<div class="leftB">
+<ol style="list-style-type: decimal">
+<li>Understanding the policy context</li>
+</ol>
+</div>
+<div class="rightA">
+<p>Considering the whole system that influences your analysis helps identify all possible areas where uncertainty can arise. Ensure you understand what is causing the uncertainty in your inputs and outputs, and whether this can be quantified.</p>
+</div>
+<div class="leftB">
+<ol start="2" style="list-style-type: decimal">
+<li>Sources of uncertainty</li>
+</ol>
+</div>
+<div class="rightA">
+<p>Before conducting uncertainty analysis, you should consider the range of possible scenarios and techniques. We provide a list of the most common techniques with some examples for reference.</p>
+</div>
+<div class="leftB">
+<ol start="3" style="list-style-type: decimal">
+<li>Conducting uncertainty analysis</li>
+</ol>
+</div>
+<div class="rightA">
+<p>There is little point conducting any analysis if it has no impact, so this is perhaps the most important chapter. It is important to engage with your stakeholders so they take account of uncertainty in any decisions they make. You should think about how you interact with the audience, tailoring your communication to different groups. This will help them to understand the consequences of uncertainty and why they should be interested in it.</p>
+</div>
+<div class="leftB">
+<ol start="4" style="list-style-type: decimal">
+<li>Presenting and communicating uncertainty</li>
+</ol>
+</div>
+
+
+
 
 </div>
 

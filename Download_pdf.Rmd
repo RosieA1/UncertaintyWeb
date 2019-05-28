@@ -7,27 +7,10 @@ output:
     toc_depth: 2
 ---
 
-You can download pdf versions of each chapter using the buttons below
+You can download pdf versions of each chapter by going to this [link](https://github.com/RosieA1/UncertaintyWeb/tree/master/PDF_chapters), clicking on the chapter you wish to download and then clicking the download button
 
+```{r fig.align="center", echo=FALSE, out.width='100%'}
 
-```{r echo=FALSE}
-xfun::embed_file('Asking_the_right_question.pdf')
-```
+knitr::include_graphics("images/Download_demo.png")
 
-<br><br><br>
-
-```{r echo=FALSE}
-xfun::embed_file('Defining_and_identifying_uncertainty.pdf')
-```
-
-<br><br><br>
-
-```{r echo=FALSE}
-xfun::embed_file('Conducting_uncertainty_analysis.pdf')
-```
-
-<br><br><br>
-
-```{r echo=FALSE}
-xfun::embed_file('Presenting_and_communicating_uncertainty.pdf')
 ```
