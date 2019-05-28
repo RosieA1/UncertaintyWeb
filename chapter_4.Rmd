@@ -513,7 +513,7 @@ If we need to communicate a series of PDFs, then multiple functions can be shown
 </div>
 
 <div class = "leftB">
-<b>Multiple PDFs<b> can be used to show uncertainty across different measures
+<b>Multiple PDFs</b> can be used to show uncertainty across different measures
 </div>
 
 <div class = "rightA">
