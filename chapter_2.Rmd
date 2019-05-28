@@ -42,8 +42,6 @@ Uncertainty can feed through into analysis from many different sources. Each ste
 Try to identify and record all the potential sources of uncertainty in your analysis at an early stage. Early identification of uncertainty is important, if you overlook a potential source of uncertainty this could reduce the usefulness and impact of your subsequent analysis. 
 </div>
 
-<br>
-
 
 <div style="clear: both;"></div>
 
@@ -83,7 +81,6 @@ knitr::include_graphics("images/coin_toss.png")
 
 ```
 
-<br><br><br>
 
 <div style="clear: both;"></div>
 
