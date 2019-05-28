@@ -1,0 +1,33 @@
+---
+title: <br><br><br> Download pdf
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+---
+
+You can download pdf versions of each chapter using the buttons below
+
+
+```{r echo=FALSE}
+xfun::embed_file('Asking_the_right_question.pdf')
+```
+
+<br><br><br>
+
+```{r echo=FALSE}
+xfun::embed_file('Defining_and_identifying_uncertainty.pdf')
+```
+
+<br><br><br>
+
+```{r echo=FALSE}
+xfun::embed_file('Conducting_uncertainty_analysis.pdf')
+```
+
+<br><br><br>
+
+```{r echo=FALSE}
+xfun::embed_file('Presenting_and_communicating_uncertainty.pdf')
+```

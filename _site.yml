@@ -16,6 +16,8 @@ navbar:
       href: chapter_3.html
     - text: "Presenting and communicating uncertainty"
       href: chapter_4.html
+    - text: "Download pdf"
+      href: Download_pdf.html
 output:
   html_document:
     theme: yeti
