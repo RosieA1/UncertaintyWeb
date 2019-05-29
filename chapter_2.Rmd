@@ -32,27 +32,35 @@ width: 23%;
 
 <br>
 
+<div class = "leftA">
+Introduction
+</div>
+
 <div class = "rightA"> 
-Uncertainty can feed through into analysis from many different sources. Each step in data collection, data processing and modelling is likely to bring added uncertainty.
+Uncertainty can feed through into analysis from many different sources.  Each step in data collection, data processing and modelling is likely to bring added uncertainty.
 </div>
 
 <br>
 
 <div class = "rightA"> 
-Try to identify and record all the potential sources of uncertainty in your analysis at an early stage. Early identification of uncertainty is important, if you overlook a potential source of uncertainty this could reduce the usefulness and impact of your subsequent analysis. 
+Try to identify and record all the potential sources of uncertainty in your analysis at an early stage.  Early identification of uncertainty is important; if you overlook a potential source of uncertainty this could reduce the usefulness and impact of your subsequent analysis.
+</div>
+
+<div class = "rightA">
+This chapter sets out a range of techniques to help you understand the resulting uncertainty in your analysis.
 </div>
 
 
 <div style="clear: both;"></div>
 
-## Classifications of uncertainty
+## Defining uncertainty
 
 <div class = "rightA"> 
-It is useful to distinguish between distinct classifications of uncertainty. Firstly, understanding the characteristics of different classifications of uncertainty by type can help you to identify sources of uncertainty in your own analysis.  Further, categorising the types of uncertainty in an analytical problem provides a framework for the next steps of analysis. Once uncertainty has been identified, you should then ask: can you quantify the uncertainty, and can you reduce it?
+It is useful to distinguish between distinct classifications of uncertainty. Understanding the characteristics of different classifications of uncertainty can help you to identify sources of uncertainty in your own analysis.  Further, categorising the types of uncertainty in an analytical problem provides a framework for the next steps of analysis.
 </div>
 
 <div class = "rightA"> 
-A common classification divides uncertainty into aleatory, epistemic and ontological types.  We explain these in the table below.
+A common classification divides uncertainty into known knowns, known unknowns, and unknown unknowns.  We explain these in Table 2.1.
 </div>
 
 
@@ -68,12 +76,12 @@ knitr::include_graphics("images/maxresdefault.png")
 Table 2.1: Classifications of Uncertainty
 </div>
 
-| Classification  | Aleatory - "known knowns" | Epistemic - "known unknowns" | Ontological - "unknown unknowns" |
+| Classification  | Known knowns - Aleatory uncertainty | Known unknowns - Epistemic uncertainty | Unknown unknowns - Ontological uncertainty |
 | --------------- | ------------------------- | ---------------------------- | -------------------------------- | 
-| <b>Definition</b>| Known knowns are things we know that we know. Aleatory uncertainty refers to the inherent uncertainty that is always present due to underlying probabilistic variability.  Since we are aware of aleatory uncertainty and can estimate average values and variation, we usually regard it as a ‘known known’ | Known unknowns are things that we know we don’t know. Epistemic uncertainty comes from a lack of knowledge about the (complex) system we are trying to model. Assumptions are used to plug these gaps in the absence of information. | Unknown unknowns are things that we don't know we don't know.  Ontological uncertainty usually comes from factors or situations that we have not previously experienced and therefore cannot consider because we simply don't know where to look in the first instance. |
-| <b>Can it be quantified? </b> | We can quantify aleatory uncertainty.  We usually characterise this type of uncertainty using a probability distribution function (PDF).  A PDF gives all the possible values that a variable can have and assigns a probability of occurrence to each.  As analysts, the challenge for us is to derive the PDF. | Epistemic uncertainty can be quantified (but isn’t always) – e.g. through sensitivity analysis.  These techniques quantify the uncertainty by altering assumptions and observing the impact on modelling outputs.  They will work if the range of assumptions tested covers the range of unknown variables. | Ontological uncertainty cannot be quantified.  We cannot identify unknowable unknowns, so there are no actions we can take to quantify them. What we can do is be clear about the sources of uncertainty we have included, so that any others subsequently identified would likely add to that uncertainty. |
-| <b> Can it be reduced? </b> | This type of uncertainty cannot be completely removed.  We can sometimes reduce it through data smoothing or increasing the size of a sample, but there will always be some random variability. | Epistemic uncertainty is reducible. Epistemic uncertainty can be reduced by gathering information to lessen the gaps in our knowledge.  Using new data sources, expanding our data collection or conducting research can remove the need for assumptions or refine their ranges. | This type of uncertainty is not reducible. However, ontological uncertainty can usually be separated into "unknowable unknowns" and "knowable unknowns". Horizon scanning can help identify knowable unknowns.  Once they are identified they become epistemic uncertainties. |
-| <b> Example </b> | Tossing a coin is an example of aleatory uncertainty. We can observe the possible outcomes (heads or tails) and the probability of each occurring (50:50), therefore create a PDF. However, prior to the coin being tossed we cannot reduce the uncertainty in outcomes. | Taking our coin toss example, we don't know whether the coin is fair in the first instance. We may assume the coins is fair and will give a 50% probability of each outcome. Once we start to toss the coin, we start to gather information on its fairness. The longer we toss the coin the better our information gets and the greater the reduction in epistemic uncertainty. | Unknown unknown are often future events or circumstances that we cannot predict. An example could be the introduction of a new technology that was previously unheard of. If the new technology affects the operation of a system, previous analysis is no longer reliable as it didn't account for this change. |
+| <b>Definition</b>| Known knowns are <b>things we know that we know</b>. This refers to the inherent uncertainty that is always present due to underlying probabilistic variability | Known unknowns are <b>things that we know we don’t know</b>. This type of uncertainty comes from a lack of knowledge about the (complex) system we are trying to model. Assumptions are used to plug these gaps in the absence of information. | Unknown unknowns are <b>things that we don't know we don't know </b>.  It usually comes from factors or situations that we have not previously experienced and therefore cannot consider because we simply don’t know where to look in the first instance. |
+| <b>Can it be quantified? </b> | <b>Yes</b> it can be quantified. We usually characterise it using a probability distribution function (PDF). A PDF gives all the possible values that a variable can have and assigns a probability of occurrence to each. As analysts, the challenge for us is to derive the PDF. If you find that you can’t then you may instead have a known unknown. | <b>Yes</b> it can be quantified (but isn’t always) – e.g. through sensitivity analysis. These techniques quantify the uncertainty by altering assumptions and observing the impact on modelling outputs. They will work if the range of assumptions tested covers the range of unknown variables. | <b>No</b> it cannot be quantified.  We cannot identify unknowable unknowns, so there are no actions we can take to quantify them. What we can do is be clear about the sources of uncertainty we have included, so that any others subsequently identified would likely add to that uncertainty. |
+| <b> Can it be reduced? </b> | This type of uncertainty cannot be completely removed.  We can sometimes reduce it through data smoothing or increasing the size of a sample, but there will always be some random variability. | Known unknowns are reducible by gathering information to lessen the gaps in our knowledge.  Using new data sources, expanding our data collection or conducting research can remove the need for assumptions or refine their ranges. | This type of uncertainty is not reducible. However, this type of uncertainty can usually be separated into “unknowable unknowns” and “knowable unknowns”. Horizon scanning can help identify knowable unknowns. Once they are identified they become known unknowns (in the middle column).  |
+| <b> Example </b> | Tossing a coin is an example of a known known. We can observe the possible outcomes (heads or tails) and the probability of each occurring (50:50), therefore create the PDF. However, prior to the coin being tossed we cannot reduce the uncertainty in outcome. | Taking our coin toss example, we don’t know whether the coin is fair in the first instance. We may assume the coin is fair and will give a 50% probability of each outcome. Once we start to toss the coin, we start to gather information on its fairness. The longer we toss the coin the better our information gets and the greater the reduction in the known unknown. | Unknown unknowns are often future events or circumstances that we cannot predict. An example could be the introduction of a new technology that was previously unheard of. If the new technology affects the operation of a system, previous analysis is no longer reliable as it didn’t account for this change. |
 
 ```{r fig.align="center", echo=FALSE, out.width='100%'}
 
@@ -110,11 +118,11 @@ Table 2.2: Sources of uncertainty
 
 | <b>Data Origin Checklist</b> |  | <b>Approaches for understanding uncertainty</b> |
 | --------------------- | ------------------------- | ---------------------------- |
-|<b> Where do the data come from and how were they collected? </b> | How well do the definitions and concepts in the data you have chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another | Think about how the measures differ, how the concepts they capture differ and how you can adjust for this. |
-|<b> How well does your data source compare with your analysis objective?</b> | How rigorous was the data collection process? <br><br> Was the data owner’s quality assurance sufficiently robust? <br><br> Would respondents have fully understood the question intent? <br><br> For example, poorly designed survey questions or coding tools to capture responses may lead to ambiguity, inconsistency and bias in responses. <br><br> Some datasets are subject to regulation and compliance with standards or other codes of practice.  In such cases, quality should be well documented and assured like in National Statistics | Check for documentation and QA of the dataset. |
+|<b>How well does your data source compare with your analysis objective?</b>| How well do the definitions and concepts in the data you have chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another. | Think about how the measures differ, how the concepts they capture differ and how you can adjust for this. |
+|<b> Where do the data come from and how were they collected?</b> | How rigorous was the data collection process? <br><br> Was the data owner’s quality assurance sufficiently robust? <br><br> Would respondents have fully understood the question intent? <br><br> For example, poorly designed survey questions or coding tools to capture responses may lead to ambiguity, inconsistency and bias in responses. <br><br> Some datasets are subject to regulation and compliance with standards or other codes of practice.  In such cases, quality should be well documented and assured like in National Statistics | Check for documentation and QA of the dataset. |
 |<b> Is there more than one data source? </b> | | You might be able to use one source to validate another or use it to help quantify the uncertainty. |
 |<b> What period does the data cover?  </b> | More uncertainty will occur if either the data don’t match the time period of interest and/or if the data are volatile. | If your data are volatile, consider using smoothing or estimation methods.|
-|<b> At what stage did you obtain the data? </b> |For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. <br><br> For raw data that you have collated, processed and cleaned yourself you will already have a good understanding of any issues. ||
+|<b> At what stage did you obtain the data? </b> |For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. <br><br> For raw data that you have collated, processed and cleaned yourself you will already have a good understanding of any issues. | |
 |<b>Are there coding differences? E.g. age groups that don’t align? </b>| Coding can cause problems when the coding classification does not match your target concept or coding is inconsistent across different data sets. | You could include additional analysis on more groups to assess the impact on your analysis. |
 |<b>How have missing values been treated? Have they been imputed? </b> | Treatment of missing values may be done through imputation – where values are substituted either based on a relationship with other variables or copied from a similar record. Be aware that this is rarely reflected in measures of variance and could cause systemic issues in the data. ||
 |<b>How have surveys been calibrated? </b>| Adjustments to the weights of survey responses are used to make survey results representative of a wider population. | Make sure you understand any adjustments and ensure it doesn’t conflict with your analysis. |

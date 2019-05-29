@@ -12,7 +12,7 @@ navbar:
       href: chapter_1.html
     - text: "Defining and Identifying Uncertainty"
       href: chapter_2.html
-    - text: "Conducting uncertainty analysis"
+    - text: "Understanding and Measuring Uncertainty"
       href: chapter_3.html
     - text: "Presenting and communicating uncertainty"
       href: chapter_4.html
