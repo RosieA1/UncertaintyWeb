@@ -13,6 +13,10 @@ output:
 margin-top: 100px;
 }
 
+.section h2{
+padding-top: 150px;
+}
+
 .leftA{
 float: left;
 width: 100%;
