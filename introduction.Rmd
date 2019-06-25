@@ -141,7 +141,7 @@ Before conducting any uncertainty analysis, it is important to check that you un
 </div>
 
 <div class = "leftB">
-1. Understanding the policy context
+1. Asking the right question
 </div>
 
 <div class = "rightA">
@@ -149,19 +149,19 @@ Considering the whole system that influences your analysis helps identify all po
 </div>
 
 <div class = "leftB">
-2. Sources of uncertainty
+2. Defining and Identifying Uncertainty
 </div>
 
 <div class = "rightA">
-Before conducting uncertainty analysis, you should consider the range of possible scenarios and techniques. We provide a list of the most common techniques with some examples for reference.
+Before conducting uncertainty analysis, you should consider the range of possibletechniques. We provide a list of the most common techniques with some examples for reference.
 </div>
 
 <div class = "leftB">
-3. Conducting uncertainty analysis
+3. Understanding and Measuring Uncertainty
 </div>
 
 <div class = "rightA">
-There is little point conducting any analysis if it has no impact, so this is perhaps the most important chapter. It is important to engage with your stakeholders so they take account of uncertainty in any decisions they make. You should think about how you interact with the audience, tailoring your communication to different groups. This will help them to understand the consequences of uncertainty and why they should be interested in it.
+There is little point conducting any analysis if it has no impact, so this is perhaps the most important section. It is important to engage with your stakeholders so they take account of uncertainty in any decisions they make. You should think about how you interact with the audience, tailoring your communication to different groups. This will help them to understand the consequences of uncertainty and why they should be interested in it.
 </div>
 
 <div class = "leftB">

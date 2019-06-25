@@ -51,7 +51,7 @@ Try to identify and record all the potential sources of uncertainty in your anal
 </div>
 
 <div class = "rightA">
-This chapter sets out a range of techniques to help you understand the resulting uncertainty in your analysis.
+This section sets out a range of techniques to help you understand the resulting uncertainty in your analysis.
 </div>
 
 
@@ -157,8 +157,9 @@ Considering the assumptions you're making in your analysis is critical to any un
 Table 2.3: Assumptions
 </div>
 
-|  |  |
-| ----------- | ------------------------------ |
+
+| Consideration  |   |
+| ----------- | ----------------------------------------------------------- |
 | <b> Consider where you have used assumptions</b> | Assumptions are used when we have incomplete knowledge. All models will require some assumptions, so you need to ensure that assumptions are robust and consistently understood.  There should be an assumptions log.  Where did the assumptions come from?  How were they generated and why?  What is the impact if they are wrong, and how often are they reviewed? <br><br> |
 | <b>What assumptions are outside the scope of the model?</b> | There are often parameters outside of the scope of the model that have been implicitly assumed. For example, models may assume no substantial policy changes in related areas. These assumptions provide the context in which the modelling results are appropriate.  You need to be aware of the limitations that these assumptions impose on analytical results. <br><br>  |
 | <b>Assess the quality of each assumption </b> |Assumptions should be based on robust evidence. The less evidence to support an assumption the more uncertain it will be. High quality assumptions will be underpinned by robust data, while low quality assumptions may simply be an opinion or may be supported by a poor data source <br><br> |

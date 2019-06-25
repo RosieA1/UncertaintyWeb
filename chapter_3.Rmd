@@ -79,7 +79,7 @@ At this stage you should have considered where the uncertainties lie. You now wi
 </div>
 
 <div class = "rightA">
-This chapter presents some general approaches for quantifying and measuring the uncertainty in your analysis.
+This section presents some general approaches for quantifying and measuring the uncertainty in your analysis.
 </div>
 
 
@@ -181,12 +181,12 @@ This should be repeated until the key outputs are stable and reproducible at the
 <div class = "fullBoxBlue">
 <b>Example:</b> 
 <br><br>
-Can help assess overall uncertainty when you have uncertainty around many aspects of your model 
-Assess uncertainty around a fund forecast 
-Estimate the uncertainty around assumptions used in policy costings
-An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided here:  <b>Placeholder for link to Monte Carlo Template</b>
-<br><br> &#64;Risk is an Excel add-in to analyse risk using Monte Carlo. An example of which is provided here:
-<b>Placeholder for DfE &#64;Risk Example</b>
+<ul><li>Can help assess overall uncertainty when you have uncertainty around many aspects of your model</li>
+<li>Assess uncertainty around a fund forecast</li>
+<li>Estimate the uncertainty around assumptions used in policy costings</li>
+<li>An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided here:  <b>Placeholder for link to Monte Carlo Template</b></li>
+<li> &#64;Risk is an Excel add-in to analyse risk using Monte Carlo. An example of which is provided here:
+<b>Placeholder for DfE &#64;Risk Example</b></li>
 
 </div>
 
@@ -321,7 +321,7 @@ If one source of uncertainty has a much greater impact than all the others, then
 <div class = "fullBoxBlue">
 <b>Outline:</b> 
 <br><br>
-Consider all the sources of uncertainty affecting the analysis and quantify the impact that each has on the overall uncertainty (even if this is approximate or subjective – see chapter 2). If one source has substantially more impact that the others, then simply looking at the uncertainty in this one factor might be a pragmatic approximation for the overall uncertainty measure, ignoring other sources.
+Consider all the sources of uncertainty affecting the analysis and quantify the impact that each has on the overall uncertainty (even if this is approximate or subjective – see section on 'Defining and Identifying Uncertainty'). If one source has substantially more impact that the others, then simply looking at the uncertainty in this one factor might be a pragmatic approximation for the overall uncertainty measure, ignoring other sources.
 <br><br>
 This is not a robust way of estimating overall uncertainty, as it ignores all but one source. It should only be used if previous techniques are inappropriate, and there is genuinely one source of uncertainty that has an impact that is an order of magnitude larger than the others. However, when time is tight this may be a proportionate way of estimating uncertainty.
 </div>
@@ -376,14 +376,10 @@ If there are many sources of uncertainty with complex correlations between them,
 
 <div class = "fullBoxBlue">
 <b>Outline:</b> 
-<br><br>
-Identify the individual sources of uncertainty, and the range of possible values for each.
-<br><br>
-Create a set of coherent scenarios, setting each source of uncertainty to a value that could realistically occur in parallel with the others (e.g. a crimewave is unlikely to occur if the economy is booming).
-br><br>
-Try to ensure that the chosen scenarios cover the full range of possible outcomes, from highly optimistic to highly pessimistic, with equal attention given to each to avoid bias in presenting the results.
-br><br>
-Then quantify the overall uncertainty in each scenario, combining uncertainties using other methods in this chapter (the benefit is that this combining can be done manually for a small number of specific cases, rather than having to formulate the combinations mathematically for all possible inputs). 
+<ul><li>Identify the individual sources of uncertainty, and the range of possible values for each.</li>
+<li>Create a set of coherent scenarios, setting each source of uncertainty to a value that could realistically occur in parallel with the others (e.g. a crimewave is unlikely to occur if the economy is booming).</li>
+<li>Try to ensure that the chosen scenarios cover the full range of possible outcomes, from highly optimistic to highly pessimistic, with equal attention given to each to avoid bias in presenting the results.</li>
+<li>Then quantify the overall uncertainty in each scenario, combining uncertainties using other methods in this section (the benefit is that this combining can be done manually for a small number of specific cases, rather than having to formulate the combinations mathematically for all possible inputs). </li></ul>
 </div>
 
 <br><br>

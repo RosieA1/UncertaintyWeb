@@ -4,10 +4,10 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Introduction"
-      href: introduction.html
     - text: "Executive Summary"
       href: exec.html
+    - text: "Introduction"
+      href: introduction.html
     - text: "Asking the right question"
       href: chapter_1.html
     - text: "Defining and Identifying Uncertainty"
@@ -16,6 +16,8 @@ navbar:
       href: chapter_3.html
     - text: "Presenting and communicating uncertainty"
       href: chapter_4.html
+    - text: "Case Studies"
+      href: case_studies.html
     - text: "Download pdf"
       href: Download_pdf.html
 output:

@@ -76,12 +76,14 @@ Understand what role the uncertainty has in the decision. How are your results l
 How influential is the uncertainty analysis?
 </div>
 
-<div class = "rightA">
-In some circumstances the uncertainty will be the key driver in the decision, for example if the uncertainty is large enough to indicate the result of a policy could be successful or unsuccessful. In this case the uncertainty analysis is very influential, and a more detailed   explanation is likely to be required. 
-</div>
+<div style="clear: both;"></div>
 
 <div class = "leftB"> 
 If there is a major risk that has not been included in the analysis, then this may be greatest uncertainty
+</div>
+
+<div class = "rightA">
+In some circumstances the uncertainty will be the key driver in the decision, for example if the uncertainty is large enough to indicate the result of a policy could be successful or unsuccessful. In this case the uncertainty analysis is very influential, and a more detailed   explanation is likely to be required. 
 </div>
 
 <div class = "rightA">
@@ -229,6 +231,8 @@ Descriptive terms such as ‘low risk’ or ‘very likely’ can be interpreted
 Be careful when using descriptive terms and adhere to an established system is possible	
 </div>
 
+<div style="clear: both;"></div>
+
 <div class = "rightA">
 An exception to this is where there is an established system that your audience is used to for attaching terminology to probabilities, one that can be assumed to be well-understood by the intended audience. For example:
 <ul><li> According to the IPCC (Intergovernmental Panel on Climate Change), “very likely” means 90-100% probability. </li>
@@ -344,7 +348,7 @@ These should generally be avoided, except for specific datasets , because people
 </div>
 
 <div class = "rightA">
-Most complex graphs
+More complex graphs
 <br>
 <i>Heat and Choropleth maps, Treemaps, Sankey diagrams</i>
 </div>
@@ -388,37 +392,47 @@ Error bars are a simple way to illustrate a range around a data point
 Error bars can be added to bar graphs, line graphs and scatter graphs to illustrate a range around a central estimate, within which we expect the value to lie with a given probability.
 </div>
 
-<div class = "rightA">
-As referred to previously, consider the situation and decide on an appropriate level to display.  E.g., don’t apply 95% confidence/prediction intervals by default. 
-</div>
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Choose an appropriate probability level based on the context
 </div>
 
 <div class = "rightA">
-State what probability the error bars represent, and describe in prose how the viewer should ‘read’ the error bar.
+As referred to previously, consider the situation and decide on an appropriate level to display.  E.g., don’t apply 95% confidence/prediction intervals by default. 
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Be clear about what the error bars represent
 </div>
 
 <div class = "rightA">
-Error bars can be added easily to a data series or time series. However, if the data are continuous (e.g. a time series) then consider whether showing multiple line graphs would be clearer than a single line graph with error bars.
+State what probability the error bars represent, and describe in prose how the viewer should ‘read’ the error bar.
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Error bars can be applied to series of data points
 </div>
 
 <div class = "rightA">
-If the output data are 2-dimensional, then you can apply error bars in 2 dimensions. Be careful to ensure that the resulting graph does not become illegible due to clutter.
+Error bars can be added easily to a data series or time series. However, if the data are continuous (e.g. a time series) then consider whether showing multiple line graphs would be clearer than a single line graph with error bars.
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 2-dimensional error bars can be used where necessary 
 </div>
+
+<div class = "rightA">
+If the output data are 2-dimensional, then you can apply error bars in 2 dimensions. Be careful to ensure that the resulting graph does not become illegible due to clutter.
+</div>
+
+
 
 ```{r fig.align="center", echo=FALSE}
 
@@ -444,21 +458,26 @@ Box plots can convey more information about possible outcomes than a range alone
 Box plots can help the audience understand the underlying distribution of possible outcomes in more detail than just a range. Typically they show the median, interquartile range, maximum and minimum values for the range of possible outcomes. This can be particularly useful when the underlying distribution is skewed or non-normal.
 </div>
 
-<div class = "rightA">
-Box plots can be arranged in parallel to show the distributions for a range of measures, and can help compare the different shapes.
-</div>
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 A series of box plots can be used to compare distributions 
 </div>
 
 <div class = "rightA">
-Box plots may not be widely understood by non-analysts, so think carefully about whether the added information will be effective, or whether a simple range would be sufficient. A labelled example can be used to help the audience interpret the format.
+Box plots can be arranged in parallel to show the distributions for a range of measures, and can help compare the different shapes.
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Think about whether the audience will be familiar with the format 
 </div>
+
+<div class = "rightA">
+Box plots may not be widely understood by non-analysts, so think carefully about whether the added information will be effective, or whether a simple range would be sufficient. A labelled example can be used to help the audience interpret the format.
+</div>
+
 
 ```{r fig.align="center", echo=FALSE}
 
@@ -484,41 +503,51 @@ PDFs show complete information on the quantified uncertainty
 A probability density function can be used to give complete information on the range of possible outcomes, and the likelihood of each for a given estimate.
 </div>
 
-<div class = "rightA">
-While presenting complete information may seem ideal, it may be more information than the audience actually needs. Would a prose description of the mean and range be sufficient?
-</div>
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Think about whether the audience needs this much information 
 </div>
 
 <div class = "rightA">
-If the PDF is approximately normal, then there may be little value in displaying it, as the essential features can be described in a few words.
+While presenting complete information may seem ideal, it may be more information than the audience actually needs. Would a prose description of the mean and range be sufficient?
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 PDFs can be useful when the distribution of outcomes is multimodal, or otherwise complex 
 </div>
 
 <div class = "rightA">
-The distribution could be multimodal – for example the marks for students passing a university module may have a peak for a number who don’t study very hard, and a peak for those who worked really hard. In this case it could be misleading to present the mean, so a graphical illustration   of the distribution may be more effective.
+If the PDF is approximately normal, then there may be little value in displaying it, as the essential features can be described in a few words.
 </div>
 
 <div class = "rightA">
-It may aid clarity to draw the reader’s attention to important features, such as the mode.
+The distribution could be multimodal – for example the marks for students passing a university module may have a peak for a number who don’t study very hard, and a peak for those who worked really hard. In this case it could be misleading to present the mean, so a graphical illustration   of the distribution may be more effective.
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Labelling can be used to highlight the key features 
 </div>
 
 <div class = "rightA">
-If we need to communicate a series of PDFs, then multiple functions can be shown to compare the range of possible outcomes across the series.
+It may aid clarity to draw the reader’s attention to important features, such as the mode.
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 <b>Multiple PDFs</b> can be used to show uncertainty across different measures
 </div>
+
+<div class = "rightA">
+If we need to communicate a series of PDFs, then multiple functions can be shown to compare the range of possible outcomes across the series.
+</div>
+
+<div style="clear: both;"></div>
 
 <div class = "rightA">
 If there are only 2 or 3 these can be overlaid to make it easy to compare. With more, ‘small multiples’ are likely to be clearer.
@@ -549,21 +578,26 @@ A CDF may be more helpful than a PDF if there is a specific threshold of interes
 A cumulative density function essentially shows the same information as a probability density function. However a CDF may be more helpful when the audience is primarily concerned with how likely it is that the value will be below (or above) a particular point (rather than the range within which we expect the value to fall). For example, how likely is it that our costs exceed our budget? (rather than what are our costs going to be?
 </div>
 
-<div class = "rightA">
-However, features such as the mode are less clear on a CDF (shown by the steepest part of the graph), as they are harder to read by eye.
-</div>
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 The most likely value is less clear on a CDF 
 </div>
 
 <div class = "rightA">
-Drawing gridlines intersecting at key points of the function can help the viewer understand how to ‘read’ the graph.
+However, features such as the mode are less clear on a CDF (shown by the steepest part of the graph), as they are harder to read by eye.
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Labelling can be used to highlight the key features 
 </div>
+
+<div class = "rightA">
+Drawing gridlines intersecting at key points of the function can help the viewer understand how to ‘read’ the graph.
+</div>
+
 
 ```{r fig.align="center", echo=FALSE}
 
@@ -589,13 +623,16 @@ Fan charts can show how uncertainty changes over time
 Fan charts can be used to show a series of different prediction intervals for time-series projections (e.g. 30%, 60% and 90% at the same time).  This is essentially plotting selected points from a time-dependent PDF.
 </div>
 
-<div class = "rightA">
-Often a central ‘best estimate’ is not included, to avoid the viewer focussing on a single estimate and undermining the importance of the uncertainty
-</div>
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Avoid including the mode 
 </div>
+
+<div class = "rightA">
+Often a central ‘best estimate’ is not included, to avoid the viewer focussing on a single estimate and undermining the importance of the uncertainty
+</div>
+
 
 ```{r fig.align="center", echo=FALSE}
 
@@ -621,28 +658,34 @@ Multiple line charts can be clearer than a series of error bars
 Multiple line charts with time series data to show a quantified range around a ‘most likely’ projection (essentially a series of error bars).
 </div>
 
-<div class = "rightA">
-With scenario analysis, a series of line charts can be used to show the projections from each scenario.
-</div>
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Alternative scenarios can be illustrated with multiple line graphs
 </div>
 
 <div class = "rightA">
-Generally with scenario analysis each scenario should be presented with equal prominence, to avoid suggesting that one is more likely than another (unless analysis has been carried out to quantify the likelihoods of each).
+With scenario analysis, a series of line charts can be used to show the projections from each scenario.
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Give equal prominence to each scenario
 </div>
 
 <div class = "rightA">
-Try to include an even number of scenarios, to avoid having a middle option that may be misinterpreted as the ‘most likely’ scenario.
+Generally with scenario analysis each scenario should be presented with equal prominence, to avoid suggesting that one is more likely than another (unless analysis has been carried out to quantify the likelihoods of each).
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Try to have an even number of scenarios 
+</div>
+
+<div class = "rightA">
+Try to include an even number of scenarios, to avoid having a middle option that may be misinterpreted as the ‘most likely’ scenario.
 </div>
 
 ```{r fig.align="center", echo=FALSE}
@@ -673,20 +716,24 @@ Tornado diagrams are different to most other graphs discussed here. They are not
 Tornado diagrams depict sensitivity of a result to changes in selected variables. They show the effect on the output of varying each variable at a time, keeping other input variables at their assumed values.
 </div>
 
-<div class = "rightA">
-If the level of uncertainty is unpalatable to the customers, then this format can be useful to help focus work on reducing the level of uncertainty in key parameters.
-</div>
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Can help communicate the reasons for uncertainty, and identify further need for analysis 
 </div>
 
 <div class = "rightA">
-One limitation of the format is that only one parameter is changed at a time. There are some situations where the uncertainty due to one variable may appear small initially but becomes much more prominent if a second variable takes on a slightly different value (e.g. think of a workflow model with a bottleneck. A tornado diagram might show the bottleneck parameter to be the overwhelming uncertainty. However, if this parameter is increased slightly then the bottleneck may move elsewhere, completely changing the picture)
+If the level of uncertainty is unpalatable to the customers, then this format can be useful to help focus work on reducing the level of uncertainty in key parameters.
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Tornado diagrams can be misleading in complex models 
+</div>
+
+<div class = "rightA">
+One limitation of the format is that only one parameter is changed at a time. There are some situations where the uncertainty due to one variable may appear small initially but becomes much more prominent if a second variable takes on a slightly different value (e.g. think of a workflow model with a bottleneck. A tornado diagram might show the bottleneck parameter to be the overwhelming uncertainty. However, if this parameter is increased slightly then the bottleneck may move elsewhere, completely changing the picture)
 </div>
 
 ```{r fig.align="center", echo=FALSE}
@@ -713,22 +760,25 @@ Infographics can be useful for public facing communications
 Infographics are graphic visual representations of information, data or knowledge intended to present information quickly and clearly. They can improve people’s understanding by using graphics to enhance peoples’ ability to see patterns and trends.
 </div>
 
-<div class = "rightA">
-When done well they will grab the reader’s attention from become a very powerful way of communicating key messages. Designing a good infographic may be worthwhile if your audience is less confident with data and analysis.
-</div>
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Graphics can grab attention and make messages more accessible
 </div>
 
 <div class = "rightA">
-Like all graphs and visualisation you should ensure the information is presented clearly and truthfully. With infographics there is additional the risk that visual design elements detract from the key message. Consider the final audience for the information to determine if an infographic is the right choice and follow best practice
+When done well they will grab the reader’s attention from become a very powerful way of communicating key messages. Designing a good infographic may be worthwhile if your audience is less confident with data and analysis.
 </div>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 However, watch out for common pitfalls and follow best practice for the design
 </div>
 
+<div class = "rightA">
+Like all graphs and visualisation you should ensure the information is presented clearly and truthfully. With infographics there is additional the risk that visual design elements detract from the key message. Consider the final audience for the information to determine if an infographic is the right choice and follow best practice
+</div>
 
 ```{r fig.align="center", echo=FALSE}
 
@@ -754,24 +804,28 @@ Interactive tools can be used to immerse your reader on complex matters
 An interactive tool can help make analysis more accessible to non-specialists. They can create an immersive experience that is easier for them to understand and is highly memorable.
 </div>
 
-<div class = "rightA">
-Consider the overall message and where the uncertainties lie. Which aspects will the audience be interested in and what do they need to know? Use this understanding to bring focus to which interactive elements to create. 
-</div>
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Focus on specific messages 
 </div>
 
 <div class = "rightA">
+Consider the overall message and where the uncertainties lie. Which aspects will the audience be interested in and what do they need to know? Use this understanding to bring focus to which interactive elements to create. 
+</div>
+
+<div class = "rightA">
 The interactivity will enable your users to manipulate and get a deeper understanding of the message.
+</div>
+
+<div style="clear: both;"></div>
+
+<div class = "leftB">
+Allow reader to adjust a key variable 
 </div>
 
 <div class = "rightA">
 If a key source of uncertainty is a single variable, then it may be possible to construct a display that can be changed as the user adjusts the value of this variable by moving a slider.
-</div>
-
-<div class = "leftB">
-Allow reader to adjust a key variable 
 </div>
 
 <div class = "rightA">
