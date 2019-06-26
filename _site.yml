@@ -2,9 +2,9 @@ name: "my-website"
 navbar: 
   title: "Uncertainty Group"
   left:
-    - text: "Home"
+    - text: "Overview"
       href: index.html
-    - text: "Executive Summary"
+    - text: "Decision Maker Summary"
       href: exec.html
     - text: "Introduction"
       href: introduction.html
