@@ -8,7 +8,7 @@ navbar:
       href: exec.html
     - text: "Introduction"
       href: introduction.html
-    - text: "Asking the right question"
+    - text: "Agreeing how uncertainty should be used to help answer the question"
       href: chapter_1.html
     - text: "Defining and Identifying Uncertainty"
       href: chapter_2.html

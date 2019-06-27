@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> Asking the right question
+title: <br><br><br> Agreeing how uncertainty should be used to help answer the question
 output:
   html_document:
     toc: true
@@ -39,22 +39,9 @@ width: 23%;
 <br>
 
 <div class = "rightA">
-TEST TEST Decision-makers need information about uncertainty in the impacts of their decisions, as well as the most likely impact. This section looks at the steps to ensure that analysts and decision makers understand the question being asked, how analytical outputs will be used in the decision-making process, and how we can appropriately incorporate uncertainty into the analysis.
+Decision-makers need information about uncertainty in the impacts of their decisions. This section looks at the steps to ensure that analysts and decision-makers agree on the question being asked, how analytical outputs will be used in the decision-making process, and how to appropriately incorporate uncertainty into the analysis.
 </div>
 
-<br>
-
-<div class = "leftA">
-  Agreeing what the question is
-</div>
-
-<br>
-
-<div class = "rightA">
-Before any analysis begins we should work with policy colleagues to define the question that the analysis will answer. 
-</div>
-
-<br>
 
 <div style="clear: both;"></div>
 
@@ -68,17 +55,17 @@ Clarify what the real question is
 </div>
 
 <div class = "rightA">
-  It is important to ensure that the question is correctly framed to address the problem. For example, are we really interested in 'how much money will my policy save?', or should we be asking 'what is the likelihood that this policy would save more than &#163;x?'.  
+  It is important to ensure that the question is correctly framed to address the problem. For example, are we really interested in 'how much money is this new policy likely to save?', or should we be asking 'how certain can we that this policy would save more than &#163;x?'.  
 </div>
 
 <br>
 
 <div class = "rightA">
-  As well as clearly defining the question, we should also ensure that any sub-questions to support the analysis are appropriately thought through. For example – in an education context we may be interested in uncertainty on both an academic and a financial year basis.  
+  As well as clearly defining the question, we should also ensure that any important detailed questions to support the analysis are appropriately thought through. For example, in an education context we may be interested in uncertainty in both academic and financial years  
 </div>
 
 <div class = "leftB">
-  Identify the important sub-questions
+  Identify the important details
 </div>
 
 <br>
@@ -88,16 +75,16 @@ Clarify what the real question is
 </div>
 
 <div class = "rightA">
-  Once the question and sub-questions have been agreed, analysts and decision makers should discuss how the outputs will be used. Understanding the role of the analysis in the decision-making process will help to inform which uncertainty techniques are appropriate and proportionate. 
+  Once the key questions have been agreed, analysts and decision-makers should discuss how the outputs will be used. Understanding the role of the analysis in the decision-making process will help to inform which uncertainty techniques are appropriate and proportionate. 
 </div>
 
 <div class = "rightA">
-  It is important to jointly identify sources of uncertainty that are so deep that little or nothing can be said quantitatively about their impact on the policy outcome. Deep uncertainties can have major implications for decision-making, and may call for a descriptive approach to the analysis and presentation of options.
+  It is also important to jointly identify sources of uncertainty that are so deep that little or nothing can be said quantitatively about their impact on the policy outcome. An exzmple might be the impact of a natural disaster on a particular policy. Deep uncertainties can have major implications for decision-making, and may call for a descriptive approach to the analysis and presentation of options.
 </div>
 
 <div style="clear: both;"></div>
 
-## How will output ranges be used? 
+## How will outputs be used? 
 
 <br>
 
@@ -106,7 +93,7 @@ Discuss the role for the analysis
 </div>
 
 <div class = "rightA">
-Will the policy decision be  based on the results of the analysis, or is it just one of a wider set of considerations informing the decision? The more influential the analysis is, the more important it is to build in robust uncertainty analysis.
+Will the policy decision be  based purely on the results of the analysis, or is it just one of a wider set of considerations informing the decision? The more influential the analysis is, the more important it is to build in robust uncertainty analysis.
 </div>
 
 <br>
@@ -126,7 +113,7 @@ Incorporating uncertainty into analysis
 </div>
 
 <div class = "rightA">
-Now that we know what the question is and the context in which the answers will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to work with the decision maker by asking what it is conceptually that they <i>would like</i> to be able to say. This is important as it frames how the analysis will be conducted. 
+Now that we know what the question is and the context in which the analysis will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to work with the decision maker by asking what it is conceptually that they <i>would like</i> to be able to say. This is important as it frames how the analysis will be conducted. 
 </div>
 
 <div style="clear: both;"></div>
@@ -138,7 +125,7 @@ Explain how the uncertainty can be used to better inform decisions
 </div>
 
 <div class = "rightA">
-Help the decision maker to understand how information about the uncertainty present in the analysis supports a better informed and more robust decision. Make it clear that not all sources of uncertainty will be quantifiable and/or supported by robust evidence. Jointly prioritise the key sources of uncertainty that need to be included in the model.
+Help the decision-maker to understand how information about the uncertainty present in the analysis supports a better informed and more robust decision. Make it clear that not all sources of uncertainty will be quantifiable and/or supported by robust evidence. Jointly prioritise the key sources of uncertainty that need to be included in the model.
 </div>
 
 <div class = "rightA">
@@ -150,11 +137,11 @@ Avoid misleading results or spurious accuracy by choosing the appropriate techni
 </div>
 
 <div class = "rightA">
-Discuss with the decision maker what level of uncertainty is acceptable. Do they want to know how wrong the forecast would need to be in order to change or rethink the policy? Or are they simply interested in an output “range”? If so, what does that “range” actually mean?
+Discuss with the decision-maker what level of uncertainty is acceptable. Do they want to know how wrong the forecast would need to be in order to change or rethink the policy? Or are they simply interested in an output “range”? If so, what does that “range” actually mean?
 </div>
 
 <div class = "leftB">
-Check what the policy maker’s risk appetite is and how the uncertainty will inform their decision
+Check how the uncertainty will inform the decision-maker’s judgement
 </div>
 
 <div class = "rightA">
@@ -166,9 +153,9 @@ The uncertainty analysis may differ depending on whether it is a policy, operati
 </div>
 
 <div class = "rightA">
-Examples can be very helpful when discussing the analysis with the decision maker. An answer to the question of how much a policy would save may be &#163;3m, with uncertainty analysis giving a broad range of &#163;0.5-5.5m. You could discuss with the decision maker how they want to be able to frame the analysis, for example: <br> <i>"A range of &#163;0.5-5.5m";
-<br> "The estimated savings are &#163;3m, with analysis showing a 90% likelihood that savings will be between &#163;1-5m";
-<br> "Analysis shows that there is an 80% likelihood that the savings will be greater than &#163;2m";
+Examples can be very helpful when discussing the analysis with the decision maker. An answer to the question of the net benefits of a policy may be &#163;3m, with uncertainty analysis giving a broad range of &#163;0.5-5.5m. You could discuss with the decision maker how they want to be able to frame the analysis, for example: <br> <i>"A range of &#163;0.5-5.5m";
+<br> "The estimated benefits are &#163;3m, with analysis showing a 90% likelihood that benefits will be between &#163;1-5m";
+<br> "Analysis shows that there is an 80% likelihood that the net benefits will be greater than &#163;2m";
 <br> "The policy needs to have X amount of takeup in order to break even"</i>
 </div>
 
@@ -177,13 +164,5 @@ Operational decision makers may not want to see a range of results, but instead 
 </div>
 
 <div class = "rightA">
-Financial decision makers may be interested in understanding the likelihood of receiving a certain level of income, or that risks and opportunities will materialise. Here, the analysis would need to go hand in hand with financial risk management to mitigate the risks materialising or crystallising the opportunities.
-</div>
-
-<div class = "rightA">
-Your analysis could be used to provide advice on how a system is driven, and how each parameter interacts and impacts on the final output. Through scenario or sensitivity testing, you can find the dependencies and significances of the model parameters, and explore how these will feed through to affect the final output.
-</div>
-
-<div class = "leftB">
-Analysis could advise customer on system drivers or resource planning
+Financial decision makers may be interested in understanding the likelihood of receiving a certain level of income, or that risks and opportunities will materialise. For example, HMRC might want to know the likelihood of receiving a certain level from tax receipts. Here, the analysis would need to go hand in hand with financial risk management to mitigate the risks materialising or crystallising the opportunities.
 </div>
