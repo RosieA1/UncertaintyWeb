@@ -39,7 +39,7 @@ width: 23%;
 <br>
 
 <div class = "rightA">
-TEST TEST TEST Decision-makers need information about uncertainty in the impacts of their decisions, as well as the most likely impact. This section looks at the steps to ensure that analysts and decision makers understand the question being asked, how analytical outputs will be used in the decision-making process, and how we can appropriately incorporate uncertainty into the analysis.
+TEST TEST Decision-makers need information about uncertainty in the impacts of their decisions, as well as the most likely impact. This section looks at the steps to ensure that analysts and decision makers understand the question being asked, how analytical outputs will be used in the decision-making process, and how we can appropriately incorporate uncertainty into the analysis.
 </div>
 
 <br>
