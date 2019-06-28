@@ -331,6 +331,8 @@ Decide what level of detail to include on uncertainty
 The following table suggests some graph types that can be used for most situations, each of which are described in the following section.
 </div>
 
+<div style="clear: both;"></div>
+
 ## Error bars
 
 <br>

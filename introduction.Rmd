@@ -126,7 +126,7 @@ We have also provided a one-page summary of key messages for analysts that can a
 </div>
 
 <div class = "rightA">
-1. Asking the right question
+1. Agreeing how uncertainty should be used to help answer the question
 2. Defining and identifying uncertainty
 3. Understanding and measuring uncertainty
 4. Presenting and communicating uncertainty
@@ -141,7 +141,7 @@ Before conducting any uncertainty analysis, it is important to check that you un
 </div>
 
 <div class = "leftB">
-1. Asking the right question
+1. Agreeing how uncertainty should be used to help answer the question
 </div>
 
 <div class = "rightA">
