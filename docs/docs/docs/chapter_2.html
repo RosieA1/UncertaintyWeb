@@ -451,7 +451,7 @@ width: 23%;
 <p>Introduction</p>
 </div>
 <div class="rightA">
-<p>Uncertainty can feed through into analysis from many different sources. Each step in data collection, data processing and modelling is likely to bring added uncertainty.</p>
+<p>Uncertainty can feed through into analysis and subsequent decision making from many different sources. Each step in data collection, data processing and modelling is likely to bring added uncertainty.</p>
 </div>
 <p><br></p>
 <div class="rightA">
@@ -466,7 +466,7 @@ width: 23%;
 <div id="defining-uncertainty" class="section level2">
 <h2>Defining uncertainty</h2>
 <div class="rightA">
-<p>It is useful to distinguish between distinct classifications of uncertainty. Understanding the characteristics of different classifications of uncertainty can help you to identify sources of uncertainty in your own analysis. Further, categorising the types of uncertainty in an analytical problem provides a framework for the next steps of analysis.</p>
+<p>It is useful to distinguish between distinct classifications of uncertainty. Understanding the characteristics of different classifications of uncertainty can help you to identify sources of uncertainty in your own analysis. Further, categorising the types of uncertainty provides a framework for the next steps of analysis.</p>
 </div>
 <div class="rightA">
 <p>A common classification divides uncertainty into known knowns, known unknowns, and unknown unknowns. We explain these in Table 2.1.</p>
@@ -494,14 +494,14 @@ width: 23%;
 <tbody>
 <tr class="odd">
 <td><b>Definition</b></td>
-<td>Known knowns are <b>things we know that we know</b>. This refers to the inherent uncertainty that is always present due to underlying probabilistic variability</td>
+<td>Known knowns are <b>things we know that we know</b>. This refers to the inherent uncertainty that is always present due to underlying probabilistic variability.</td>
 <td>Known unknowns are <b>things that we know we don’t know</b>. This type of uncertainty comes from a lack of knowledge about the (complex) system we are trying to model. Assumptions are used to plug these gaps in the absence of information.</td>
 <td>Unknown unknowns are <b>things that we don’t know we don’t know </b>. It usually comes from factors or situations that we have not previously experienced and therefore cannot consider because we simply don’t know where to look in the first instance.</td>
 </tr>
 <tr class="even">
 <td><b>Can it be quantified? </b></td>
 <td><b>Yes</b> it can be quantified. We usually characterise it using a probability distribution function (PDF). A PDF gives all the possible values that a variable can have and assigns a probability of occurrence to each. As analysts, the challenge for us is to derive the PDF. If you find that you can’t then you may instead have a known unknown.</td>
-<td><b>Yes</b> it can be quantified (but isn’t always) – e.g. through sensitivity analysis. These techniques quantify the uncertainty by altering assumptions and observing the impact on modelling outputs. They will work if the range of assumptions tested covers the range of unknown variables.</td>
+<td><b>Yes</b> it can be quantified (but isn’t always) – e.g. through sensitivity analysis. These techniques try to quantify the uncertainty by altering assumptions and observing the impact on modelling outputs. They will work if the range of assumptions tested covers the range of unknown variables.</td>
 <td><b>No</b> it cannot be quantified. We cannot identify unknowable unknowns, so there are no actions we can take to quantify them. What we can do is be clear about the sources of uncertainty we have included, so that any others subsequently identified would likely add to that uncertainty.</td>
 </tr>
 <tr class="odd">
@@ -546,7 +546,7 @@ width: 23%;
 </colgroup>
 <thead>
 <tr class="header">
-<th><b>Data Origin Checklist</b></th>
+<th><b>Data Checklist</b></th>
 <th></th>
 <th><b>Approaches for understanding uncertainty</b></th>
 </tr>
@@ -554,13 +554,13 @@ width: 23%;
 <tbody>
 <tr class="odd">
 <td><b>How well does your data source compare with your analysis objective?</b></td>
-<td>How well do the definitions and concepts in the data you have chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another.</td>
+<td>How well do the definitions and concepts in the data chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another. For example, you might want to analyse London &amp; South East but only have data for the whole of the UK.</td>
 <td>Think about how the measures differ, how the concepts they capture differ and how you can adjust for this.</td>
 </tr>
 <tr class="even">
 <td><b> Where do the data come from and how were they collected?</b></td>
-<td>How rigorous was the data collection process? <br><br> Was the data owner’s quality assurance sufficiently robust? <br><br> Would respondents have fully understood the question intent? <br><br> For example, poorly designed survey questions or coding tools to capture responses may lead to ambiguity, inconsistency and bias in responses. <br><br> Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics</td>
-<td>Check for documentation and QA of the dataset.</td>
+<td>How rigorous was the data collection process? <br><br> Was the data owner’s quality assurance sufficiently robust? <br><br> Would respondents have fully understood the question intent? <br><br> For example, poorly designed survey questions or coding tools to capture responses may lead to ambiguity, inconsistency or bias in responses. <br><br> Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics</td>
+<td>Check for documentation and QA of the data. <br><br> Read footnotes carefully in statistical releases.</td>
 </tr>
 <tr class="odd">
 <td><b> Is there more than one data source? </b></td>
@@ -584,8 +584,8 @@ width: 23%;
 </tr>
 <tr class="odd">
 <td><b>How have missing values been treated? Have they been imputed? </b></td>
-<td>Treatment of missing values may be done through imputation – where values are substituted either based on a relationship with other variables or copied from a similar record. Be aware that this is rarely reflected in measures of variance and could cause systemic issues in the data.</td>
-<td></td>
+<td>Treatment of missing values may be done through imputation – where values are substituted either based on a relationship with other variables or copied from a similar record.</td>
+<td>Understanding where imputations have been made, reading footnotes carefully.</td>
 </tr>
 <tr class="even">
 <td><b>How have surveys been calibrated? </b></td>
@@ -603,8 +603,8 @@ width: 23%;
 <td>What do you know about the impacts of data linking on your analysis?</td>
 </tr>
 <tr class="odd">
-<td><b>How has disclosure control been applied? </b></td>
-<td>In most cases, disclosure control will mean a loss of accuracy which may reduce the usefulness of the data. <br><br> How was disclosure control done and what are the impacts? Welldesigned anonymisation should usually result in loss of detail with no systematic impact - but poorly designed disclosure control can introduce structural effects or biases in results.</td>
+<td><b>How has statistical disclosure control been applied? </b></td>
+<td>In most cases, disclosure control will mean a loss of accuracy which may reduce the usefulness of the data. <br><br> How was disclosure control done and what are the impacts? Well designed anonymisation should usually result in loss of detail with no systematic impact - but poorly designed disclosure control can introduce structural effects or biases in results.</td>
 <td>Check for caveats around disclosure control that could introduce uncertainty in your data.</td>
 </tr>
 <tr class="even">
@@ -650,7 +650,7 @@ width: 23%;
 </tr>
 <tr class="odd">
 <td><b>Assess the quality of each assumption </b></td>
-<td>Assumptions should be based on robust evidence. The less evidence to support an assumption the more uncertain it will be. High quality assumptions will be underpinned by robust data, while low quality assumptions may simply be an opinion or may be supported by a poor data source <br><br></td>
+<td>Assumptions should be based on robust evidence. The less evidence to support an assumption the more uncertain it will be. High quality assumptions will be underpinned by robust data, while low quality assumptions may simply be an opinion or may be supported by a poor data source. <br><br></td>
 </tr>
 <tr class="even">
 <td><b>Assess the impact of each assumption </b></td>
@@ -658,7 +658,7 @@ width: 23%;
 </tr>
 <tr class="odd">
 <td><b>What don’t you know? (unknown unknowns) </b></td>
-<td>Some uncertainties can’t be captured in an assumption as we don’t have perfect insight. However, effort should be made to identify all possible uncertainties, turning unknown unknowns into known unknowns, and capture these as assumptions. The assumptions log will convey the boundary of what has been included. <br><br></td>
+<td>Some uncertainties can’t be captured in an assumption as we don’t have perfect insight. However, effort should be made to identify all possible uncertainties and capture these as assumptions. The assumptions log will convey the boundary of what has been included. <br><br></td>
 </tr>
 </tbody>
 </table>

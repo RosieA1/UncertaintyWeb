@@ -37,7 +37,7 @@ width: 23%;
 <br>
 
 <div class = "rightA"> 
-We now consider how to choose <i>what</i> messages about uncertainty we shouuld communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively.
+We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively.
 </div>
 
 <div style="clear: both;"></div>
@@ -47,52 +47,14 @@ We now consider how to choose <i>what</i> messages about uncertainty we shouuld 
 <br>
 
 <div class = "rightA">
-The analysis of uncertainty is often complex. Presenting this in its entirety could overwhelm the recipient and may mean they do not take away the key messages. We need to choose carefully which messages about uncertainty to communicate to decision makers – ensuring they receive enough information to understand the key points, without receiving so much that it clouds the central issue. <br><br> You should also consider the onward communication of your message to ensure that when your work is passed on to others its core message and integrity are maintained.
+The analysis of uncertainty is often complex. We need to choose carefully which messages about uncertainty to communicate to decision makers – ensuring they receive enough information to understand the key points, without receiving so much that it clouds the central issue. <br><br> You should also consider the onward communication of your message to ensure that when your work is passed on to others its core message and integrity are maintained.
 </div>
 
 <div style="clear: both;"></div>
 
-## What decision is the uncertainty informing?
+## Uncertainty improves the quality of the analytical communication
 
 <br>
-
-<div class = "leftB"> 
-What is the decision?
-</div>
-
-<div class = "rightA">
-When deciding what uncertainty to communicate you need to consider what results are most appropriate in the context of the question being asked. At this point you should refer to the first section of this guidance: Asking the right question.  
-</div>
-
-<div class = "rightA">
-Consider what uncertainty is relevant to the decision maker. In the example 'what is the likelihood that this policy would save more than &#163;x?', a maximum to minimum range may be less relevant to the decision maker, and instead you should focus your communication on the ‘likelihood’ and the key drivers that affect it.
-</div>
-
-<div class = "rightA">
-Understand what role the uncertainty has in the decision. How are your results likely to affect the decision being made? 
-</div>
-
-<div class = "leftB"> 
-How influential is the uncertainty analysis?
-</div>
-
-<div style="clear: both;"></div>
-
-<div class = "leftB"> 
-If there is a major risk that has not been included in the analysis, then this may be greatest uncertainty
-</div>
-
-<div class = "rightA">
-In some circumstances the uncertainty will be the key driver in the decision, for example if the uncertainty is large enough to indicate the result of a policy could be successful or unsuccessful. In this case the uncertainty analysis is very influential, and a more detailed   explanation is likely to be required. 
-</div>
-
-<div class = "rightA">
-If quality assurance has been very limited then presenting any measure of uncertainty may be misleading. In such circumstances where the greatest source of uncertainty is the potential for error, then this should be the most prominent message that is conveyed to the decision maker. This may be in the form of an analytical assurance statement that highlights areas of concern.
-</div>
-
-<div class = "rightA">
-In other cases, the uncertainty could be less important, for example your analysis might suggest that the cost of a project is uncertain, but in all cases the benefits outweigh the costs. In this case the uncertainty is less influential and may require less detailed communication. 
-</div>
 
 <div class = "rightA">
 Most decision makers want certainty. This can make communicating uncertainty a difficult task. Decision makers can react adversely when faced with uncertainty, leading them to lose confidence in analysis.  When uncertainty is large, decision makers may feel that the analysis is of no use.
@@ -103,11 +65,11 @@ Don’t let uncertainty undermine confidence in the analysis
 </div>
 
 <div class = "rightA">
-A useful phrase to remember is “all models are wrong, but some are useful”.  All analysis will be uncertain because every model is a simplification of reality. However, that does not stop them from being useful, models allow us to understand a system and uncertain results can help identify important features of that system. 
+A handy phrase to remember is “all models are wrong, but some are useful”.  All analysis will be uncertain because every model is a simplification of reality. However, that does not stop them from being useful. Models allow us to better understand a system and uncertain results can help identify important features of that system. 
 </div>
 
 <div class = "rightA">
-If uncertainty means that a straightforward conclusion is not possible, focus your communication on what the uncertainty analysis can tell you.  This may be the key factor that drives overall uncertainty or a greater understanding of how features of a system interact.  
+If uncertainty means that a straightforward conclusion is not possible, focus your communication on what the uncertainty analysis <i>can</i> tell you.  This may be the key factor that drives overall uncertainty or a greater understanding of how features of a system interact.  
 </div>
 
 <div style="clear: both;"></div>
@@ -228,7 +190,7 @@ Descriptive terms such as ‘low risk’ or ‘very likely’ can be interpreted
 </div>
 
 <div class = "leftB">
-Be careful when using descriptive terms and adhere to an established system is possible	
+Be careful when using descriptive terms and adhere to an established system if possible	
 </div>
 
 <div style="clear: both;"></div>
@@ -248,7 +210,7 @@ Use positive and negative framing
 </div>
 
 <div class = "rightA">
-There is no clear preference for choosing between probabilities and fractions (e.g. 10% probability, or 1 out of 10). Given this, the usual preferences of the audience or the ‘norm’ within the organisation may be best followed.
+There is no clear preference for choosing between probabilities and fractions (e.g. 10% probability, or 1 out of 10). Given this, the usual preferences of the audience or the ‘norm’ within the organisation should be followed.
 </div>
 
 <div class = "leftB">
@@ -292,7 +254,7 @@ Commissioners may request a ‘best estimate’ for ease of onward use, but you 
 </div>
 
 <div class = "rightA">
-Stating a range may be perceived as a uniform distribution across the range. Conversely, stating a range around a best estimate may be perceived as a triangular distribution (or Normal with analytical audiences). Consider which of these best reflects the actual uncertainty when deciding what to present.
+Stating a range may be perceived as a uniform distribution across the range. Conversely, stating a range around a best estimate may be perceived as a triangular distribution (or Normal with analytical audiences). The output distribution could of course also be asymmetric or bi-modal. Consider which of these best reflects the actual uncertainty when deciding what to present. 
 </div>
 
 <div class = "leftB">
@@ -326,7 +288,7 @@ Graphs and visualisations are an excellent way of communicating the outputs of a
 </div>
 
 <div class = "rightA">
-Unquantified uncertainties cannot generally be included in graphs, so will need to be communicated through other means.
+Unquantified uncertainties cannot generally be included in graphs, so will need to be communicated through other means (e.g. a risk log and/or assumptions log).
 </div>
 
 <div class = "rightA">
@@ -369,18 +331,7 @@ Decide what level of detail to include on uncertainty
 The following table suggests some graph types that can be used for most situations, each of which are described in the following section.
 </div>
 
-|                                          | Single Measure                                                                    | Multiple Measure                  | Time Series           | 2-dimensional data         |
-|------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------|-----------------------|----------------------------|
-| None                                     | Single point graph, or describe in prose                                          | Bar graph or line graph           | Line graph            | Scatter graph              |
-| A Range                                  | Single point graph with error bars                                                | Bar or line graph with error bars | Line graph with range | Scatter with 2d error bars |
-| Summary Statistics                       | Single box plot                                                                   | Series of box plots               | ?                     | ?                          |
-| Maximum Detail                           | Probability Distribution Function (PDF) or Cumulative Distribution Function (CDF) | Multiple PDFs or Violin Plots     | Fan chart             | ?                          |
-| Uncertainty due to the methodology       | Scatter Plot                                                                      |                                   | Spaghetti Plot        | Spaghetti Plot             |
-| Uncertainty due to alternative scenarios | Describe in prose                                                                 |                                   | Multiple Line Graphs  |                            |
-
-<div style="clear: both;"></div>
-
-## Errors bars
+## Error bars
 
 <br>
 
@@ -723,7 +674,7 @@ Can help communicate the reasons for uncertainty, and identify further need for 
 </div>
 
 <div class = "rightA">
-If the level of uncertainty is unpalatable to the customers, then this format can be useful to help focus work on reducing the level of uncertainty in key parameters.
+If the level of uncertainty is unpalatable to the customers, then this format can be useful to help focus work on reducing the level of uncertainty in key parameters. Tornado diagrams also help you to focus on the inputs which are most important to focus on getting as "right" as is possible.
 </div>
 
 <div style="clear: both;"></div>
