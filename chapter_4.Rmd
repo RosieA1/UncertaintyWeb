@@ -57,7 +57,7 @@ The analysis of uncertainty is often complex. We need to choose carefully which 
 <br>
 
 <div class = "rightA">
-Most decision makers want certainty. This can make communicating uncertainty a difficult task. Decision makers can react adversely when faced with uncertainty, leading them to lose confidence in analysis.  When uncertainty is large, decision makers may feel that the analysis is of no use.
+Decision makers may be more comfortable with certain messages. This can make communicating uncertainty a difficult task. Decision makers can react adversely when faced with uncertainty, leading them to lose confidence in analysis.  When uncertainty is large, decision makers may feel that the analysis is of no use.
 </div>
 
 <div class = "leftB"> 
@@ -96,18 +96,6 @@ If little is quantified, then it may be better to present no quantification at a
 
 <div class = "rightA">
 If the largest source of uncertainty is the potential for a risk outside of the analysis to be realised, then this should be the most prominently displayed message.  
-</div>
-
-<div class = "leftB"> 
-Is there a major risk that has not been included?
-</div>
-
-<div class = "rightA">
-If quality assurance has been very limited, then presenting <i>any</i> measure of uncertainty may be misleading. When the greatest source of uncertainty is the potential for error, then this should be the most prominent message that you convey to the decision maker. This may be in the form of an analytical assurance statement that highlights areas of concern.
-</div>
-
-<div class = "leftB"> 
-If quality assurance has been very limited, you should probably lead with this
 </div>
 
 <div class = "rightA">
@@ -262,7 +250,7 @@ Consider whether to include a ‘best estimate’ within the range
 </div>
 
 <div class = "rightA">
-Don’t simply use 95% confidence intervals by default. Think about what the outputs are going to be used for (see section 1), and discuss the level of risk and uncertainty that the decision maker wants to plan for – this might not be 5%.
+Don’t simply use 95% confidence intervals by default. Think about what the outputs are going to be used for (see [Agreeing how uncertainty should be used to help answer the question](https://rosiea1.github.io/UncertaintyWeb/chapter_1.html) section), and discuss the level of risk and uncertainty that the decision maker wants to plan for – this might not be 5%.
 </div>
 
 <div class = "leftB">
@@ -292,7 +280,7 @@ Unquantified uncertainties cannot generally be included in graphs, so will need 
 </div>
 
 <div class = "rightA">
-Some types of graph are not particularly well suited to displaying quantified uncertainty:
+Some types of graphs are not particularly well suited to displaying quantified uncertainty, though this does not preclude their use if they are the most useful way to communicate a core message. You would need to find other ways to communicate uncertainty if using these chart types.
 </div>
 
 <div class = "leftB">
@@ -306,7 +294,7 @@ Some simple graphs
 </div>
 
 <div class = "rightA">
-These should generally be avoided, except for specific datasets , because people find it difficult compare the angles or sizes of different sections . This is true for analysis in general, but particularly for uncertainty as they show only a single value for each data point.
+These charts may not always be useful when presenting uncertain analysis as they only show a single value for each data point. People can also find it difficult to compare angles or sizes of different sections.
 </div>
 
 <div class = "rightA">

@@ -35,11 +35,11 @@ Uncertainty analysis: understanding what you don't know
 </div>
 
 <div class = "rightA">
-Uncertainty is unavoidable when making forecasts of future events or impacts of decisions. Our knowledge of the present is typically  incomplete; and we can’t be sure what will happen in the future. We can reduce uncertainty due to lack of knowledge by obtaining more information, or asking experts for advice. However, we can’t eliminate uncertainty entirely, so we must find ways to describe and communicate it.
+Uncertainty is unavoidable when making predictions about future events or impacts of decisions. Our knowledge of the present is typically  incomplete; and we can’t be sure what will happen in the future. We can reduce uncertainty due to lack of knowledge by obtaining more information, or asking experts for advice. However, we can’t eliminate uncertainty entirely, so we must find ways to describe and communicate it.
 </div>
 
 <div class = "rightA">
-There is a difference between uncertainty and risk; risk typically refers to the likelihood of a future unplanned event or unintended consequence that can be assigned a numeric probability. Forecasts of risk, like other forecasts, are themselves subject to uncertainty.   For example, the UK Met Office forecasts the risk of rain (“probability of precipitation”) over a five-day period for specific locations using a mathematical computer model of the atmosphere. This forecast is uncertain because the initial state of the atmosphere is not perfectly known, and because small perturbations can lead to large weather changes. This uncertainty is described using a range from running several forecasts from equally likely initial conditions.
+There is a difference between uncertainty and risk; risk typically refers to the likelihood of a future unplanned event or unintended consequence that can be assigned a numeric probability. Forecasts of risk, like other forecasts, are themselves subject to uncertainty. For example, UK Met Office predictions of the risk of rain are uncertain as to whether it will rain at all, as well as uncertain about how much it will rain. This uncertainty is described using a range from running several forecasts from equally likely initial conditions.
 </div>
 
 <div class = "rightA">
@@ -55,39 +55,23 @@ Red River Flood, Grand Forks USA, 1997
 </div>
 
 <div class = "leftB">
-Example
+<b>Example</b>
 </div>
 
 <div class = "rightA">
 The National Weather Service (NWS) predicted, 2 months in advance, the Red River to crest 49 feet.
 </div>
 
-<div class = "leftB">
-Analysis
-</div>
-
 <div class = "rightA">
 In response, the levees were built to handle a flood of 51 feet
-</div>
-
-<div class = "leftB">
-Decision
 </div>
 
 <div class = "rightA">
 The actual flood level was 54 feet
 </div>
 
-<div class = "leftB">
-Result
-</div>
-
 <div class = "rightA">
 Had the NWS communicated their uncertainty (+/- 9 feet) the several $billion damages could have been avoided
-</div>
-
-<div class = "leftB">
-Uncertainty
 </div>
 
 <div style="clear: both;"></div>
@@ -137,7 +121,7 @@ Toolkit contents
 </div>
 
 <div class = "rightA">
-Before conducting any uncertainty analysis, it is important to check that you understand how the analysis will be used. What type of decision is being made? Is it a financial, operational, policy or other type of decision? This will frame how you approach the analysis and how you communicate it to your customers. 
+Before conducting any uncertainty analysis, it is important to check that you understand how the analysis will be used. What type of decision is being made? Are you informing a debate or a final decision? This will frame how you approach the analysis and how you communicate it to your customers. 
 </div>
 
 <div class = "leftB">
@@ -161,7 +145,7 @@ Before conducting uncertainty analysis, you should consider the range of possibl
 </div>
 
 <div class = "rightA">
-There is little point conducting any analysis if it has no impact, so this is perhaps the most important section. It is important to engage with your stakeholders so they take account of uncertainty in any decisions they make. You should think about how you interact with the audience, tailoring your communication to different groups. This will help them to understand the consequences of uncertainty and why they should be interested in it.
+There is little point conducting any analysis if it has no impact, so this is perhaps the most important section. It is important to engage with your decision makers so they take account of uncertainty in any decisions they make. You should think about how you interact with the audience, tailoring your communication to different groups. This will help them to understand the consequences of uncertainty and why they should be interested in it.
 </div>
 
 <div class = "leftB">

@@ -41,7 +41,13 @@ Introduction
 </div>
 
 <div class = "rightA"> 
-Uncertainty can feed through into analysis and subsequent decision making from many different sources.  Each step in data collection, data processing and modelling is likely to bring added uncertainty.
+Analytical uncertainty can feed through into analysis and subsequent decision making from many different sources.  Each step in data collection, data processing and modelling is likely to bring added uncertainty.
+</div>
+
+<br>
+
+<div class = "rightA">
+We encounter uncertainty throughout the decision making process and in the analysis which supports it. In addition to uncertainties around the analytical question, we will also find uncertainty in the context of the decision being made, the data and assumptions feeding into the analysis and in the analysis itself. As analysts we need to understand and describe contextual uncertainties to ensure our analysis has impact; and we need to describe and quantify analytical uncertainties to ensure decision makers are clear about how far analytical results can be used to support their conclusions.
 </div>
 
 <br>
@@ -51,7 +57,7 @@ Try to identify and record all the potential sources of uncertainty in your anal
 </div>
 
 <div class = "rightA">
-This section sets out a range of techniques to help you understand the resulting uncertainty in your analysis.
+This chapter sets out a range of techniques to help you understand and assess the sources of uncertainty in your analysis.
 </div>
 
 
@@ -60,7 +66,7 @@ This section sets out a range of techniques to help you understand the resulting
 ## Defining uncertainty
 
 <div class = "rightA"> 
-It is useful to distinguish between distinct classifications of uncertainty. Understanding the characteristics of different classifications of uncertainty can help you to identify sources of uncertainty in your own analysis.  Further, categorising the types of uncertainty provides a framework for the next steps of analysis.
+Understanding the characteristics of different classifications of uncertainty can help you to identify sources of uncertainty in your own analysis.  Further, categorising the types of uncertainty provides a framework for the next steps of analysis.
 </div>
 
 <div class = "rightA"> 
@@ -84,7 +90,7 @@ Table 2.1: Classifications of Uncertainty
 | --------------- | ------------------------- | ---------------------------- | -------------------------------- | 
 | <b>Definition</b>| Known knowns are <b>things we know that we know</b>. This refers to the inherent uncertainty that is always present due to underlying probabilistic variability. | Known unknowns are <b>things that we know we don’t know</b>. This type of uncertainty comes from a lack of knowledge about the (complex) system we are trying to model. Assumptions are used to plug these gaps in the absence of information. | Unknown unknowns are <b>things that we don't know we don't know </b>.  It usually comes from factors or situations that we have not previously experienced and therefore cannot consider because we simply don’t know where to look in the first instance. |
 | <b>Can it be quantified? </b> | <b>Yes</b> it can be quantified. We usually characterise it using a probability distribution function (PDF). A PDF gives all the possible values that a variable can have and assigns a probability of occurrence to each. As analysts, the challenge for us is to derive the PDF. If you find that you can’t then you may instead have a known unknown. | <b>Yes</b> it can be quantified (but isn’t always) – e.g. through sensitivity analysis. These techniques try to quantify the uncertainty by altering assumptions and observing the impact on modelling outputs. They will work if the range of assumptions tested covers the range of unknown variables. | <b>No</b> it cannot be quantified.  We cannot identify unknowable unknowns, so there are no actions we can take to quantify them. What we can do is be clear about the sources of uncertainty we have included, so that any others subsequently identified would likely add to that uncertainty. |
-| <b> Can it be reduced? </b> | This type of uncertainty cannot be completely removed.  We can sometimes reduce it through data smoothing or increasing the size of a sample, but there will always be some random variability. | Known unknowns are reducible by gathering information to lessen the gaps in our knowledge.  Using new data sources, expanding our data collection or conducting research can remove the need for assumptions or refine their ranges. | This type of uncertainty is not reducible. However, this type of uncertainty can usually be separated into “unknowable unknowns” and “knowable unknowns”. Horizon scanning can help identify knowable unknowns. Once they are identified they become known unknowns (in the middle column).  |
+| <b> Can it be reduced? </b> | This type of uncertainty cannot be completely removed.  We can sometimes reduce it through data smoothing or increasing the size of a sample, but there will always be some random variability. | Known unknowns are reducible by gathering information to lessen the gaps in our knowledge.  Using new data sources, expanding our data collection or conducting research can remove the need for assumptions or refine their ranges. | This type of uncertainty is not reducible. However, this type of uncertainty can usually be separated into “unknowable unknowns” and “knowable unknowns”. Horizon scanning can help identify knowable unknowns. Once they are identified they become known unknowns.  |
 | <b> Example </b> | Tossing a coin is an example of a known known. We can observe the possible outcomes (heads or tails) and the probability of each occurring (50:50), therefore create the PDF. However, prior to the coin being tossed we cannot reduce the uncertainty in outcome. | Taking our coin toss example, we don’t know whether the coin is fair in the first instance. We may assume the coin is fair and will give a 50% probability of each outcome. Once we start to toss the coin, we start to gather information on its fairness. The longer we toss the coin the better our information gets and the greater the reduction in the known unknown. | Unknown unknowns are often future events or circumstances that we cannot predict. An example could be the introduction of a new technology that was previously unheard of. If the new technology affects the operation of a system, previous analysis is no longer reliable as it didn’t account for this change. |
 
 ```{r fig.align="center", echo=FALSE, out.width='100%'}
@@ -99,7 +105,7 @@ knitr::include_graphics("images/coin_toss.png")
 ## Sources of uncertainty
 
 <div class = "rightA">
-The data that feeds into your analysis project will have been previously specified, defined, and collected. In some cases, you will do this yourself, but more commonly you will draw on data sources collected by others. Having chosen your data sources for your project the following checklist (Table 2.2) can be used to help identify and quantify any sources of uncertainty.
+The data that feeds into your analysis project will have been previously specified, defined, and collected. In some cases, you will do this yourself, but you may also draw on data sources collected by others. Having chosen your data sources for your project the following checklist (Table 2.2) can be used to help identify and quantify any sources of uncertainty.
 </div>
 
 <div class = "rightA">
@@ -166,3 +172,6 @@ Table 2.3: Assumptions
 | <b>Assess the impact of each assumption </b> | The importance of an assumption is measured by its effect on the on the analytical output. The higher the impact of an assumption the more uncertain results will be. Critical assumptions will drastically affect the results, while less importance assumptions may only have a marginal effect on results. More weight should be given to gathering evidence to improve the quality of critical assumptions. <br><br> |
 | <b>What don’t you know? (unknown unknowns) </b> | Some uncertainties can’t be captured in an assumption as we don’t have perfect insight. However, effort should be made to identify all possible uncertainties and capture these as assumptions. The assumptions log will convey the boundary of what has been included. <br><br> |
 
+<div class = "rightA">
+It is important to describe and quantify sources of uncertainty in your analysis. In the following sections we think about how to quantify that uncertainty and how we present it. However, it is also important to understand the context your analysis feeds into when deciding the extent to which analytical uncertainty needs to be assessed and thinking about how it should be presented. In a highly uncertain context, detailed assessment of data-driven uncertainty may not be worthwhile. This is an analytical judgement to be made in light of the full consideration of sources of uncertainty.
+</div>

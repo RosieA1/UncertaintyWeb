@@ -72,9 +72,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -192,8 +190,6 @@ $(document).ready(function () {
   menuAnchor.closest('li.dropdown').addClass('active');
 });
 </script>
-
-<div class="container-fluid main-container">
 
 <!-- tabsets -->
 
@@ -352,6 +348,16 @@ div.tocify {
 
 </style>
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
 <div class="col-xs-12 col-sm-4 col-md-3">
@@ -467,7 +473,7 @@ width: 23%;
 <h2>Uncertainty improves the quality of the analytical communication</h2>
 <p><br></p>
 <div class="rightA">
-<p>Most decision makers want certainty. This can make communicating uncertainty a difficult task. Decision makers can react adversely when faced with uncertainty, leading them to lose confidence in analysis. When uncertainty is large, decision makers may feel that the analysis is of no use.</p>
+<p>Decision makers may be more comfortable with certain messages. This can make communicating uncertainty a difficult task. Decision makers can react adversely when faced with uncertainty, leading them to lose confidence in analysis. When uncertainty is large, decision makers may feel that the analysis is of no use.</p>
 </div>
 <div class="leftB">
 <p>Don’t let uncertainty undermine confidence in the analysis</p>
@@ -499,15 +505,6 @@ width: 23%;
 </div>
 <div class="rightA">
 <p>If the largest source of uncertainty is the potential for a risk outside of the analysis to be realised, then this should be the most prominently displayed message.</p>
-</div>
-<div class="leftB">
-<p>Is there a major risk that has not been included?</p>
-</div>
-<div class="rightA">
-<p>If quality assurance has been very limited, then presenting <i>any</i> measure of uncertainty may be misleading. When the greatest source of uncertainty is the potential for error, then this should be the most prominent message that you convey to the decision maker. This may be in the form of an analytical assurance statement that highlights areas of concern.</p>
-</div>
-<div class="leftB">
-<p>If quality assurance has been very limited, you should probably lead with this</p>
 </div>
 <div class="rightA">
 <p>Think about how caveats are presented. A long list is unhelpful, but two or three upfront that have the most impact on the results are likely to be more helpful and easily understood. You should explain what the caveats mean for decision makers who want to use the analysis, rather than simply setting out what they are.</p>
@@ -645,7 +642,7 @@ According to NICE (National Institute for Health and Care Excellence), probabili
 <p>Consider whether to include a ‘best estimate’ within the range</p>
 </div>
 <div class="rightA">
-<p>Don’t simply use 95% confidence intervals by default. Think about what the outputs are going to be used for (see section 1), and discuss the level of risk and uncertainty that the decision maker wants to plan for – this might not be 5%.</p>
+<p>Don’t simply use 95% confidence intervals by default. Think about what the outputs are going to be used for (see <a href="https://rosiea1.github.io/UncertaintyWeb/chapter_1.html">Agreeing how uncertainty should be used to help answer the question</a> section), and discuss the level of risk and uncertainty that the decision maker wants to plan for – this might not be 5%.</p>
 </div>
 <div class="leftB">
 <p>Choose appropriate confidence/prediction intervals and be clear</p>
@@ -670,7 +667,7 @@ According to NICE (National Institute for Health and Care Excellence), probabili
 <p>Unquantified uncertainties cannot generally be included in graphs, so will need to be communicated through other means (e.g. a risk log and/or assumptions log).</p>
 </div>
 <div class="rightA">
-<p>Some types of graph are not particularly well suited to displaying quantified uncertainty:</p>
+<p>Some types of graphs are not particularly well suited to displaying quantified uncertainty, though this does not preclude their use if they are the most useful way to communicate a core message. You would need to find other ways to communicate uncertainty if using these chart types.</p>
 </div>
 <div class="leftB">
 <p>Some graph types cannot be used to show uncertainty clearly</p>
@@ -679,7 +676,7 @@ According to NICE (National Institute for Health and Care Excellence), probabili
 <p>Some simple graphs <br> <i>Pie charts, donut charts, stacked charts</i></p>
 </div>
 <div class="rightA">
-<p>These should generally be avoided, except for specific datasets , because people find it difficult compare the angles or sizes of different sections . This is true for analysis in general, but particularly for uncertainty as they show only a single value for each data point.</p>
+<p>These charts may not always be useful when presenting uncertain analysis as they only show a single value for each data point. People can also find it difficult to compare angles or sizes of different sections.</p>
 </div>
 <div class="rightA">
 <p>More complex graphs <br> <i>Heat and Choropleth maps, Treemaps, Sankey diagrams</i></p>

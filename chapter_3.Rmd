@@ -505,7 +505,7 @@ However the uncertainty is estimated, make sure that it is clear that it is a su
 <div class = "halfBoxBlueLeft">
 <b>Advantages:</b> 
 <br><br>
-<ul><li>Can be produced quickly</li>
+<ul><li>May be able to be produced quickly, though can take time if using formal elicitation methods with large groups</li>
 <li>Requires little to no data</li>
 <li>Based on real-world performance, so avoids optimism/pessimism bias (the estimated uncertainty may be asymmetric as a result)</li>
 <li>Do not need to consider all sources of uncertainty individually</li>
