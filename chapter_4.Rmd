@@ -37,7 +37,7 @@ width: 23%;
 <br>
 
 <div class = "rightA"> 
-We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively.
+We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively. A wealth of additional information can be found on the [Government Statistical Service website](https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/Communicating_Quality_Uncertainty_and_Change_for_publication.pdf)
 </div>
 
 <div style="clear: both;"></div>

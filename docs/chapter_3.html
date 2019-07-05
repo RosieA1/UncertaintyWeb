@@ -506,33 +506,78 @@ float: right;
 <div class="rightA">
 <p>We have highlighted ways to think about the size and distribution of uncertainty coming from specific sources. We now bring this together into approaches that can be applied to any source of uncertainty. In most cases, the approach to uncertainty quantification is limited by the data and time available to you.</p>
 </div>
-<div class="leftA">
-<p>Table 3.1: Sources of uncertainty</p>
+<div style="clear: both;">
+
 </div>
-<table style="width:60%;">
-<colgroup>
-<col width="16%" />
-<col width="43%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><b> Can you create a probability distribution? </b></td>
-<td>A probability distribution describes the probability of occurrences of different outcomes. Generally, there are two types of probability distribution; discrete distributions and continuous distributions. <br><br> Consider whether you have information about the underlying distribution of the parameter. Often data from other sources will be provided with confidence intervals (or standard errors, etc) that can be used to quantify uncertainty. Where such information is not provided, you may be able to approximate these with knowledge of the sample size and design. <br><br> Distributions can also be created using what you can learn by analysing the performance of previous forecasts against outturn results . The distribution of previous errors can provide the uncertainty distribution for the current forecast. If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, the Delphi Method can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.</td>
-</tr>
-<tr class="even">
-<td><b> Can you create a range? </b></td>
-<td>A range is similar to a probability distribution, in that it considers the possible outcomes but does not consider the probability of each outcome occurring. If there are data or resource limitations a range can be a simple way to illustrate the uncertainty in a parameter. <br><br> Historical data can be used to quantify a range. Consider how the parameter has changed over a suitable time period. The maximum and minimum values could provide a sensible range. When using historical data be aware that you will only be able to assess ‘business as usual’ uncertainty. If there are future shocks to the system this may fall outside your historic range. <br><br> For parameters that have been the subject of academic studies a literature review can be used to create a range. Consider why different studies may result in different outcomes, and which studies are the most suitable for what you are trying to measure. <br><br> If no quantitative data is available, consider whether there are relevant policy constraints that will limit your range. Judgement from experts can be also be used to create sensible ranges.</td>
-</tr>
-<tr class="odd">
-<td><b> If it is not possible to create a probability distribution or range, make a qualitative assessment </b></td>
-<td>In some situations, it is not possible to create a probability distribution or a range. In such cases, make a qualitative assessment of uncertainty. This is still useful to analysts and customers to consider the magnitude of uncertainty. <br><br> You can make qualitative assessments yourself, and by using expert judgement. A simple approach is to Red Amber Green (RAG) rate the likelihood and impact of uncertainty in your parameters. This qualitative assessment should be considered when thinking about the analytical results. If data is categorised as highly uncertain and having a large impact on results, then final outputs will be subject to large uncertainty.</td>
-</tr>
-<tr class="even">
-<td><b> Break-even analysis could help re-frame your assumption </b></td>
-<td>A further option to support decision-makers is to use break-even analysis. Break-even analysis helps people understand how much the input has to change before you reach a break-even point so they can consider the probability of this occurring. This is useful to understand at which point a saving becomes a cost or possibly at which point you would take a different decision. <br><br> Some decision makers will be used to seeing a range around a central estimate. Break-even analysis works backwards – if we were to break-even what would the input be? This could help bring the policy alive and help assumption owners to really consider how realistic the assumption is.</td>
-</tr>
-</tbody>
-</table>
+<div class="leftB">
+<p>Consider discrete and continuous distributions</p>
+</div>
+<div class="rightA">
+<p>A probability distribution describes the probability of occurrences of different outcomes. Generally, there are two types of probability distribution; discrete distributions and continuous distributions.</p>
+</div>
+<div class="rightA">
+<p>Consider whether you have information about the underlying distribution of the parameter. Often data from other sources will be provided with confidence intervals (or standard errors, etc) that can be used to quantify uncertainty. Where such information is not provided, you may be able to approximate these with knowledge of the sample size and design.</p>
+</div>
+<div class="leftB">
+<p>Data sources may include confidence intervals</p>
+</div>
+<div class="rightA">
+<p>Distributions can also be created using what you know about error from previous models. Consider the performance of previous forecasts against outturn results . The distribution of previous errors can provide the uncertainty distribution for the current forecast.</p>
+</div>
+<div class="leftB">
+<p>Analyse past model performance to create distribution</p>
+</div>
+<div class="rightA">
+<p>If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, the Delphi Method can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.</p>
+</div>
+<div class="leftB">
+<p>Without quantitative data, use expert judgement</p>
+</div>
+<div class="rightA">
+<p>A range is similar to a probability distribution, in that it considers the possible outcomes but does not consider the probability of each outcome occurring. If there are data or resource limitations a range can be a simple way to illustrate the uncertainty in a parameter.</p>
+</div>
+<div class="leftB">
+<p>Ranges can work in absence of distributions</p>
+</div>
+<div class="rightA">
+<p>Historical data can be used to quantify a range. Consider how the parameter has changed over a suitable time period. The maximum and minimum values could provide a sensible range. When using historical data be aware that you will only be able to assess ‘business as usual’ uncertainty. If there are future shocks to the system this may fall outside your historic range.</p>
+</div>
+<div class="leftB">
+<p>Historical data can inform the range</p>
+</div>
+<div class="rightA">
+<p>For parameters that have been the subject of academic studies a literature review can be used to create a range. Consider why different studies may result in different outcomes, and which studies are the most suitable for what you are trying to measure.</p>
+</div>
+<div class="leftB">
+<p>You can also use a literature review</p>
+</div>
+<div class="rightA">
+<p>If no quantitative data is available, consider whether there are relevant policy constraints that will limit your range. Judgement from experts can be also be used to create sensible ranges.</p>
+</div>
+<div class="leftB">
+<p>Expert steers can inform the range</p>
+</div>
+<div class="rightA">
+<p>In some situations, it is not possible to create a probability distribution or a range. In such cases, make a qualitative assessment of uncertainty. This is still useful to analysts and customers to consider the magnitude of uncertainty.</p>
+</div>
+<div class="rightA">
+<p>You can make qualitative assessments yourself, and by using expert judgement. A simple approach is to Red Amber Green (RAG) rate the likelihood and impact of uncertainty in your parameters. This qualitative assessment should be considered when thinking about the analytical results. If data is categorised as highly uncertain and having a large impact on results, then final outputs will be subject to large uncertainty.</p>
+</div>
+<div class="leftB">
+<p>RAG rate your parameters</p>
+</div>
+<div class="rightA">
+<p>A further option to support decision makes is to use break-even analysis. This is useful to understand at which point a saving becomes a cost or possibly at which point you would take a different decision.</p>
+</div>
+<div class="leftB">
+<p>Break-even analysis can help re-frame the question</p>
+</div>
+<div class="rightA">
+<p>Some decision makers will be used to seeing a range around a central estimate. Break-even analysis works backwards – if we were to break-even what would the input be? This could help bring the policy alive and help assumption owners to really consider how realistic the assumption is.</p>
+</div>
+<div class="rightA">
+<p>Break-even analysis helps people understand how much the input has to change before you reach a break-even point so they can consider the probability of this occurring.</p>
+</div>
 <p><img src="images/squiggle.png" width="100%" style="display: block; margin: auto;" /></p>
 <div style="clear: both;">
 
