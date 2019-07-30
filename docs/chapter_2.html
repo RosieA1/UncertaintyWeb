@@ -407,6 +407,9 @@ div.tocify {
   <a href="case_studies.html">Case Studies</a>
 </li>
 <li>
+  <a href="further_reading.html">Further Reading</a>
+</li>
+<li>
   <a href="Download_pdf.html">Download pdf</a>
 </li>
       </ul>
@@ -481,7 +484,7 @@ width: 23%;
 <div class="rightA">
 <p>A common classification divides uncertainty into known knowns, known unknowns, and unknown unknowns. We explain these in Table 2.1.</p>
 </div>
-<p><img src="images/maxresdefault.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="images/magnify.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br><br></p>
 <div class="leftA">
 <p>Table 2.1: Classifications of Uncertainty</p>
@@ -528,152 +531,94 @@ width: 23%;
 </tr>
 </tbody>
 </table>
-<p><img src="images/coin_toss.png" width="100%" style="display: block; margin: auto;" /></p>
 <div style="clear: both;">
 
 </div>
 </div>
-<div id="sources-of-uncertainty" class="section level2">
-<h2>Sources of uncertainty</h2>
+<div id="sources-of-analytical-uncertainty---data" class="section level2">
+<h2>Sources of analytical uncertainty - Data</h2>
 <div class="rightA">
-<p>The data that feeds into your analysis project will have been previously specified, defined, and collected. In some cases, you will do this yourself, but you may also draw on data sources collected by others. Having chosen your data sources for your project the following checklist (Table 2.2) can be used to help identify and quantify any sources of uncertainty.</p>
-</div>
-<div class="rightA">
-<p>To gain a full picture of the impact of uncertainty on your analysis you should think through what you know about the size and distribution of uncertainties, and how you might include this information in your analysis. The list is not exhaustive. Rather, it is intended as an aid to critical thinking about practical steps you can take to quantify uncertainty.</p>
+<p>The data that feeds into your analysis project will have been previously specified, defined, and collected. In some cases, you will do this yourself, but you may also draw on data sources collected by others. Having chosen your data sources for your project you will need to think about how well your data describes the reality of the situation you are modelling or analysing.</p>
 </div>
 <div class="rightA">
-<p>Usually, it is not possible to quantify exactly the level of uncertainty in your analysis. Where measurement is difficult or incomplete, think about what you can say about the reliability of your measures and what might be missing.</p>
+<p>To gain a full picture of the impact of data uncertainty on your analysis you should think through what you know about where your data has come from. The sorts of things you should think about include:</p>
 </div>
-<p><img src="images/brain.png" width="100%" style="display: block; margin: auto;" /></p>
-<div class="leftA">
-<p>Table 2.2: Sources of uncertainty</p>
+<div style="clear: both;">
+
 </div>
-<table>
-<colgroup>
-<col width="28%" />
-<col width="33%" />
-<col width="37%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><b>Data Checklist</b></th>
-<th></th>
-<th><b>Approaches for understanding uncertainty</b></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><b>How well does your data source compare with your analysis objective?</b></td>
-<td>How well do the definitions and concepts in the data chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another. For example, you might want to analyse London &amp; South East but only have data for the whole of the UK.</td>
-<td>Think about how the measures differ, how the concepts they capture differ and how you can adjust for this.</td>
-</tr>
-<tr class="even">
-<td><b> Where do the data come from and how were they collected?</b></td>
-<td>How rigorous was the data collection process? <br><br> Was the data owner’s quality assurance sufficiently robust? <br><br> Would respondents have fully understood the question intent? <br><br> For example, poorly designed survey questions or coding tools to capture responses may lead to ambiguity, inconsistency or bias in responses. <br><br> Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics</td>
-<td>Check for documentation and QA of the data. <br><br> Read footnotes carefully in statistical releases.</td>
-</tr>
-<tr class="odd">
-<td><b> Is there more than one data source? </b></td>
-<td></td>
-<td>You might be able to use one source to validate another or use it to help quantify the uncertainty.</td>
-</tr>
-<tr class="even">
-<td><b> What period does the data cover? </b></td>
-<td>More uncertainty will occur if either the data don’t match the time period of interest and/or if the data are volatile.</td>
-<td>If your data are volatile, consider using smoothing or estimation methods.</td>
-</tr>
-<tr class="odd">
-<td><b> At what stage did you obtain the data? </b></td>
-<td>For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. <br><br> For raw data that you have collated, processed and cleaned yourself you will already have a good understanding of any issues.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><b>Are there coding differences? E.g. age groups that don’t align? </b></td>
-<td>Coding can cause problems when the coding classification does not match your target concept or coding is inconsistent across different data sets.</td>
-<td>You could include additional analysis on more groups to assess the impact on your analysis.</td>
-</tr>
-<tr class="odd">
-<td><b>How have missing values been treated? Have they been imputed? </b></td>
-<td>Treatment of missing values may be done through imputation – where values are substituted either based on a relationship with other variables or copied from a similar record.</td>
-<td>Understanding where imputations have been made, reading footnotes carefully.</td>
-</tr>
-<tr class="even">
-<td><b>How have surveys been calibrated? </b></td>
-<td>Adjustments to the weights of survey responses are used to make survey results representative of a wider population.</td>
-<td>Make sure you understand any adjustments and ensure it doesn’t conflict with your analysis.</td>
-</tr>
-<tr class="odd">
-<td><b>How have extreme values been processed? </b></td>
-<td>Extreme values or outliers can arise because of coding or measurement errors, but also because of genuinely unusual outcomes. <br><br> How certain are you are that outlying data points are valid? <br><br> Have outliers already been treated or removed before you got the data? The choice of how to deal with an outlier will differ in each piece of analysis.</td>
-<td>Consider how the retention or exclusion of an outlier will affect your results. Truncation or removal of outliers will typically introduce bias but this may be tolerated in exchange for reduced variance.</td>
-</tr>
-<tr class="even">
-<td><b>How have datasets been matched and linked? </b></td>
-<td>Combining datasets can increase their value and identify new relationships between variables, but data linkage can result in two types of errors: false positive matches and false negative matches.</td>
-<td>What do you know about the impacts of data linking on your analysis?</td>
-</tr>
-<tr class="odd">
-<td><b>How has <a href="https://gss.civilservice.gov.uk/guidances/methodology/#statistical-disclosure-control">statistical disclosure control</a> been applied? </b></td>
-<td>In most cases, disclosure control will mean a loss of accuracy which may reduce the usefulness of the data. <br><br> How was disclosure control done and what are the impacts? Well designed anonymisation should usually result in loss of detail with no systematic impact - but poorly designed disclosure control can introduce structural effects or biases in results.</td>
-<td>Check for caveats around disclosure control that could introduce uncertainty in your data.</td>
-</tr>
-<tr class="even">
-<td><b> What do you know about bias and uncertainty in the data? <b></td>
-<td>Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertainty. <br><br> In the absence of direct measure of variance, be aware that small sample sizes will increase the margin of error in your results. <br><br> Is your data inherently volatile?</td>
-<td>Are there known biases or uncertainties in the data that you can quantify and potentially correct? For example, is there information about systematic causes of missing data entries or under-reporting that you have data on or can correct through external validation or weighting?</td>
-</tr>
-</tbody>
-</table>
-<p><img src="images/Uncertainty4.png" width="100%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>
+<b> How your data source compares with your analysis objective: </b> How well do the definitions and concepts in the data chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another. For example, you might want to analyse London &amp; South East but only have data for the whole of the UK.
+</li>
+<li>
+<b> Where the data come from and how they have been collected: </b> How rigorous was the data collection process? Was the data owner’s quality assurance sufficiently robust? For survey data, would respondents have fully understood the question intent? Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics
+</li>
+<li>
+<b> What period the data covers: </b> More uncertainty will occur if either the data don’t match the time period of interest and/or if the data are volatile.
+</li>
+<li>
+<b> Whether your data has been subjected to any pre-processing: </b> For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. For example, missing values may have been imputed, survey data may have been weighted to make survey results representative of a wider population, extreme values and outliers may have been removed, data sets may have been combined (possibly resulting in false positive or false negative matches), disclosure controls may have been applied (potentially biasing the data set)
+</li>
+</ul>
 <div style="clear: both;">
 
 </div>
 </div>
-<div id="assumptions" class="section level2">
-<h2>Assumptions</h2>
+<div id="sources-of-analytical-uncertainty---assumptions" class="section level2">
+<h2>Sources of analytical uncertainty - Assumptions</h2>
 <p><br></p>
 <div class="rightA">
 <p>Considering the assumptions you’re making in your analysis is critical to any uncertainty analysis</p>
 </div>
-<div class="leftA">
-<p>Table 2.3: Assumptions</p>
-</div>
-<table>
-<colgroup>
-<col width="16%" />
-<col width="83%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Consideration</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><b> Consider where you have used assumptions</b></td>
-<td>Assumptions are used when we have incomplete knowledge. All models will require some assumptions, so you need to ensure that assumptions are robust and consistently understood. There should be an assumptions log. Where did the assumptions come from? How were they generated and why? What is the impact if they are wrong, and how often are they reviewed? <br><br></td>
-</tr>
-<tr class="even">
-<td><b>What assumptions are outside the scope of the model?</b></td>
-<td>There are often parameters outside of the scope of the model that have been implicitly assumed. For example, models may assume no substantial policy changes in related areas. These assumptions provide the context in which the modelling results are appropriate. You need to be aware of the limitations that these assumptions impose on analytical results. <br><br></td>
-</tr>
-<tr class="odd">
-<td><b>Assess the quality of each assumption </b></td>
-<td>Assumptions should be based on robust evidence. The less evidence to support an assumption the more uncertain it will be. High quality assumptions will be underpinned by robust data, while low quality assumptions may simply be an opinion or may be supported by a poor data source. <br><br></td>
-</tr>
-<tr class="even">
-<td><b>Assess the impact of each assumption </b></td>
-<td>The importance of an assumption is measured by its effect on the on the analytical output. The higher the impact of an assumption the more uncertain results will be. Critical assumptions will drastically affect the results, while less importance assumptions may only have a marginal effect on results. More weight should be given to gathering evidence to improve the quality of critical assumptions. <br><br></td>
-</tr>
-<tr class="odd">
-<td><b>What don’t you know? (unknown unknowns) </b></td>
-<td>Some uncertainties can’t be captured in an assumption as we don’t have perfect insight. However, effort should be made to identify all possible uncertainties and capture these as assumptions. The assumptions log will convey the boundary of what has been included. <br><br></td>
-</tr>
-</tbody>
-</table>
 <div class="rightA">
-<p>It is important to describe and quantify sources of uncertainty in your analysis. In the following sections we think about how to quantify that uncertainty and how we present it. However, it is also important to understand the context your analysis feeds into when deciding the extent to which analytical uncertainty needs to be assessed and thinking about how it should be presented. In a highly uncertain context, detailed assessment of data-driven uncertainty may not be worthwhile. This is an analytical judgement to be made in light of the full consideration of sources of uncertainty.</p>
+<p>Assumptions are used when we have incomplete knowledge. All models will require some assumptions, so you need to ensure that assumptions are robust and consistently understood. There should be an assumptions log. Where did the assumptions come from? How were they generated and why? What is the impact if they are wrong, and how often are they reviewed?</p>
+</div>
+<div class="leftB">
+<p>Consider where you have used assumptions</p>
+</div>
+<div class="rightA">
+<p>There are often parameters outside of the scope of the model that have been implicitly assumed. For example, models may assume no substantial policy changes in related areas and there may be deliberate limits in the coverage or timelines of your analysis – deliberate modelling exclusions that allow timely and effective analysis. These assumptions and limitations provide the context in which the modelling results are appropriate. You need to be aware of the restrictions that these assumptions impose on the interpretation of analytical results and take care to explain where modelling results can (and cannot) be used.</p>
+</div>
+<div class="leftB">
+<p>What assumptions are outside the scope of the model?</p>
+</div>
+<div class="rightA">
+<p>Assumptions should be based on robust evidence. The less evidence to support an assumption the more uncertain it will be. High quality assumptions will be underpinned by robust data, while low quality assumptions may simply be an opinion or may be supported by a poor data source.</p>
+</div>
+<div class="leftB">
+<p>Assess the quality of each assumption</p>
+</div>
+<div class="rightA">
+<p>The importance of an assumption is measured by its effect on the on the analytical output. The higher the impact of an assumption the more uncertain results will be. Critical assumptions will drastically affect the results, while less importance assumptions may only have a marginal effect on results. More weight should be given to gathering evidence to improve the quality of critical assumptions.</p>
+</div>
+<div class="leftB">
+<p>Assess the impact of each assumption</p>
+</div>
+<div class="rightA">
+<p>Some uncertainties can’t be captured in an assumption as we don’t have perfect insight. However, effort should be made to identify all possible uncertainties and capture these as assumptions. The assumptions log will convey the boundary of what has been included.</p>
+</div>
+<div class="leftB">
+<p>What don’t you know? (unknown unknowns)</p>
+</div>
+<p><img src="images/assumptions.png" width="100%" style="display: block; margin: auto;" /></p>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="sources-of-analytical-uncertainty---analysis" class="section level2">
+<h2>Sources of analytical uncertainty - Analysis</h2>
+<p><br></p>
+<div class="rightA">
+<p>An additional, but important source of analytical uncertainty is in the analysis itself. Good AQA practices can help identify the restricted uses of analytical ouputs and help minimise the possibility of errors. However, mistakes can still be made, so being clear with decision makers about the extent to which analysis has been quality assured can help them understand how far they may rely on analytical results in support of their decision making.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div id="describing-and-presenting-analytical-uncertainty" class="section level2">
+<h2>Describing and Presenting analytical uncertainty</h2>
+<div class="rightA">
+<p>It is important to understand sources of uncertainty in your analysis. In the following sections we think about how to quantify that uncertainty and how we present it. However, it is also important to understand the context your analysis feeds into when deciding the extent to which analytical uncertainty needs to be assessed and thinking about how it should be presented. In a highly uncertain context, detailed assessment of data-driven uncertainty may not be worthwhile. This is an analytical judgement to be made in light of the full consideration of sources of uncertainty.</p>
 </div>
 </div>
 

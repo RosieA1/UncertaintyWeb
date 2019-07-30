@@ -18,8 +18,11 @@ navbar:
       href: chapter_4.html
     - text: "Case Studies"
       href: case_studies.html
+    - text: "Further Reading"
+      href: further_reading.html
     - text: "Download pdf"
       href: Download_pdf.html
+
 output:
   html_document:
     theme: yeti

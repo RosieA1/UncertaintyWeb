@@ -84,6 +84,13 @@ Clarify what the real question is
 
 <div style="clear: both;"></div>
 
+
+```{r fig.align="center", echo=FALSE, out.width='100%'}
+
+knitr::include_graphics("images/Question.png")
+
+```
+
 ## How will outputs be used? 
 
 <br>
@@ -115,6 +122,14 @@ Incorporating uncertainty into analysis
 <div class = "rightA">
 Now that we know what the question is and the context in which the analysis will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to work with the decision maker by asking what it is conceptually that they <i>would like</i> to be able to say. This is important as it frames how the analysis will be conducted. 
 </div>
+
+
+```{r fig.align="center", echo=FALSE, out.width='100%'}
+
+knitr::include_graphics("images/Outputs_use.png")
+
+```
+
 
 <div style="clear: both;"></div>
 

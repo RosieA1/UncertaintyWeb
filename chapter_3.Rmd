@@ -85,7 +85,7 @@ This section presents some approaches at a high level then in more detail for qu
 
 ```{r fig.align="center", echo=FALSE, out.width='100%'}
 
-knitr::include_graphics("images/Wheel.png")
+knitr::include_graphics("images/measure.png")
 
 ```
 
@@ -96,7 +96,15 @@ knitr::include_graphics("images/Wheel.png")
 <br>
 
 <div class = "rightA"> 
-We have highlighted ways to think about the size and distribution of uncertainty coming from specific sources.   We now bring this together into approaches that can be applied to any source of uncertainty.  In most cases, the approach to uncertainty quantification is limited by the data and time available to you.
+We have highlighted ways to think about the uncertainty coming from specific sources. We now bring this together into approaches that can be applied to understand the size and distribution of these uncertainties and how you might include this information in your analysis. In most cases, the approach to uncertainty quantification is limited by the data and time available to you, though you should also consider where the major sources of uncertainty are in your analysis and pay most attention to these.
+</div>
+
+<div class= "rightA">
+When considering uncertainty in input data, you should think about whether the data being used was gathered for an alternative purpose and if it has been maipulated and how you can adjust or account for this. Accompanying data descriptions (or a quick exploration of the source data if these don’t exist) can be helpful in understanding data limitations of the data and whether any adjustments made could conflict with or bias your analysis. Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertainty. 
+</div>
+
+<div class= "rightA">
+In addition, the following approaches can be useful in understanding the size and distribution of the uncertainties in your analytical inputs.
 </div>
 
 <div style="clear: both;"></div>
@@ -118,7 +126,7 @@ Data sources may include confidence intervals
 </div>
 
 <div class = "rightA">
-Distributions can also be created using what you know about error from previous models.  Consider the performance of previous forecasts against outturn results . The distribution of previous errors can provide the uncertainty distribution for the current forecast. 
+Distributions can also be created using what you know about error from previous models. Consider the performance of previous forecasts against outturn results. The distribution of previous errors can provide the uncertainty distribution for the current forecast. Additionally, you might be able to use one source to validate another or to help estimate the uncertainty in the original source.
 </div>
 
 <div class = "leftB">
@@ -126,7 +134,7 @@ Analyse past model performance to create distribution
 </div>
 
 <div class = "rightA">
-If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, the Delphi Method  can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.
+If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, the Delphi Method (a structured facilitation method, which relies on a panel of experts to build a combined judgement, for example,  about a particular number) can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.
 </div>
 
 <div class = "leftB">
@@ -170,7 +178,7 @@ In some situations, it is not possible to create a probability distribution or a
 </div>
 
 <div class = "rightA">
-You can make qualitative assessments yourself, and by using expert judgement. A simple approach is to Red Amber Green (RAG) rate the likelihood and impact of uncertainty in your parameters. This qualitative assessment should be considered when thinking about the analytical results. If data is categorised as highly uncertain and having a large impact on results, then final outputs will be subject to large uncertainty.
+You can make qualitative assessments yourself, and by using expert judgement. A simple approach is to Red Amber Green (RAG) rate the likelihood and impact of uncertainty in your parameters. This qualitative assessment should be considered when thinking about the analytical results. If data is categorised as highly uncertain and having a large impact on results, then final outputs will be subject to large uncertainty. Care in presentation is needed when using these more qualitative methods, however, as it’s potentially easier for decision makers to misunderstand the relevance of qualitative assessments of uncertainty for their decision as compared to quantitative assessments. It is particularly important to explain the impact of uncertainty on the analytical result and the decision to be made when using these types of qualitative assessment.
 </div>
 
 <div class = "leftB">
@@ -196,19 +204,19 @@ Break-even analysis helps people understand how much the input has to change bef
 
 ```{r fig.align="center", echo=FALSE, out.width='100%'}
 
-knitr::include_graphics("images/squiggle.png")
+knitr::include_graphics("images/cablecar.png")
 
 ```
  
 <div style="clear: both;"></div>
 
-## Common techniques for conducting uncertainty analysis
+## Common techniques for assessing uncertainty in analytical outputs
 
 <br>
 
 
 <div class = "rightA">
-Below are some common techniques for analysing uncertainty.
+Now that we have explored how to assess uncertainties in individual analytical inputs, we turn to commonly used techniques for analysing overall  uncertainty in analytical outputs, moving from approaches to use when we have a good numerical understanding of input uncertainties, though to approaches which can be used when we know less about how input uncertainties are quantified.
 </div>
 
 <br><br>
@@ -327,13 +335,6 @@ However this method tends to get very complicated once more than a few uncertain
 <b>Placeholder for Example</b>
 </div>
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
-
-knitr::include_graphics("images/Deterministic.png")
-
-```
-
-
 <div style="clear: both;"></div>
 
 <br><br>
@@ -381,13 +382,6 @@ Useful for financial forecasting, where individual budgets and their uncertainty
 <br><br>
 Also useful for quickly estimating the uncertainty when changing the timeframe of a forecast e.g. if you have a forecast by month (with quantified uncertainty), then this is quick way of estimating the uncertainty in the annual totals – assuming there is no correlation between the uncertainty from one month to the next.
 </div>
-
-```{r fig.align="center", echo=FALSE, out.width='100%'}
-
-knitr::include_graphics("images/Quadrature.png")
-
-```
-
 
 <div style="clear: both;"></div>
 
@@ -437,6 +431,8 @@ This is not a robust way of estimating overall uncertainty, as it ignores all bu
 <br><br>
 The Accuracy Tracking Tool <b>link to DfE Accuracy tracking tool</b> can be used to estimate the residual uncertainty once the dominant uncertainty has been modelled. This tool assesses the accuracy of different forecast elements and allows you to see the percentage which both the dominant and residual uncertainty contribute to the total error.
 </div>
+
+<br><br>
 
 ```{r fig.align="center", echo=FALSE, out.width='100%'}
 
@@ -496,13 +492,6 @@ If there are many sources of uncertainty with complex correlations between them,
 Forecasting where a range of policy options are being considered, particularly where the likelihood of an event occurring is unknown, for example early analysis on Brexit scenarios
 </div>
 
-```{r fig.align="center", echo=FALSE, out.width='100%'}
-
-knitr::include_graphics("images/Scenario_Analysis.png")
-
-```
-
-
 <div style="clear: both;"></div>
 
 <br><br>
@@ -553,13 +542,6 @@ Repeat for the variance at each subsequent time period to produce e.g. a fan for
 <br><br>
 <b>MoJ prison population forecasting</b>
 </div>
-
-```{r fig.align="center", echo=FALSE, out.width='100%'}
-
-knitr::include_graphics("images/Variance.png")
-
-```
-
 
 <div style="clear: both;"></div>
 
@@ -634,12 +616,12 @@ knitr::include_graphics("images/Judgement.png")
 <br><br>
 
 
-## Testing outputs as part of quality assurance
+## Quality assuring uncertainty analysis and accounting for wider uncertainties
 
 <br>
 
 <div class = "leftB"> 
-It is best practice to test the outputs of the analysis before using/presenting
+It is best practice to test the outputs of the uncertainty analysis before using/presenting
 </div>
 
 <div class = "rightA"> 
@@ -651,12 +633,18 @@ Uncertainty analysis may produce ‘extreme outcomes’, so that implausible res
 </div>
 
 <div class = "rightA"> 
-Unusual results may also indicate a weakness in how you have used your chosen technique. For example, if using the Monte Carlo technique, there may be unknown correlation which hasn’t been accounted for, or you might have used an inappropriate distribution for a parameter.
+Unusual results in uncertainty analysis may also indicate a weakness in how you have used your chosen technique. For example, if using the Monte Carlo technique, there may be unknown correlation which hasn’t been accounted for, or you might have used an inappropriate distribution for a parameter.
 </div>
 
-<div class = "leftB"> Unusual results may indicate a weakness in the use of the technique
+<div class = "leftB"> 
+Unusual results may indicate a weakness in the use of the technique
 </div>
 
 <div class = "rightA"> 
-One element to test in your analysis may be potential system shocks, such as a recession. Does your uncertainty analysis need to account for these? It is not always useful or practical to account for system shocks, depending on your analysis, and they may be better treated in a risk register. You should support your users by pointing out system shocks that are common or highly likely to impact.
+One element you may not be able to test in your analysis is the effect of unknown system shocks, such as a recession. It is not always useful or practical to investigate and analyse these types of epistemic or ontological uncertainty, but they should be accounted for in presenting your analysis, for example by highlighting the risks associated with the analysis and the decision it will inform.
 </div>
+
+<div class = "leftB"> 
+Accounting for uncertainties that analysis cannot capture 
+</div>
+
