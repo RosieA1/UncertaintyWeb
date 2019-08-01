@@ -72,7 +72,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -190,6 +192,8 @@ $(document).ready(function () {
   menuAnchor.closest('li.dropdown').addClass('active');
 });
 </script>
+
+<div class="container-fluid main-container">
 
 <!-- tabsets -->
 
@@ -348,16 +352,6 @@ div.tocify {
 
 </style>
 
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
-
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
 <div class="col-xs-12 col-sm-4 col-md-3">
@@ -475,7 +469,7 @@ width: 23%;
 </div>
 <p><br></p>
 <div class="rightA">
-<p>As well as clearly defining the question, we should also ensure that any important detailed questions to support the analysis are appropriately thought through. For example, we may be interested in uncertainty on a calendar year or financial year basis.</p>
+<p>As well as clearly defining the question, we should also ensure that any important detailed questions to support the analysis are appropriately thought through. For example, are we interested in uncertainty on a calendar year or financial year basis?</p>
 </div>
 <div class="leftB">
 <p>Identify the important details</p>
@@ -488,7 +482,7 @@ width: 23%;
 <p>Once the key questions have been agreed, analysts and decision-makers should discuss how the outputs will be used. Understanding the role of the analysis in the decision-making process will help to inform which uncertainty techniques are appropriate and proportionate.</p>
 </div>
 <div class="rightA">
-<p>It is also important to jointly identify sources of uncertainty that are so deep that little or nothing can be said quantitatively about their impact on the policy outcome. An exzmple might be the impact of a natural disaster on a particular policy. Deep uncertainties can have major implications for decision-making, and may call for a descriptive approach to the analysis and presentation of options.</p>
+<p>It is also important to jointly identify sources of uncertainty that are so deep that little or nothing can be said quantitatively about their impact on the policy outcome. An example might be the impact of a natural disaster on a particular policy. Deep uncertainties can have major implications for decision-making, and may call for a descriptive approach to the analysis and presentation of options.</p>
 </div>
 <div style="clear: both;">
 
@@ -506,7 +500,7 @@ width: 23%;
 </div>
 <p><br></p>
 <div class="rightA">
-<p>If the output is to be fed into ‘downstream’ models, then it is important to understand the requirements of the downstream model. For example, if scenarios are used to illustrate uncertainty, then these may not be suitable for a ‘downstream’ Monte Carlo simulation.</p>
+<p>If the output is to be fed into ‘downstream’ models, then it is important to understand the requirements of those models. For example, if <i>scenarios</i> are used to illustrate uncertainty in your model, then these may not be suitable inputs for a Monte Carlo simulation in a dependent model.</p>
 </div>
 <div class="leftB">
 <p>Are there dependent models drawing on the analysis?</p>
@@ -516,7 +510,7 @@ width: 23%;
 <p>Incorporating uncertainty into analysis</p>
 </div>
 <div class="rightA">
-<p>Now that we know what the question is and the context in which the analysis will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to work with the decision maker by asking what it is conceptually that they <i>would like</i> to be able to say. This is important as it frames how the analysis will be conducted.</p>
+<p>Now that we know what the question is and the context in which the analysis will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to ask the decision maker what it is conceptually that they <i>would like</i> to be able to say. This is important as it frames how the uncertainty analysis will be conducted.</p>
 </div>
 <p><img src="images/Outputs_use.png" width="100%" style="display: block; margin: auto;" /></p>
 <div style="clear: both;">
@@ -541,7 +535,7 @@ width: 23%;
 <p>Discuss with the decision-maker what level of uncertainty is acceptable. Do they want to know how wrong the forecast would need to be in order to change or rethink the policy? Or are they simply interested in an output “range”? If so, what does that “range” actually mean?</p>
 </div>
 <div class="leftB">
-<p>Check how the uncertainty will inform the decision-maker’s judgement</p>
+<p>Discuss how the uncertainty will inform the decision-maker’s judgement</p>
 </div>
 <div class="rightA">
 <p>Examples can be very helpful when discussing the analysis with the decision maker. An answer to the question of the net benefits of a policy may be £3m, with uncertainty analysis giving a broad range of £0.5-5.5m. You could discuss with the decision maker how they want to be able to frame the analysis, for example: <br> <i>“A range of £0.5-5.5m”; <br> “The estimated benefits are £3m, with analysis showing a 90% likelihood that benefits will be between £1-5m”; <br> “Analysis shows that there is an 80% likelihood that the net benefits will be greater than £2m”; <br> “The policy needs to have X amount of takeup in order to break even”</i></p>

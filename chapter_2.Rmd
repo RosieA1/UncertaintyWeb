@@ -57,7 +57,7 @@ Try to identify and record all the potential sources of uncertainty in your anal
 </div>
 
 <div class = "rightA">
-This chapter sets out a range of techniques to help you understand and assess the sources of uncertainty in your analysis.
+This section sets out a range of techniques to help you understand and assess the sources of uncertainty in your analysis.
 </div>
 
 
@@ -161,7 +161,7 @@ Some uncertainties can’t be captured in an assumption as we don’t have perfe
 </div>
 
 <div class = "leftB">
-What don’t you know? (unknown unknowns)
+What don’t you know? 
 </div>
 
 

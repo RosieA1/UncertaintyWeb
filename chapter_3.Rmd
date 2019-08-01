@@ -540,7 +540,7 @@ Repeat for the variance at each subsequent time period to produce e.g. a fan for
 <div class = "fullBoxBlue">
 <b>Example:</b> 
 <br><br>
-<b>MoJ prison population forecasting</b>
+<b>[MoJ prison population forecasting](https://rosiea1.github.io/UncertaintyWeb/case_studies.html#estimating_uncertainty_in_prison_population_projections)</b> 
 </div>
 
 <div style="clear: both;"></div>
