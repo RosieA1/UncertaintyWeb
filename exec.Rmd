@@ -24,8 +24,9 @@ This toolkit has been written for analysts to help them understand and assess th
 </div>
 
 <div class = "rightA">
+Key points:
 <ul>
-<li> Consider the full range of possible outcomes when using analysis to inform decisions, not just the ‘best estimate’</li>
-<li> Challenge analysts where information on uncertainty is absent or inadequate </li>
-<li> Ask questions about how to interpret the uncertainty if this is unclear, and the implications of it </li>
-<li> Provide feedback to analysts on the usefulness and effectiveness of how they communicate uncertainty </li>
+<li> Consider the full range of possible outcomes when using analysis to inform decisions, not just the ‘best estimate’.</li>
+<li> Challenge analysts where information on uncertainty is absent or inadequate. </li>
+<li> Ask questions about how to interpret the uncertainty and its implications. </li>
+<li> Provide feedback to analysts on the usefulness and effectiveness of how they communicate uncertainty. </li>

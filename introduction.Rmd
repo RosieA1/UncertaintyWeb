@@ -39,7 +39,7 @@ Uncertainty is unavoidable when making predictions about future events or impact
 </div>
 
 <div class = "rightA">
-There is a difference between uncertainty and risk; risk typically refers to the likelihood of a future unplanned event or unintended consequence that can be assigned a numeric probability. Forecasts of risk, like other forecasts, are themselves subject to uncertainty. For example, UK Met Office predictions of the risk of rain are uncertain as to whether it will rain at all, as well as uncertain about how much it will rain. This uncertainty is described using a range from running several forecasts from equally likely initial conditions.
+There is a difference between uncertainty and risk; risk typically refers to the likelihood of a future unplanned event or unintended consequence that can be assigned a numeric probability. Forecasts of risk, like other forecasts, are themselves subject to uncertainty. For example, UK Met Office predictions of the risk of rain are uncertain as to whether it will rain at all, as well as uncertainty about how much it will rain. This uncertainty is described using a range from running several forecasts from equally likely initial conditions.
 </div>
 
 <div class = "rightA">
@@ -106,7 +106,7 @@ This document sits alongside the Aqua Book guidance on quality analysis. The Aqu
 </div>
 
 <div class = "rightA">
-We have also provided a one-page summary of key messages for analysts that can also be shared with decision-makers.
+We have also provided a [one-page summary](https://rosiea1.github.io/UncertaintyWeb/exec.html) of key messages for analysts to be shared with decision-makers.
 </div>
 
 <div class = "rightA">

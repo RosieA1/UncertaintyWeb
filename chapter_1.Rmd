@@ -61,7 +61,7 @@ Clarify what the real question is
 <br>
 
 <div class = "rightA">
-  As well as clearly defining the question, we should also ensure that any important detailed questions to support the analysis are appropriately thought through. For example, we may be interested in uncertainty on a calendar year or financial year basis. 
+  As well as clearly defining the question, we should also ensure that any important detailed questions to support the analysis are appropriately thought through. For example, are we interested in uncertainty on a calendar year or financial year basis? 
 </div>
 
 <div class = "leftB">
@@ -79,7 +79,7 @@ Clarify what the real question is
 </div>
 
 <div class = "rightA">
-  It is also important to jointly identify sources of uncertainty that are so deep that little or nothing can be said quantitatively about their impact on the policy outcome. An exzmple might be the impact of a natural disaster on a particular policy. Deep uncertainties can have major implications for decision-making, and may call for a descriptive approach to the analysis and presentation of options.
+  It is also important to jointly identify sources of uncertainty that are so deep that little or nothing can be said quantitatively about their impact on the policy outcome. An example might be the impact of a natural disaster on a particular policy. Deep uncertainties can have major implications for decision-making, and may call for a descriptive approach to the analysis and presentation of options.
 </div>
 
 <div style="clear: both;"></div>
@@ -106,7 +106,7 @@ Will the policy decision be  based purely on the results of the analysis, or is 
 <br>
 
 <div class = "rightA">
-If the output is to be fed into ‘downstream’ models, then it is important to understand the requirements of the downstream model. For example, if scenarios are used to illustrate uncertainty, then these may not be suitable for a ‘downstream’ Monte Carlo simulation.
+If the output is to be fed into ‘downstream’ models, then it is important to understand the requirements of those models. For example, if <i>scenarios</i> are used to illustrate uncertainty in your model, then these may not be suitable inputs for a Monte Carlo simulation in a dependent model.
 </div>
 
 <div class = "leftB">
@@ -120,7 +120,7 @@ Incorporating uncertainty into analysis
 </div>
 
 <div class = "rightA">
-Now that we know what the question is and the context in which the analysis will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to work with the decision maker by asking what it is conceptually that they <i>would like</i> to be able to say. This is important as it frames how the analysis will be conducted. 
+Now that we know what the question is and the context in which the analysis will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to ask the decision maker what it is conceptually that they <i>would like</i> to be able to say. This is important as it frames how the uncertainty analysis will be conducted. 
 </div>
 
 
@@ -156,7 +156,7 @@ Discuss with the decision-maker what level of uncertainty is acceptable. Do they
 </div>
 
 <div class = "leftB">
-Check how the uncertainty will inform the decision-maker’s judgement
+Discuss how the uncertainty will inform the decision-maker’s judgement
 </div>
 
 <div class = "rightA">
