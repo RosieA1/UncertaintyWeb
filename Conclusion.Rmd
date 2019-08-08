@@ -1,0 +1,26 @@
+---
+title: <br><br><br> Conclusion
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+---
+
+This toolkit is designed to provide guidance to analysts on how to incorporate uncertainty analysis into their work, as well as setting out some high level advice to decision makers, so they know what to expect when commissioning analysis and interpreting analytical results. It sets out best practice, gives examples of situations where different techniques could be used, and highlights things to consider when conducting your analysis.
+
+<br><br>
+
+<b>The toolkit is presented in the first instance as a suggested set of guidelines and we will be consulting with experts from Governnment, the academic community and other external bodies to develop thinking in line with the latest evidence on communicating uncertainty.</b> We welcome feedback on the content. You can get in touch by emailing: <b>placeholder for email address </b>
+
+<br><br>
+
+It is not meant to give hard and fast rules, and there will be times where the work you are doing will necessarily bend or break some of the recommendations we have presented here. 
+
+<br><br>
+
+Users of the toolkit should be aware that it is not designed to provide hard and fast rules and should also think about consulting other sources of guidance. 
+
+<br><br>
+
+Additional papers that may be of interest are presented in the Further Reading tab. Your department may also have an uncertainty group who can advise on specific techniques and their implementation.
