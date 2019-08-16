@@ -123,7 +123,7 @@ float: right;
 
 
 <div class = "rightA"> 
-At this stage you should have considered where the uncertainties lie. You now will need to consider whether it is possible to quantify this uncertainty. 
+At this stage you should have considered where the uncertainties lie. You will now need to consider whether it is possible to quantify this uncertainty. 
 </div>
 
 <div class = "rightA">
@@ -341,9 +341,7 @@ This should be repeated until the key outputs are stable and reproducible at the
 <ul><li>Can help assess overall uncertainty when you have uncertainty around many aspects of your model</li>
 <li>Assess uncertainty around a fund forecast</li>
 <li>Estimate the uncertainty around assumptions used in policy costings</li>
-<li>An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided here:  <b>Placeholder for link to Monte Carlo Template</b></li>
-<li> &#64;Risk is an Excel add-in to analyse risk using Monte Carlo. An example of which is provided here:
-<b>Placeholder for DfE &#64;Risk Example</b></li>
+<li>An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided [here](https://github.com/RosieA1/UncertaintyWeb/tree/master/Monte%20Carlo%20template) </b></li></ul>
 
 </div>
 
