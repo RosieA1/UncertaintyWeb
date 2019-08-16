@@ -11,7 +11,7 @@
 
 
 
-<title>    Agreeing how uncertainty should be used to help answer the question</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -72,9 +72,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -193,8 +191,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -286,7 +282,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = true;
+    options.showAndHide = false;
     options.smoothScroll = true;
 
     // tocify
@@ -349,8 +345,24 @@ div.tocify {
   border-radius: 0px;
 }
 
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -421,7 +433,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore"><br><br><br> Agreeing how uncertainty should be used to help answer the question</h1>
+<h1 class="title toc-ignore"><br><br><br></h1>
 
 </div>
 
@@ -432,15 +444,59 @@ div.tocify {
 margin-top: 100px;
 }
 
-.section h2{
-padding-top: 150px;
+body {
+counter-reset : h1;
 }
 
-.leftA{
-float: left;
-width: 100%;
-font-weight: bold;
+h1 {
+  counter-reset:h2;
 }
+
+h2 {
+counter-reset : h3;
+}
+
+h1:before{
+  content : "1" ". ";
+  counter-increment: h1;
+}
+
+h2:before {
+content : "1" "." counter(h2,decimal) ". ";
+counter-increment : h2;
+}
+
+h2.nocount:before {
+content : "";
+counter-increment : none;
+}
+
+.section h1{
+padding-top: 200px;
+} 
+
+.section h2{
+padding-top: 200px;
+float:right;
+width: 75%;
+}
+
+.section h3{
+float:right;
+width: 75%;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  float: right;
+} 
 
 .rightA{
 float:right;
@@ -454,6 +510,8 @@ width: 23%;
 
 .
 </style>
+<div id="agreeing-how-uncertainty-should-be-used-to-help-answer-the-question" class="section level1">
+<h1>Agreeing how uncertainty should be used to help answer the question</h1>
 <p><br></p>
 <div class="rightA">
 <p>Decision-makers need information about uncertainty in the impacts of their decisions. This section looks at the steps to ensure that analysts and decision-makers agree on the question being asked, how analytical outputs will be used in the decision-making process, and how to appropriately incorporate uncertainty into the analysis.</p>
@@ -463,6 +521,13 @@ width: 23%;
 </div>
 <div id="understanding-the-problem" class="section level2">
 <h2>Understanding the problem</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Clarify what the real question is</p>
@@ -477,10 +542,7 @@ width: 23%;
 <div class="leftB">
 <p>Identify the important details</p>
 </div>
-<p><br></p>
-<div class="leftA">
-<p>Appropriate use of outputs</p>
-</div>
+<p><br><br></p>
 <div class="rightA">
 <p>Once the key questions have been agreed, analysts and decision-makers should discuss how the outputs will be used. Understanding the role of the analysis in the decision-making process will help to inform which uncertainty techniques are appropriate and proportionate.</p>
 </div>
@@ -494,6 +556,13 @@ width: 23%;
 </div>
 <div id="how-will-outputs-be-used" class="section level2">
 <h2>How will outputs be used?</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Discuss the role for the analysis</p>
@@ -508,10 +577,6 @@ width: 23%;
 <div class="leftB">
 <p>Are there dependent models drawing on the analysis?</p>
 </div>
-<p><br></p>
-<div class="leftA">
-<p>Incorporating uncertainty into analysis</p>
-</div>
 <div class="rightA">
 <p>Now that we know what the question is and the context in which the analysis will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to ask the decision maker what it is conceptually that they <i>would like</i> to be able to say. This is important as it frames how the uncertainty analysis will be conducted.</p>
 </div>
@@ -522,6 +587,13 @@ width: 23%;
 </div>
 <div id="what-information-do-we-need-from-the-decision-maker-to-include-uncertainty-analysis-at-the-right-points" class="section level2">
 <h2>What information do we need from the decision maker to include uncertainty analysis at the right points?</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <div class="leftB">
 <p>Explain how the uncertainty can be used to better inform decisions</p>
 </div>
@@ -548,6 +620,7 @@ width: 23%;
 </div>
 <div class="rightA">
 <p>Financial decision makers may be interested in understanding the likelihood of receiving a certain level of income, or that risks and opportunities will materialise. For example, HMRC might want to know the likelihood of receiving a certain level from tax receipts. Here, the analysis would need to go hand in hand with financial risk management to mitigate the risks materialising or crystallise the opportunities.</p>
+</div>
 </div>
 </div>
 

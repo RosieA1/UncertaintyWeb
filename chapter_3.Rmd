@@ -1,9 +1,10 @@
 ---
-title: <br><br><br> Understanding and Measuring Uncertainty
+title: <br><br><br> #Understanding and Measuring Uncertainty
 output:
   html_document:
     toc: true
-    toc_float: true
+    toc_float:
+          collapsed: false
     toc_depth: 2
 ---
 
@@ -13,15 +14,59 @@ output:
 margin-top: 100px;
 }
 
-.section h2{
-padding-top: 150px;
+body {
+counter-reset : h1;
+	}
+
+h1 {
+  counter-reset:h2;
 }
 
-.leftA{
-float: left;
-width: 100%;
-font-weight: bold;
+h2 {
+counter-reset : h3;
+	}
+
+h1:before{
+  content : "3" ". ";
+  counter-increment: h1;
 }
+
+h2:before {
+content : "3" "." counter(h2,decimal) ". ";
+counter-increment : h2;
+	}
+
+h2.nocount:before {
+content : "";
+counter-increment : none;
+	}
+
+.section h1{
+padding-top: 200px;
+} 
+
+.section h2{
+padding-top: 200px;
+float:right;
+width: 75%;
+}
+
+.section h3{
+float:right;
+width: 75%;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  float: right;
+} 
 
 .rightA{
 float:right;
@@ -68,11 +113,14 @@ float: right;
 
 </style>
 
-<br>
+<br><br><br>
 
-<div class = "leftA">
-Introduction
-</div>
+# Understanding and Measuring Uncertainty
+
+<br><br>
+
+### Introduction
+
 
 <div class = "rightA"> 
 At this stage you should have considered where the uncertainties lie. You now will need to consider whether it is possible to quantify this uncertainty. 
@@ -92,6 +140,12 @@ knitr::include_graphics("images/measure.png")
 <div style="clear: both;"></div>
 
 ## General approaches for quantifying uncertainty in an input parameter
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -212,6 +266,12 @@ knitr::include_graphics("images/cablecar.png")
 
 ## Common techniques for assessing uncertainty in analytical outputs
 
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
 <br>
 
 
@@ -222,6 +282,12 @@ Now that we have explored how to assess uncertainties in individual analytical i
 <br><br>
 
 ## Monte Carlo Techniques
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br><br>
 
@@ -291,7 +357,13 @@ knitr::include_graphics("images/Monte_carlo.png")
 
 <br><br>
 
-## Deterministic Combinations of Uncertainties
+## Convolution
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br><br>
 
@@ -302,9 +374,11 @@ If there are a small number of uncertainty sources, then it may be possible to c
 <div class = "fullBoxBlue">
 <b>Outline:</b> 
 <br><br>
-In principle uncertainties can be combined deterministically, by combining the distributions for each input mathematically. This avoids the randomness of probabilistic approaches.
+In principle uncertainty distributions can be combined to give an exact distribution for the resulting overall uncertainty (known as convolution).
 <br><br>
-However this method tends to get very complicated once more than a few uncertainties are involved, and probabilistic methods may be easier.
+Consider rolling two dice - the value of each follows a discrete uniform distribution from 1 to 6. If we wanted to know the sum of the two dice, we can combine these uniform distributions to show that the resulting probability profile follows a triangular distribution from 2 to 12.
+<br><br>
+This avoids the randomness of probabilistic approaches. However this method tends to get very complicated once more than a few uncertainties are involved, and probabilistic methods may be easier.
 </div>
 
 <br><br>
@@ -313,13 +387,14 @@ However this method tends to get very complicated once more than a few uncertain
 <b>Advantages:</b> 
 <br><br>
 <ul><li>Deterministic, so outputs are reproducible and quick to generate</li>
-<li>Works with any input probability distributions</li></ul>
+<li>Works with any input probability distributions (don't need to assume normality)</li></ul>
 </div>
 
 <div class = "halfBoxBlueRight">
 <b>Disadvantages:</b> 
 <br><br>
 <ul><li>Can be difficult to do with more than 2 or 3 sources of uncertainty</li>
+<li>Generally only feasible if the distributions are combined using simple mathematical operations (addition, subtraction, multiplication)</li>
 <li>Assumes that each uncertainty is independent (or correlations must be accounted for)</li></ul>
 </div>
 
@@ -332,7 +407,7 @@ However this method tends to get very complicated once more than a few uncertain
 <div class = "fullBoxBlue">
 <b>Example:</b> 
 <br><br>
-<b>Placeholder for Example</b>
+Any situation where you're combining two probability distributions using simple mathematical operations (addition, subtraction, multiplication)
 </div>
 
 <div style="clear: both;"></div>
@@ -340,6 +415,12 @@ However this method tends to get very complicated once more than a few uncertain
 <br><br>
 
 ## Summing Uncorrelated Uncertainties in Quadrature
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br><br>
 
@@ -388,6 +469,12 @@ Also useful for quickly estimating the uncertainty when changing the timeframe o
 <br><br>
 
 ## Focussing on the Dominant Uncertainty
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br><br>
 
@@ -447,7 +534,13 @@ knitr::include_graphics("images/Dominant.png")
 
 ## Scenario Analysis
 
-<br><br>
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
+<br>
 
 If there are many sources of uncertainty with complex correlations between them, then it may be more sensible to use a set of scenarios to illustrate the range of plausible outcomes.
 
@@ -497,6 +590,12 @@ Forecasting where a range of policy options are being considered, particularly w
 <br><br>
 
 ## Using Past Variance to Estimate Future Uncertainty
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br><br>
 
@@ -548,6 +647,12 @@ Repeat for the variance at each subsequent time period to produce e.g. a fan for
 <br><br>
 
 ## Judgement
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br><br>
 
@@ -617,6 +722,12 @@ knitr::include_graphics("images/Judgement.png")
 
 
 ## Quality assuring uncertainty analysis and accounting for wider uncertainties
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 

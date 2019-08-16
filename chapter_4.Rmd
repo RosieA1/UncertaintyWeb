@@ -1,9 +1,10 @@
 ---
-title: <br><br><br> Presenting and communicating uncertainty
+title: <br><br><br> # Presenting and communicating uncertainty
 output:
   html_document:
     toc: true
-    toc_float: true
+    toc_float:
+          collapsed: false
     toc_depth: 2
 ---
 
@@ -13,15 +14,60 @@ output:
 margin-top: 100px;
 }
 
-.section h2{
-padding-top: 150px;
+body {
+counter-reset : h1;
 }
 
-.leftA{
-float: left;
-width: 100%;
-font-weight: bold;
+h1 {
+  counter-reset:h2;
 }
+
+h2 {
+counter-reset : h3;
+}
+
+h1:before{
+  content : "4" ". ";
+  counter-increment: h1;
+}
+
+h2:before {
+content : "4" "." counter(h2,decimal) ". ";
+counter-increment : h2;
+}
+
+h2.nocount:before {
+content : "";
+counter-increment : none;
+}
+
+.section h1{
+padding-top: 200px;
+} 
+
+.section h2{
+padding-top: 200px;
+float:right;
+width: 75%;
+}
+
+.section h3{
+float:right;
+width: 75%;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  float: right;
+} 
+
 
 .rightA{
 float:right;
@@ -34,7 +80,9 @@ width: 23%;
 }
 </style>
 
-<br>
+# Presenting and communicating uncertainty
+
+<br><br>
 
 <div class = "rightA"> 
 We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively. A wealth of additional information can be found on the [Government Statistical Service website](https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/Communicating_Quality_Uncertainty_and_Change_for_publication.pdf)
@@ -43,6 +91,12 @@ We now consider how to choose <i>what</i> messages about uncertainty we should c
 <div style="clear: both;"></div>
  
 ## Deciding what to communicate
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -60,10 +114,16 @@ knitr::include_graphics("images/Odd_tulip.png")
 
 ## Uncertainty improves the quality of the analytical communication
 
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
 <br>
 
 <div class = "rightA">
-Decision makers may be more comfortable with certain messages. This can make communicating uncertainty a difficult task. Decision makers can react adversely when faced with uncertainty, leading them to lose confidence in analysis.  When uncertainty is large, decision makers may feel that the analysis is of no use.
+Decision makers are usually more comfortable with certain messages. This can make communicating uncertainty a difficult task. Decision makers can react adversely when faced with uncertainty, leading them to lose confidence in analysis.  When uncertainty is large, decision makers may feel that the analysis is of no use.
 </div>
 
 <div class = "leftB"> 
@@ -81,6 +141,12 @@ If uncertainty means that a straightforward conclusion is not possible, focus yo
 <div style="clear: both;"></div>
 
 ## What is the key message?
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -115,6 +181,12 @@ Front load the important caveats and explain why they matter.
 <div style="clear: both;"></div>
 
 ## Understanding the audience
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -157,6 +229,12 @@ A good relationship with colleagues will minimise this risk. Work collaborativel
 
 ## Deciding how to communicate uncertainty
 
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
 <div class = "rightA">
 Now you have determined what the message is you need to consider how to communicate with your decision makers. Firstly, think about how you will be communicating your results. Will this be via a written report, presentation, or an oral briefing with or without visuals? Any constraints on format may steer you to an approach.
 </div>
@@ -168,6 +246,12 @@ This section considers a range of approaches based on your understanding of the 
 <div style="clear: both;"></div>
 
 ## Communication Basics
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -196,7 +280,7 @@ An exception to this is where there is an established system that your audience 
 </div>
 
 <div class = "rightA">
-Presenting the likelihood of success [may be perceived differently](https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf) to presenting the corresponding likelihood of failure. Present the information both ways to avoid bias (e.g. “there is an 80% chance of success and a 20% chance of failure”). By adding in the chance of failure, you remind the reader that it exists and how large it is, which may otherwise be overlooked. Visual part-to-whole comparisons can help with this.
+Presenting the likelihood of success [may be perceived differently](https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf) to presenting the corresponding likelihood of failure. Present the information both ways to avoid bias (e.g. “there is an 80% chance of success and a 20% chance of failure”). By adding in the chance of failure, you remind the reader that it exists and how large it is, which may otherwise be overlooked. Visual part-to-whole comparisons can help with this. See [infographics section](https://rosiea1.github.io/UncertaintyWeb/chapter_4.html#infographics) for more details.
 </div>
 
 <div class = "leftB">
@@ -273,6 +357,12 @@ Be clear what confidence level you are using and ensure your audience understand
 
 ## Graphs and visualisation
 
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
 <br>
 
 <div class = "leftB">
@@ -338,6 +428,12 @@ For representing uncertainty due to alternative scenarios, multiple line graphs 
 <div style="clear: both;"></div>
 
 ## Error bars
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -405,6 +501,12 @@ knitr::include_graphics("images/error_bars.png")
 
 ## Box plots
 
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
 <br>
 
 <div class = "leftB">
@@ -449,6 +551,12 @@ knitr::include_graphics("images/box_plots.png")
 <div style="clear: both;"></div>
 
 ## Probability density functions (PDFs)
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -497,7 +605,7 @@ It may aid clarity to draw the reader’s attention to important features, such 
 <div style="clear: both;"></div>
 
 <div class = "leftB">
-<b>Multiple PDFs</b> can be used to show uncertainty across different measures
+Multiple PDFs can be used to show uncertainty across different measures
 </div>
 
 <div class = "rightA">
@@ -524,6 +632,12 @@ knitr::include_graphics("images/pdf.png")
 <div style="clear: both;"></div>
 
 ## Cumulative density functions (CDFs)
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -570,6 +684,12 @@ knitr::include_graphics("images/cdf.png")
 
 ## Fan Charts
 
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
 <br>
 
 <div class = "leftB">
@@ -604,6 +724,12 @@ knitr::include_graphics("images/fan_chart.png")
 <div style="clear: both;"></div>
 
 ## Multiple Line Charts
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -659,6 +785,12 @@ knitr::include_graphics("images/multiple_line.png")
 
 ## Tornado Diagrams
 
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
 <br>
 
 <div class = "leftB">
@@ -706,6 +838,12 @@ knitr::include_graphics("images/tornado.png")
 <div style="clear: both;"></div>
 
 ## Infographics
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -760,6 +898,12 @@ knitr::include_graphics("images/infographic.png")
 <div style="clear: both;"></div>
 
 ## Interactive Tools
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 

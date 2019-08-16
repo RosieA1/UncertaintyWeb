@@ -1,9 +1,10 @@
 ---
-title: <br><br><br> Agreeing how uncertainty should be used to help answer the question
+title: <br><br><br> #Agreeing how uncertainty should be used to help answer the question
 output:
   html_document:
     toc: true
-    toc_float: true
+    toc_float:
+          collapsed: false
     toc_depth: 2
 ---
 
@@ -13,15 +14,59 @@ output:
 margin-top: 100px;
 }
 
-.section h2{
-padding-top: 150px;
+body {
+counter-reset : h1;
 }
 
-.leftA{
-float: left;
-width: 100%;
-font-weight: bold;
+h1 {
+  counter-reset:h2;
 }
+
+h2 {
+counter-reset : h3;
+}
+
+h1:before{
+  content : "1" ". ";
+  counter-increment: h1;
+}
+
+h2:before {
+content : "1" "." counter(h2,decimal) ". ";
+counter-increment : h2;
+}
+
+h2.nocount:before {
+content : "";
+counter-increment : none;
+}
+
+.section h1{
+padding-top: 200px;
+} 
+
+.section h2{
+padding-top: 200px;
+float:right;
+width: 75%;
+}
+
+.section h3{
+float:right;
+width: 75%;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  float: right;
+} 
 
 .rightA{
 float:right;
@@ -36,6 +81,8 @@ width: 23%;
 .
 </style>
 
+# Agreeing how uncertainty should be used to help answer the question
+
 <br>
 
 <div class = "rightA">
@@ -47,6 +94,12 @@ Decision-makers need information about uncertainty in the impacts of their decis
 
 
 ## Understanding the problem 
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -68,11 +121,8 @@ Clarify what the real question is
   Identify the important details
 </div>
 
-<br>
+<br><br>
 
-<div class = "leftA"> 
-  Appropriate use of outputs
-</div>
 
 <div class = "rightA">
   Once the key questions have been agreed, analysts and decision-makers should discuss how the outputs will be used. Understanding the role of the analysis in the decision-making process will help to inform which uncertainty techniques are appropriate and proportionate. 
@@ -92,6 +142,12 @@ knitr::include_graphics("images/Question.png")
 ```
 
 ## How will outputs be used? 
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br>
 
@@ -113,12 +169,6 @@ If the output is to be fed into ‘downstream’ models, then it is important to
 Are there dependent models drawing on the analysis?
 </div>
 
-<br>
-
-<div class = "leftA"> 
-Incorporating uncertainty into analysis
-</div>
-
 <div class = "rightA">
 Now that we know what the question is and the context in which the analysis will be used, we should agree how to build appropriate uncertainty into the analysis. It is a good idea to ask the decision maker what it is conceptually that they <i>would like</i> to be able to say. This is important as it frames how the uncertainty analysis will be conducted. 
 </div>
@@ -134,6 +184,12 @@ knitr::include_graphics("images/Outputs_use.png")
 <div style="clear: both;"></div>
 
 ## What information do we need from the decision maker to include uncertainty analysis at the right points?
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <div class = "leftB">
 Explain how the uncertainty can be used to better inform decisions

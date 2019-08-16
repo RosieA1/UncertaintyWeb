@@ -11,7 +11,7 @@
 
 
 
-<title>    Presenting and communicating uncertainty</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -72,9 +72,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -193,8 +191,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -286,7 +282,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = true;
+    options.showAndHide = false;
     options.smoothScroll = true;
 
     // tocify
@@ -349,8 +345,24 @@ div.tocify {
   border-radius: 0px;
 }
 
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -421,7 +433,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore"><br><br><br> Presenting and communicating uncertainty</h1>
+<h1 class="title toc-ignore"><br><br><br></h1>
 
 </div>
 
@@ -432,15 +444,60 @@ div.tocify {
 margin-top: 100px;
 }
 
-.section h2{
-padding-top: 150px;
+body {
+counter-reset : h1;
 }
 
-.leftA{
-float: left;
-width: 100%;
-font-weight: bold;
+h1 {
+  counter-reset:h2;
 }
+
+h2 {
+counter-reset : h3;
+}
+
+h1:before{
+  content : "4" ". ";
+  counter-increment: h1;
+}
+
+h2:before {
+content : "4" "." counter(h2,decimal) ". ";
+counter-increment : h2;
+}
+
+h2.nocount:before {
+content : "";
+counter-increment : none;
+}
+
+.section h1{
+padding-top: 200px;
+} 
+
+.section h2{
+padding-top: 200px;
+float:right;
+width: 75%;
+}
+
+.section h3{
+float:right;
+width: 75%;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  float: right;
+} 
+
 
 .rightA{
 float:right;
@@ -452,7 +509,9 @@ float: left;
 width: 23%;
 }
 </style>
-<p><br></p>
+<div id="presenting-and-communicating-uncertainty" class="section level1">
+<h1>Presenting and communicating uncertainty</h1>
+<p><br><br></p>
 <div class="rightA">
 <p>We now consider how to choose <i>what</i> messages about uncertainty we should communicate to decision makers and give advice on <i>how</i> to communicate those messages effectively. A wealth of additional information can be found on the <a href="https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/Communicating_Quality_Uncertainty_and_Change_for_publication.pdf">Government Statistical Service website</a></p>
 </div>
@@ -461,20 +520,34 @@ width: 23%;
 </div>
 <div id="deciding-what-to-communicate" class="section level2">
 <h2>Deciding what to communicate</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="rightA">
 <p>The analysis of uncertainty is often complex. We need to choose carefully which messages about uncertainty to communicate to decision makers – ensuring they receive enough information to understand the key points, without receiving so much that it clouds the central issue. <br><br> You should also consider the onward communication of your message to ensure that when your work is passed on to others its core message and integrity are maintained.</p>
 </div>
-<p><img src="images/Odd_tulip.png" width="350" style="display: block; margin: auto;" /></p>
+<p><img src="images/Odd_tulip.png" width="394" style="display: block; margin: auto;" /></p>
 <div style="clear: both;">
 
 </div>
 </div>
 <div id="uncertainty-improves-the-quality-of-the-analytical-communication" class="section level2">
 <h2>Uncertainty improves the quality of the analytical communication</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="rightA">
-<p>Decision makers may be more comfortable with certain messages. This can make communicating uncertainty a difficult task. Decision makers can react adversely when faced with uncertainty, leading them to lose confidence in analysis. When uncertainty is large, decision makers may feel that the analysis is of no use.</p>
+<p>Decision makers are usually more comfortable with certain messages. This can make communicating uncertainty a difficult task. Decision makers can react adversely when faced with uncertainty, leading them to lose confidence in analysis. When uncertainty is large, decision makers may feel that the analysis is of no use.</p>
 </div>
 <div class="leftB">
 <p>Don’t let uncertainty undermine confidence in the analysis</p>
@@ -491,6 +564,13 @@ width: 23%;
 </div>
 <div id="what-is-the-key-message" class="section level2">
 <h2>What is the key message?</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>If most uncertainty is quantified, then present this prominently</p>
@@ -519,6 +599,13 @@ width: 23%;
 </div>
 <div id="understanding-the-audience" class="section level2">
 <h2>Understanding the audience</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Consider the audience when choosing appropriate communication methods</p>
@@ -561,6 +648,13 @@ Mixed - a combination of both
 </div>
 <div id="deciding-how-to-communicate-uncertainty" class="section level2">
 <h2>Deciding how to communicate uncertainty</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <div class="rightA">
 <p>Now you have determined what the message is you need to consider how to communicate with your decision makers. Firstly, think about how you will be communicating your results. Will this be via a written report, presentation, or an oral briefing with or without visuals? Any constraints on format may steer you to an approach.</p>
 </div>
@@ -573,6 +667,13 @@ Mixed - a combination of both
 </div>
 <div id="communication-basics" class="section level2">
 <h2>Communication Basics</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Assess whether to describe uncertainty in words or attach figures</p>
@@ -601,7 +702,7 @@ An exception to this is where there is an established system that your audience 
 </ul>
 </div>
 <div class="rightA">
-<p>Presenting the likelihood of success <a href="https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf">may be perceived differently</a> to presenting the corresponding likelihood of failure. Present the information both ways to avoid bias (e.g. “there is an 80% chance of success and a 20% chance of failure”). By adding in the chance of failure, you remind the reader that it exists and how large it is, which may otherwise be overlooked. Visual part-to-whole comparisons can help with this.</p>
+<p>Presenting the likelihood of success <a href="https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf">may be perceived differently</a> to presenting the corresponding likelihood of failure. Present the information both ways to avoid bias (e.g. “there is an 80% chance of success and a 20% chance of failure”). By adding in the chance of failure, you remind the reader that it exists and how large it is, which may otherwise be overlooked. Visual part-to-whole comparisons can help with this. See <a href="https://rosiea1.github.io/UncertaintyWeb/chapter_4.html#infographics">infographics section</a> for more details.</p>
 </div>
 <div class="leftB">
 <p>Use positive and negative framing</p>
@@ -660,6 +761,13 @@ An exception to this is where there is an established system that your audience 
 </div>
 <div id="graphs-and-visualisation" class="section level2">
 <h2>Graphs and visualisation</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Graphs can be an excellent way of communicating the quantified elements of uncertainty</p>
@@ -709,6 +817,13 @@ An exception to this is where there is an established system that your audience 
 </div>
 <div id="error-bars" class="section level2">
 <h2>Error bars</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Error bars are a simple way to illustrate a range around a data point</p>
@@ -752,7 +867,7 @@ An exception to this is where there is an established system that your audience 
 <div class="rightA">
 <p>If the output data are 2-dimensional, then you can apply error bars in 2 dimensions. Be careful to ensure that the resulting graph does not become illegible due to clutter.</p>
 </div>
-<p><img src="images/error_bars.png" width="907" style="display: block; margin: auto;" /></p>
+<p><img src="images/error_bars.png" width="454" style="display: block; margin: auto;" /></p>
 <div class="rightA">
 <p><i>Example: <b><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/794590/updated-energy-and-emissions-projections-2018.pdf">Actual and projected performance against carbon budgets, BEIS</a></b> For future emissions, vertical bars show uncertainty in the projections and indicate 95% confidence intervals for the uncertainties that have been modelled.</i></p>
 </div>
@@ -762,6 +877,13 @@ An exception to this is where there is an established system that your audience 
 </div>
 <div id="box-plots" class="section level2">
 <h2>Box plots</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Box plots can convey more information about possible outcomes than a range alone</p>
@@ -787,7 +909,7 @@ An exception to this is where there is an established system that your audience 
 <div class="rightA">
 <p>Box plots may not be widely understood by non-analysts, so think carefully about whether the added information will be effective, or whether a simple range would be sufficient. A labelled example can be used to help the audience interpret the format.</p>
 </div>
-<p><img src="images/box_plots.png" width="305" style="display: block; margin: auto;" /></p>
+<p><img src="images/box_plots.png" width="419" style="display: block; margin: auto;" /></p>
 <div class="rightA">
 <p><i>Example: <b> <a href="https://www.gov.uk/government/publications/end-of-life-care-profiles-july-2018-data-update/statistical-commentary-end-of-life-care-profiles-july-2018-update">Deaths in the usual place of residence, Public Health England</a> </b> The graph depicts the percentage of individual that die in their usual place of residence. Box plots are used to show the variation between different Clinical Commissioning Groups, and district and local authorities. A labelled box plot is presented to explain what the ranges mean. </i></p>
 </div>
@@ -797,6 +919,13 @@ An exception to this is where there is an established system that your audience 
 </div>
 <div id="probability-density-functions-pdfs" class="section level2">
 <h2>Probability density functions (PDFs)</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>PDFs show complete information on the quantified uncertainty</p>
@@ -838,7 +967,7 @@ An exception to this is where there is an established system that your audience 
 
 </div>
 <div class="leftB">
-<p><b>Multiple PDFs</b> can be used to show uncertainty across different measures</p>
+<p>Multiple PDFs can be used to show uncertainty across different measures</p>
 </div>
 <div class="rightA">
 <p>If we need to communicate a series of PDFs, then multiple functions can be shown to compare the range of possible outcomes across the series.</p>
@@ -849,7 +978,7 @@ An exception to this is where there is an established system that your audience 
 <div class="rightA">
 <p>If there are only 2 or 3 these can be overlaid to make it easy to compare. With more, ‘small multiples’ are likely to be clearer.</p>
 </div>
-<p><img src="images/pdf.png" width="993" style="display: block; margin: auto;" /></p>
+<p><img src="images/pdf.png" width="496" style="display: block; margin: auto;" /></p>
 <div class="rightA">
 <p><i>Example: <b> <a href="https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/ukcp/ukcp18-guidance---how-to-use-the-cdf-and-pdf-plots.pdf">Change in Air Temperature for 2080-2099, Met Office</a></b> The graph shows the expected change in air temperature in 2080-99 compared to 1981-2000 for a medium emission scenario. </i></p>
 </div>
@@ -859,6 +988,13 @@ An exception to this is where there is an established system that your audience 
 </div>
 <div id="cumulative-density-functions-cdfs" class="section level2">
 <h2>Cumulative density functions (CDFs)</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>A CDF may be more helpful than a PDF if there is a specific threshold of interest to the customer</p>
@@ -894,6 +1030,13 @@ An exception to this is where there is an established system that your audience 
 </div>
 <div id="fan-charts" class="section level2">
 <h2>Fan Charts</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Fan charts can show how uncertainty changes over time</p>
@@ -920,6 +1063,13 @@ An exception to this is where there is an established system that your audience 
 </div>
 <div id="multiple-line-charts" class="section level2">
 <h2>Multiple Line Charts</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Multiple line charts can be clearer than a series of error bars</p>
@@ -954,7 +1104,7 @@ An exception to this is where there is an established system that your audience 
 <div class="rightA">
 <p>Try to include an even number of scenarios, to avoid having a middle option that may be misinterpreted as the ‘most likely’ scenario.</p>
 </div>
-<p><img src="images/multiple_line.png" width="376" style="display: block; margin: auto;" /></p>
+<p><img src="images/multiple_line.png" width="470" style="display: block; margin: auto;" /></p>
 <div class="rightA">
 <p><i>Example: <b><a href="http://cdn.obr.uk/FSR-July-2018.pdf">Employment Projections, OBR</a>.</b> The graph presents future employment levels for different demographic scenarios. Each scenario is represented by a separate line plot. The graph does not attempt to show the probability of each scenario occurring. </i></p>
 </div>
@@ -964,6 +1114,13 @@ An exception to this is where there is an established system that your audience 
 </div>
 <div id="tornado-diagrams" class="section level2">
 <h2>Tornado Diagrams</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Tornado diagrams can be used to show the <i>sources</i> of uncertainty</p>
@@ -992,7 +1149,7 @@ An exception to this is where there is an established system that your audience 
 <div class="rightA">
 <p>One limitation of the format is that only one parameter is changed at a time. There are some situations where the uncertainty due to one variable may appear small initially but becomes much more prominent if a second variable takes on a slightly different value (e.g. think of a workflow model with a bottleneck. A tornado diagram might show the bottleneck parameter to be the overwhelming uncertainty. However, if this parameter is increased slightly then the bottleneck may move elsewhere, completely changing the picture)</p>
 </div>
-<p><img src="images/tornado.png" width="324" style="display: block; margin: auto;" /></p>
+<p><img src="images/tornado.png" width="406" style="display: block; margin: auto;" /></p>
 <div class="rightA">
 <p><i>Example: <b> <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/566567/BEIS_Electricity_Generation_Cost_Report.pdf">Nuclear Levelized Cost of Electricity, BEIS</a> .</b> The graph presents the change in the levelized cost of nuclear electricity (£/MWh) that would result from changes in input parameters. Impacts are shown from both 10% upward or downward movement in central estimates and from predetermined parameters ranges (high/low data range). Yellow bars represent an increase in the parameter, blue bar represent a decrease in the parameter. </i></p>
 </div>
@@ -1002,6 +1159,13 @@ An exception to this is where there is an established system that your audience 
 </div>
 <div id="infographics" class="section level2">
 <h2>Infographics</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Infographics can be useful for public facing communications</p>
@@ -1046,6 +1210,13 @@ An exception to this is where there is an established system that your audience 
 </div>
 <div id="interactive-tools" class="section level2">
 <h2>Interactive Tools</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>Interactive tools can be used to immerse your reader on complex matters</p>
@@ -1083,6 +1254,7 @@ An exception to this is where there is an established system that your audience 
 <p><img src="images/interactive.png" width="524" style="display: block; margin: auto;" /></p>
 <div class="rightA">
 <p><i>Example: The <a href="https://www.gov.uk/guidance/2050-pathways-analysis">DECC 2050 Calculator</a> is an award-winning, user-friendly tool that helps users to explore the choices available to meet the 2050 carbon target. Whilst it doesn’t explicitly cover the uncertainty in the underlying data it does allow the user to create their own set of policies to try to reach the target. This engaging tool was helpful in demonstrating to users how difficult some of the options are and the relative impact of each choice. </i></p>
+</div>
 </div>
 </div>
 

@@ -11,7 +11,7 @@
 
 
 
-<title>    Understanding and Measuring Uncertainty</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -72,9 +72,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -193,8 +191,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -286,7 +282,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = true;
+    options.showAndHide = false;
     options.smoothScroll = true;
 
     // tocify
@@ -349,8 +345,24 @@ div.tocify {
   border-radius: 0px;
 }
 
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -421,7 +433,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore"><br><br><br> Understanding and Measuring Uncertainty</h1>
+<h1 class="title toc-ignore"><br><br><br></h1>
 
 </div>
 
@@ -432,15 +444,59 @@ div.tocify {
 margin-top: 100px;
 }
 
-.section h2{
-padding-top: 150px;
+body {
+counter-reset : h1;
+    }
+
+h1 {
+  counter-reset:h2;
 }
 
-.leftA{
-float: left;
-width: 100%;
-font-weight: bold;
+h2 {
+counter-reset : h3;
+    }
+
+h1:before{
+  content : "3" ". ";
+  counter-increment: h1;
 }
+
+h2:before {
+content : "3" "." counter(h2,decimal) ". ";
+counter-increment : h2;
+    }
+
+h2.nocount:before {
+content : "";
+counter-increment : none;
+    }
+
+.section h1{
+padding-top: 200px;
+} 
+
+.section h2{
+padding-top: 200px;
+float:right;
+width: 75%;
+}
+
+.section h3{
+float:right;
+width: 75%;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  float: right;
+} 
 
 .rightA{
 float:right;
@@ -486,10 +542,12 @@ float: right;
 }
 
 </style>
-<p><br></p>
-<div class="leftA">
-<p>Introduction</p>
-</div>
+<p><br><br><br></p>
+<div id="understanding-and-measuring-uncertainty" class="section level1">
+<h1>Understanding and Measuring Uncertainty</h1>
+<p><br><br></p>
+<div id="introduction" class="section level3">
+<h3>Introduction</h3>
 <div class="rightA">
 <p>At this stage you should have considered where the uncertainties lie. You now will need to consider whether it is possible to quantify this uncertainty.</p>
 </div>
@@ -500,8 +558,16 @@ float: right;
 <div style="clear: both;">
 
 </div>
+</div>
 <div id="general-approaches-for-quantifying-uncertainty-in-an-input-parameter" class="section level2">
 <h2>General approaches for quantifying uncertainty in an input parameter</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="rightA">
 <p>We have highlighted ways to think about the uncertainty coming from specific sources. We now bring this together into approaches that can be applied to understand the size and distribution of these uncertainties and how you might include this information in your analysis. In most cases, the approach to uncertainty quantification is limited by the data and time available to you, though you should also consider where the major sources of uncertainty are in your analysis and pay most attention to these.</p>
@@ -591,6 +657,13 @@ float: right;
 </div>
 <div id="common-techniques-for-assessing-uncertainty-in-analytical-outputs" class="section level2">
 <h2>Common techniques for assessing uncertainty in analytical outputs</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="rightA">
 <p>Now that we have explored how to assess uncertainties in individual analytical inputs, we turn to commonly used techniques for analysing overall uncertainty in analytical outputs, moving from approaches to use when we have a good numerical understanding of input uncertainties, though to approaches which can be used when we know less about how input uncertainties are quantified.</p>
@@ -599,6 +672,13 @@ float: right;
 </div>
 <div id="monte-carlo-techniques" class="section level2">
 <h2>Monte Carlo Techniques</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br><br></p>
 <p>If all significant sources of uncertainty can be quantified, along with the correlations between them, then probabilistic methods can provide a picture of the range of possible outcomes and the likelihood of each.</p>
 <p><br><br></p>
@@ -692,13 +772,20 @@ An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided
 <p><img src="images/Monte_carlo.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br><br></p>
 </div>
-<div id="deterministic-combinations-of-uncertainties" class="section level2">
-<h2>Deterministic Combinations of Uncertainties</h2>
+<div id="convolution" class="section level2">
+<h2>Convolution</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br><br></p>
 <p>If there are a small number of uncertainty sources, then it may be possible to combine them mathematically, which can be quicker than using probabilistic methods</p>
 <p><br><br></p>
 <div class="fullBoxBlue">
-<p><b>Outline:</b> <br><br> In principle uncertainties can be combined deterministically, by combining the distributions for each input mathematically. This avoids the randomness of probabilistic approaches. <br><br> However this method tends to get very complicated once more than a few uncertainties are involved, and probabilistic methods may be easier.</p>
+<p><b>Outline:</b> <br><br> In principle uncertainty distributions can be combined to give an exact distribution for the resulting overall uncertainty (known as convolution). <br><br> Consider rolling two dice - the value of each follows a discrete uniform distribution from 1 to 6. If we wanted to know the sum of the two dice, we can combine these uniform distributions to show that the resulting probability profile follows a triangular distribution from 2 to 12. <br><br> This avoids the randomness of probabilistic approaches. However this method tends to get very complicated once more than a few uncertainties are involved, and probabilistic methods may be easier.</p>
 </div>
 <p><br><br></p>
 <div class="halfBoxBlueLeft">
@@ -708,7 +795,7 @@ An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided
 Deterministic, so outputs are reproducible and quick to generate
 </li>
 <li>
-Works with any input probability distributions
+Works with any input probability distributions (don’t need to assume normality)
 </li>
 </ul>
 </div>
@@ -717,6 +804,9 @@ Works with any input probability distributions
 <ul>
 <li>
 Can be difficult to do with more than 2 or 3 sources of uncertainty
+</li>
+<li>
+Generally only feasible if the distributions are combined using simple mathematical operations (addition, subtraction, multiplication)
 </li>
 <li>
 Assumes that each uncertainty is independent (or correlations must be accounted for)
@@ -729,7 +819,7 @@ Assumes that each uncertainty is independent (or correlations must be accounted 
 </div>
 <p><br><br></p>
 <div class="fullBoxBlue">
-<p><b>Example:</b> <br><br> <b>Placeholder for Example</b></p>
+<p><b>Example:</b> <br><br> Any situation where you’re combining two probability distributions using simple mathematical operations (addition, subtraction, multiplication)</p>
 </div>
 <div style="clear: both;">
 
@@ -738,6 +828,13 @@ Assumes that each uncertainty is independent (or correlations must be accounted 
 </div>
 <div id="summing-uncorrelated-uncertainties-in-quadrature" class="section level2">
 <h2>Summing Uncorrelated Uncertainties in Quadrature</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br><br></p>
 <p>If multiple components need to be summed, and the uncertainty in each can be assumed to be normal and uncorrelated, then summing in quadrature is a useful shortcut for estimating the total uncertainty</p>
 <p><br><br></p>
@@ -782,6 +879,13 @@ Only valid if the individual uncertainty distributions are independent and norma
 </div>
 <div id="focussing-on-the-dominant-uncertainty" class="section level2">
 <h2>Focussing on the Dominant Uncertainty</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br><br></p>
 <p>If one source of uncertainty has a much greater impact than all the others, then the uncertainty due to this one factor might be a reasonable proxy for the overall uncertainty</p>
 <p><br><br></p>
@@ -831,7 +935,14 @@ Can dramatically underestimate uncertainty if the source of uncertainty assumed 
 </div>
 <div id="scenario-analysis" class="section level2">
 <h2>Scenario Analysis</h2>
-<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br></p>
 <p>If there are many sources of uncertainty with complex correlations between them, then it may be more sensible to use a set of scenarios to illustrate the range of plausible outcomes.</p>
 <p><br><br></p>
 <div class="fullBoxBlue">
@@ -898,6 +1009,13 @@ Needs input from a range of knowledgeable people
 </div>
 <div id="using-past-variance-to-estimate-future-uncertainty" class="section level2">
 <h2>Using Past Variance to Estimate Future Uncertainty</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br><br></p>
 <p>If a forecast has been produced repeatedly over many years, it may be possible to use the accuracy of all the previous forecasts to estimate the uncertainty in the new forecast</p>
 <p><br><br></p>
@@ -948,6 +1066,13 @@ The forecasts must have been produced for a sufficiently long time so that we ha
 </div>
 <div id="judgement" class="section level2">
 <h2>Judgement</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br><br></p>
 <p>If the previous methods are unfeasible then you could make a subjective estimate of the overall uncertainty using expert elicitation techniques.</p>
 <p><br><br></p>
@@ -1003,6 +1128,13 @@ Needs a group of knowledgeable experts, who can reasonably be expected to have a
 </div>
 <div id="quality-assuring-uncertainty-analysis-and-accounting-for-wider-uncertainties" class="section level2">
 <h2>Quality assuring uncertainty analysis and accounting for wider uncertainties</h2>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
 <p><br></p>
 <div class="leftB">
 <p>It is best practice to test the outputs of the uncertainty analysis before using/presenting</p>
@@ -1024,6 +1156,7 @@ Needs a group of knowledgeable experts, who can reasonably be expected to have a
 </div>
 <div class="leftB">
 <p>Accounting for uncertainties that analysis cannot capture</p>
+</div>
 </div>
 </div>
 

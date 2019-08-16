@@ -1,9 +1,10 @@
 ---
-title: <br><br><br> Defining and Identifying Uncertainty
+title: <br><br><br> # Defining and Identifying Uncertainty
 output:
   html_document:
     toc: true
-    toc_float: true
+    toc_float:
+          collapsed: false
     toc_depth: 2
 ---
 
@@ -13,8 +14,58 @@ output:
 margin-top: 100px;
 }
 
+body {
+counter-reset : h1;
+}
+
+h1 {
+  counter-reset:h2;
+}
+
+h2 {
+counter-reset : h3;
+}
+
+h1:before{
+  content : "2" ". ";
+  counter-increment: h1;
+}
+
+h2:before {
+content : "2" "." counter(h2,decimal) ". ";
+counter-increment : h2;
+}
+
+h2.nocount:before {
+content : "";
+counter-increment : none;
+}
+
+.section h1{
+padding-top: 200px;
+} 
+
 .section h2{
-padding-top: 150px;
+padding-top: 200px;
+float:right;
+width: 75%;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  float: right;
+} 
+
+.section h3{
+float:right;
+width: 75%;
 }
 
 .leftA{
@@ -34,11 +85,10 @@ width: 23%;
 }
 </style>
 
-<br>
 
-<div class = "leftA">
-Introduction
-</div>
+# Defining and Identifying Uncertainty
+
+<br>
 
 <div class = "rightA"> 
 Analytical uncertainty can feed through into analysis and subsequent decision making from many different sources.  Each step in data collection, data processing and modelling is likely to bring added uncertainty.
@@ -64,6 +114,12 @@ This section sets out a range of techniques to help you understand and assess th
 <div style="clear: both;"></div>
 
 ## Defining uncertainty
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <div class = "rightA"> 
 Understanding the characteristics of different classifications of uncertainty can help you to identify sources of uncertainty in your own analysis.  Further, categorising the types of uncertainty provides a framework for the next steps of analysis.
@@ -97,26 +153,36 @@ Table 2.1: Classifications of Uncertainty
 
 ## Sources of analytical uncertainty - Data
 
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
 <div class = "rightA">
 The data that feeds into your analysis project will have been previously specified, defined, and collected. In some cases, you will do this yourself, but you may also draw on data sources collected by others. Having chosen your data sources for your project you will need to think about how well your data describes the reality of the situation you are modelling or analysing.
 </div>
 
 <div class = "rightA">
 To gain a full picture of the impact of data uncertainty on your analysis you should think through what you know about where your data has come from. The sorts of things you should think about include:  
-</div>
 
-<div style="clear: both;"></div>
 
 <ul>
 <li> <b> How your data source compares with your analysis objective: </b> How well do the definitions and concepts in the data chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another. For example, you might want to analyse London & South East but only have data for the whole of the UK. </li>
 <li><b> Where the data come from and how they have been collected: </b> How rigorous was the data collection process? Was the data owner’s quality assurance sufficiently robust? For survey data, would respondents have fully understood the question intent? Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics </li>
 <li><b> What period the data covers: </b> More uncertainty will occur if either the data don’t match the time period of interest and/or if the data are volatile. </li>
 <li><b> Whether your data has been subjected to any pre-processing: </b> For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. For example, missing values may have been imputed, survey data may have been weighted to make survey results representative of a wider population, extreme values and outliers may have been removed, data sets may have been combined (possibly resulting in false positive or false negative matches), disclosure controls may have been applied (potentially biasing the data set) </li>
-</ul>
+</ul></div>
 
 <div style="clear: both;"></div>
 
 ## Sources of analytical uncertainty - Assumptions 
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <br> 
 
@@ -175,6 +241,12 @@ knitr::include_graphics("images/assumptions.png")
 
 ## Sources of analytical uncertainty - Analysis
 
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
+
 <br>
 
 <div class= "rightA">
@@ -184,6 +256,12 @@ An additional, but important source of analytical uncertainty is in the analysis
 <div style="clear: both;"></div>
 
 ## Describing and Presenting analytical uncertainty
+
+<div style="clear: both;"></div>
+
+<hr>
+
+<div style="clear: both;"></div>
 
 <div class= "rightA">
 It is important to understand sources of uncertainty in your analysis. In the following sections we think about how to quantify that uncertainty and how we present it. However, it is also important to understand the context your analysis feeds into when deciding the extent to which analytical uncertainty needs to be assessed and thinking about how it should be presented. In a highly uncertain context, detailed assessment of data-driven uncertainty may not be worthwhile. This is an analytical judgement to be made in light of the full consideration of sources of uncertainty.
