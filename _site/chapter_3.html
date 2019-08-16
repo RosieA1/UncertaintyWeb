@@ -446,7 +446,7 @@ margin-top: 100px;
 
 body {
 counter-reset : h1;
-    }
+}
 
 h1 {
   counter-reset:h2;
@@ -454,7 +454,7 @@ h1 {
 
 h2 {
 counter-reset : h3;
-    }
+}
 
 h1:before{
   content : "3" ". ";
@@ -464,12 +464,12 @@ h1:before{
 h2:before {
 content : "3" "." counter(h2,decimal) ". ";
 counter-increment : h2;
-    }
+}
 
 h2.nocount:before {
 content : "";
 counter-increment : none;
-    }
+}
 
 .section h1{
 padding-top: 200px;
@@ -477,11 +477,6 @@ padding-top: 200px;
 
 .section h2{
 padding-top: 200px;
-float:right;
-width: 75%;
-}
-
-.section h3{
 float:right;
 width: 75%;
 }
@@ -497,6 +492,11 @@ hr {
   width: 75%;
   float: right;
 } 
+
+.section h3{
+float:right;
+width: 75%;
+}
 
 .rightA{
 float:right;
@@ -542,12 +542,9 @@ float: right;
 }
 
 </style>
-<p><br><br><br></p>
 <div id="understanding-and-measuring-uncertainty" class="section level1">
 <h1>Understanding and Measuring Uncertainty</h1>
-<p><br><br></p>
-<div id="introduction" class="section level3">
-<h3>Introduction</h3>
+<p><br></p>
 <div class="rightA">
 <p>At this stage you should have considered where the uncertainties lie. You will now need to consider whether it is possible to quantify this uncertainty.</p>
 </div>
@@ -557,7 +554,6 @@ float: right;
 <p><img src="images/measure.png" width="100%" style="display: block; margin: auto;" /></p>
 <div style="clear: both;">
 
-</div>
 </div>
 <div id="general-approaches-for-quantifying-uncertainty-in-an-input-parameter" class="section level2">
 <h2>General approaches for quantifying uncertainty in an input parameter</h2>
