@@ -115,7 +115,7 @@ float: right;
 </style>
 
 
-# Understanding and Measuring Uncertainty
+# 4. Understanding and Measuring Uncertainty
 
 <br>
 

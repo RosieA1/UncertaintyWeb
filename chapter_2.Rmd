@@ -86,15 +86,13 @@ width: 23%;
 </style>
 
 
-# Defining and Identifying Uncertainty
+# 3. Defining and Identifying Uncertainty
 
 <br>
 
-<div class = "rightA"> 
-Analytical uncertainty can feed through into analysis and subsequent decision making from many different sources.  Each step in data collection, data processing and modelling is likely to bring added uncertainty.
+<div class = "leftB"> 
+Analytical uncertainty can feed through into analysis and subsequent decision making from many different sources
 </div>
-
-<br>
 
 <div class = "rightA">
 We encounter uncertainty throughout the decision making process and in the analysis which supports it. In addition to uncertainties around the analytical question, we will also find uncertainty in the context of the decision being made, the data and assumptions feeding into the analysis and in the analysis itself. As analysts we need to understand and describe contextual uncertainties to ensure our analysis has impact; and we need to describe and quantify analytical uncertainties to ensure decision makers are clear about how far analytical results can be used to support their conclusions.
@@ -103,7 +101,11 @@ We encounter uncertainty throughout the decision making process and in the analy
 <br>
 
 <div class = "rightA"> 
-Try to identify and record all the potential sources of uncertainty in your analysis at an early stage.  Early identification of uncertainty is important; if you overlook a potential source of uncertainty this could reduce the usefulness and impact of your subsequent analysis.
+Try to identify and record all the potential sources of uncertainty in your analysis at an early stage.  Early identification of uncertainty is important; if you overlook a potential source of uncertainty this could reduce the usefulness and impact of your subsequent analysis. See the [Presenting and communicating uncertainty](https://rosiea1.github.io/UncertaintyWeb/chapter_4.html) section for Tornado diagrams that are a useful way to communicate the size of uncertainty.
+</div>
+
+<div class = "leftB"> 
+Early identification is important 
 </div>
 
 <div class = "rightA">
@@ -164,17 +166,52 @@ The data that feeds into your analysis project will have been previously specifi
 </div>
 
 <div class = "rightA">
-To gain a full picture of the impact of data uncertainty on your analysis you should think through what you know about where your data has come from. The sorts of things you should think about include:  
+To gain a full picture of the impact of data uncertainty on your analysis you should think through what you know about where your data has come from. You should use a data log with quality and impact Red Amber Green (RAG) ratings. Consider the following questions:  
+</div>
 
+<div class = "rightA">
+<ul><li> How well do the definitions and concepts in the data chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another. For example, you might want to analyse London & South East but only have data for the whole of the UK. </li></ul>
+</div>
 
-<ul>
-<li> <b> How your data source compares with your analysis objective: </b> How well do the definitions and concepts in the data chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another. For example, you might want to analyse London & South East but only have data for the whole of the UK. </li>
-<li><b> Where the data come from and how they have been collected: </b> How rigorous was the data collection process? Was the data owner’s quality assurance sufficiently robust? For survey data, would respondents have fully understood the question intent? Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics </li>
-<li><b> What period the data covers: </b> More uncertainty will occur if either the data don’t match the time period of interest and/or if the data are volatile. </li>
-<li><b> Whether your data has been subjected to any pre-processing: </b> For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. For example, missing values may have been imputed, survey data may have been weighted to make survey results representative of a wider population, extreme values and outliers may have been removed, data sets may have been combined (possibly resulting in false positive or false negative matches), disclosure controls may have been applied (potentially biasing the data set) </li>
-</ul></div>
+<div class = "leftB">
+<b> How your data source compares with your analysis objective: </b>
+</div>
+
+<div class = "rightA">
+<ul><li> How rigorous was the data collection process? Was the data owner’s quality assurance sufficiently robust? For survey data, would respondents have fully understood the question intent? Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics. 
+<br><br>
+When considering uncertainty in input data, you should think about whether the data being used was gathered for an alternative purpose and if it has been manipulated and how you can adjust or account for this. Accompanying data descriptions (or a quick exploration of the source data if these don’t exist) can be helpful in understanding data limitations of the data and whether any adjustments made could conflict with or bias your analysis. Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertainty.</li></ul>
+</div>
+
+<div class = "leftB">
+<b> Where the data come from and how they have been collected: </b>
+</div>
+
+<div class = "rightA">
+<ul><li> More uncertainty will occur if either the data don’t match the time period of interest and/or if the data are volatile. </li></ul>
+</div>
+
+<div class = "leftB">
+<b> What period the data covers: </b> 
+</div>
+
+<div class = "rightA">
+<ul><li> For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. For example, missing values may have been imputed, survey data may have been weighted to make survey results representative of a wider population, extreme values and outliers may have been removed, data sets may have been combined (possibly resulting in false positive or false negative matches), disclosure controls may have been applied (potentially biasing the data set). Consider how the retention or exclusion of an outlier will affect your results. Truncation or removal of outliers will typically introduce bias but this may be tolerated in exchange for reduced variance. </li></ul>
+</div>
+
+<div class = "leftB">
+<b> Whether your data has been subjected to any pre-processing: </b> 
+</div>
+
+<div class = "rightA">
+Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertainty. In the absence of direct measure of variance, be aware that small sample sizes will increase the margin of error in your results.
+</div>
 
 <div style="clear: both;"></div>
+
+<div class = "leftB">
+Check whether there is any bias or uncertainty in the data
+</div>
 
 ## Sources of analytical uncertainty - Assumptions 
 
@@ -191,7 +228,7 @@ Considering the assumptions you're making in your analysis is critical to any un
 </div>
 
 <div class = "rightA">
-Assumptions are used when we have incomplete knowledge. All models will require some assumptions, so you need to ensure that assumptions are robust and consistently understood.  There should be an assumptions log.  Where did the assumptions come from?  How were they generated and why?  What is the impact if they are wrong, and how often are they reviewed?
+Assumptions are used when we have incomplete knowledge. All models will require some assumptions, so you need to ensure that assumptions are robust and consistently understood. You should use an assumptions log with quality and impact RAG ratings and they should be signed off by stakeholders. Where did the assumptions come from?  How were they generated and why?  What is the impact if they are wrong, and how often are they reviewed?
 </div>
 
 <div class= "leftB">
@@ -249,20 +286,12 @@ knitr::include_graphics("images/assumptions.png")
 
 <br>
 
+<div class = "leftB">
+Undertake appropriate AQA
+</div>
+
 <div class= "rightA">
-An additional, but important source of analytical uncertainty is in the analysis itself. Good AQA practices can help identify the restricted uses of analytical ouputs and help minimise the possibility of errors. However, mistakes can still be made, so being clear with decision makers about the extent to which analysis has been quality assured can help them understand how far they may rely on analytical results in support of their decision making.
+An additional, but important source of analytical uncertainty is in the analysis itself, with verification and validation of models. Good Analytical Quality Assurance (AQA) practices can help identify the restricted uses of analytical outputs and help minimise the possibility of errors. However, mistakes can still be made, so being clear with decision makers about the extent to which analysis has been quality assured can help them understand how far they may rely on analytical results in support of their decision making. Please see the AQuA  book for more information.
 </div>
 
 <div style="clear: both;"></div>
-
-## Describing and Presenting analytical uncertainty
-
-<div style="clear: both;"></div>
-
-<hr>
-
-<div style="clear: both;"></div>
-
-<div class= "rightA">
-It is important to understand sources of uncertainty in your analysis. In the following sections we think about how to quantify that uncertainty and how we present it. However, it is also important to understand the context your analysis feeds into when deciding the extent to which analytical uncertainty needs to be assessed and thinking about how it should be presented. In a highly uncertain context, detailed assessment of data-driven uncertainty may not be worthwhile. This is an analytical judgement to be made in light of the full consideration of sources of uncertainty.
-</div>

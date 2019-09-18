@@ -80,7 +80,7 @@ width: 23%;
 }
 </style>
 
-# Presenting and communicating uncertainty
+# 5. Presenting and communicating uncertainty
 
 <br><br>
 

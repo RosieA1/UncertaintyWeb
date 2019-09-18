@@ -81,17 +81,13 @@ width: 23%;
 .
 </style>
 
-# Agreeing how uncertainty should be used to help answer the question
+# 2. Jointly agreeing how uncertainty should be used
 
 <br>
 
 <div class = "rightA">
 Decision-makers need information about uncertainty in the impacts of their decisions. This section looks at the steps to ensure that analysts and decision-makers agree on the question being asked, how analytical outputs will be used in the decision-making process, and how to appropriately incorporate uncertainty into the analysis.
 </div>
-
-
-<div style="clear: both;"></div>
-
 
 ## Understanding the problem 
 
@@ -108,28 +104,27 @@ Clarify what the real question is
 </div>
 
 <div class = "rightA">
-  It is important to ensure that the question is correctly framed to address the problem. For example, are we really interested in 'how much money is this new policy likely to save?', or should we be asking 'how certain can we that this policy would save more than &#163;x?'.  
+It is important to ensure that the question is correctly framed to address the problem. For example, are we really interested in 'how much money is this new policy likely to save?', or should we be asking 'how certain can we that this policy would save more than &#163;x?'.  
 </div>
 
 <br>
 
 <div class = "rightA">
-  As well as clearly defining the question, we should also ensure that any important detailed questions to support the analysis are appropriately thought through. For example, are we interested in uncertainty on a calendar year or financial year basis? 
+As well as clearly defining the question, we should also ensure that any important detailed questions to support the analysis are appropriately thought through. For example, are we interested in uncertainty on a calendar year or financial year basis? 
+</div>
+
+<div class = "rightA">
+You may also want to jointly identify sources of uncertainty that are so deep that little or nothing can be said quantitatively about their impact on the outcome. An example might be the impact of a natural disaster on a particular policy. Deep uncertainties can have major implications for decision making, and may call for a descriptive approach to the analysis and presentation of options. 
 </div>
 
 <div class = "leftB">
-  Identify the important details
+Identify the important details
 </div>
 
-<br><br>
-
-
-<div class = "rightA">
-  Once the key questions have been agreed, analysts and decision-makers should discuss how the outputs will be used. Understanding the role of the analysis in the decision-making process will help to inform which uncertainty techniques are appropriate and proportionate. 
-</div>
+<br>
 
 <div class = "rightA">
-  It is also important to jointly identify sources of uncertainty that are so deep that little or nothing can be said quantitatively about their impact on the policy outcome. An example might be the impact of a natural disaster on a particular policy. Deep uncertainties can have major implications for decision-making, and may call for a descriptive approach to the analysis and presentation of options.
+Once the key questions have been agreed, analysts and decision-makers should discuss how the outputs will be used. Understanding the role of the analysis in the decision-making process will help to inform which uncertainty techniques are appropriate and proportionate. 
 </div>
 
 <div style="clear: both;"></div>
@@ -156,7 +151,7 @@ Discuss the role for the analysis
 </div>
 
 <div class = "rightA">
-Will the policy decision be  based purely on the results of the analysis, or is it just one of a wider set of considerations informing the decision? The more influential the analysis is, the more important it is to build in robust uncertainty analysis.
+Will the decision be based purely on the results of the analysis, or is it just one of a wider set of considerations informing the decision? The more influential the analysis is, the more important it is to build in robust uncertainty analysis.
 </div>
 
 <br>
@@ -183,7 +178,7 @@ knitr::include_graphics("images/Outputs_use.png")
 
 <div style="clear: both;"></div>
 
-## What information do we need from the decision maker to include uncertainty analysis at the right points?
+## Work with the decision maker to inform their decision at the right time
 
 <div style="clear: both;"></div>
 
@@ -200,7 +195,7 @@ We can help the decision-maker to understand how information about the uncertain
 </div>
 
 <div class = "rightA">
-We can assess the impact of uncertainty using many different techniques. Not all will be appropriate for a given piece of analysis. A poor choice of technique may even give misleading results. For example, if there are many sources of uncertainty, the use of 95% confidence intervals to describe just one limited part of this uncertainty may be misleading, and modelling a range of described scenarios may be more appropriate. Appropriate presentation, such as rounding, is equally important to avoid spurious accuracy (covered further in the [Presenting and communicating uncertainty](https://rosiea1.github.io/UncertaintyWeb/chapter_4.html) section).  
+We can assess the impact of uncertainty using many different techniques. Not all will be appropriate for a given piece of analysis. A poor choice of technique may even give misleading results. For example, if there are many sources of uncertainty, the use of 95% confidence intervals to describe just one limited part of this uncertainty may be misleading, and modelling a range of described scenarios may be more appropriate. Appropriate presentation, such as rounding, is equally important to avoid spurious accuracy and impling better precision than is actually the case. Communication is covered further in the [Presenting and communicating uncertainty](https://rosiea1.github.io/UncertaintyWeb/chapter_4.html) section.  
 </div>
 
 <div class = "leftB">

@@ -43,8 +43,9 @@ There is a difference between uncertainty and risk; risk typically refers to the
 </div>
 
 <div class = "rightA">
-Taking account of uncertainty – and being seen to do so – is important for public trust. We must not pretend that the consequences of a policy or decision are certain: they are always uncertain to some degree. For each option, a range of outcomes are possible. Implying certainty about one particular   outcome can damage public trust when things turn out differently.
+Taking account of uncertainty – and being seen to do so – is important for public trust. We must not pretend that the consequences of a policy or decision are certain: they are always uncertain to some degree. For each option, a range of outcomes are possible. Implying certainty about one particular outcome can damage public trust when things turn out differently.
 </div>
+
 
 <div class = "leftB">
 Why does it matter?
@@ -67,11 +68,11 @@ In response, the levees were built to handle a flood of 51 feet
 </div>
 
 <div class = "rightA">
-The actual flood level was 54 feet
+The actual flood level was 54 feet.
 </div>
 
 <div class = "rightA">
-Had the NWS communicated their uncertainty (+/- 9 feet) the several $billion damages could have been avoided
+Had the NWS communicated their uncertainty (+/- 9 feet) the several $billion damages as well as the huge personal impact could have been avoided.
 </div>
 
 <div style="clear: both;"></div>
@@ -93,31 +94,10 @@ comb2pngs(c(png1_dest, png2_dest))
 
 
 ```
-<div class = "leftB">
-Is this toolkit for you?
-</div>
+
 
 <div class = "rightA">
-This toolkit is aimed at all analysts, whether you are new to the Government or an experienced analyst looking to develop the way you communicate uncertainty to stakeholders. 
-</div>
-
-<div class = "rightA">
-This document sits alongside the Aqua Book guidance on quality analysis. The Aqua Book should be read first as it describes the principles of uncertainty analysis and the processes that should be used in considering it. This is a supplementary document providing additional information for identifying, estimating and communicating uncertainty in analysis to support decisions and decision-makers.  
-</div>
-
-<div class = "rightA">
-We have also provided a [one-page summary](https://rosiea1.github.io/UncertaintyWeb/exec.html) of key messages for analysts to be shared with decision-makers.
-</div>
-
-<div class = "rightA">
-1. Agreeing how uncertainty should be used to help answer the question
-2. Defining and identifying uncertainty
-3. Understanding and measuring uncertainty
-4. Presenting and communicating uncertainty
-</div>
-
-<div class = "leftB">
-Toolkit contents
+This toolkit contains the following chapters:
 </div>
 
 <div class = "rightA">
@@ -125,7 +105,7 @@ Before conducting any uncertainty analysis, it is important to check that you un
 </div>
 
 <div class = "leftB">
-1. Agreeing how uncertainty should be used to help answer the question
+1. Jointly agreeing how uncertainty should be used
 </div>
 
 <div class = "rightA">
@@ -133,7 +113,7 @@ Considering the whole system that influences your analysis helps identify all po
 </div>
 
 <div class = "leftB">
-2. Defining and Identifying Uncertainty
+2. Defining and identifying uncertainty
 </div>
 
 <div class = "rightA">
@@ -141,7 +121,7 @@ Before conducting uncertainty analysis, you should consider the range of possibl
 </div>
 
 <div class = "leftB">
-3. Understanding and Measuring Uncertainty
+3. Understanding and measuring uncertainty
 </div>
 
 <div class = "rightA">
