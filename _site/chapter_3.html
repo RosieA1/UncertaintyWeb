@@ -518,35 +518,12 @@ float: centre;
 colour: white;
 }
 
-.fullBoxBlue{
-background-color:#AFEEEE; 
-border-radius: 5px; 
-padding: 20px;
-width: 100%;
-}
-
-.halfBoxBlueLeft{
-background-color:#AFEEEE; 
-border-radius: 2px; 
-padding: 20px;
-width: 48%;
-float: left;
-}
-
-.halfBoxBlueRight{
-background-color:#AFEEEE; 
-border-radius: 2px; 
-padding: 20px;
-width: 48%;
-float: right;
-}
-
 </style>
 <div id="understanding-and-measuring-uncertainty" class="section level1">
 <h1>4. Understanding and Measuring Uncertainty</h1>
 <p><br></p>
 <div class="rightA">
-<p>At this stage you should have considered where the uncertainties lie. You will now need to consider whether it is possible to quantify this uncertainty.</p>
+<p>At this stage you should have considered where the uncertainties lie. You will now need to consider whether it is possible and appropriate to quantify this uncertainty. In a highly uncertain context, detailed assessment of data-driven uncertainty may not be worthwhile. This is an analytical judgement to be made in light of the full consideration of sources of uncertainty.</p>
 </div>
 <div class="rightA">
 <p>This section presents some approaches at a high level then in more detail for quantifying and measuring the uncertainty in your analysis.</p>
@@ -555,8 +532,8 @@ float: right;
 <div style="clear: both;">
 
 </div>
-<div id="general-approaches-for-quantifying-uncertainty-in-an-input-parameter" class="section level2">
-<h2>General approaches for quantifying uncertainty in an input parameter</h2>
+<div id="quantifying-uncertainty-in-inputs" class="section level2">
+<h2>Quantifying uncertainty in inputs</h2>
 <div style="clear: both;">
 
 </div>
@@ -569,16 +546,13 @@ float: right;
 <p>We have highlighted ways to think about the uncertainty coming from specific sources. We now bring this together into approaches that can be applied to understand the size and distribution of these uncertainties and how you might include this information in your analysis. In most cases, the approach to uncertainty quantification is limited by the data and time available to you, though you should also consider where the major sources of uncertainty are in your analysis and pay most attention to these.</p>
 </div>
 <div class="rightA">
-<p>When considering uncertainty in input data, you should think about whether the data being used was gathered for an alternative purpose and if it has been maipulated and how you can adjust or account for this. Accompanying data descriptions (or a quick exploration of the source data if these don’t exist) can be helpful in understanding data limitations of the data and whether any adjustments made could conflict with or bias your analysis. Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertainty.</p>
-</div>
-<div class="rightA">
 <p>In addition, the following approaches can be useful in understanding the size and distribution of the uncertainties in your analytical inputs.</p>
 </div>
 <div style="clear: both;">
 
 </div>
 <div class="leftB">
-<p>Consider discrete and continuous distributions</p>
+<p>Consider discrete and continuous distributions…</p>
 </div>
 <div class="rightA">
 <p>A probability distribution describes the probability of occurrences of different outcomes. Generally, there are two types of probability distribution; discrete distributions and continuous distributions.</p>
@@ -587,16 +561,16 @@ float: right;
 <p>Consider whether you have information about the underlying distribution of the parameter. Often data from other sources will be provided with confidence intervals (or standard errors, etc) that can be used to quantify uncertainty. Where such information is not provided, you may be able to approximate these with knowledge of the sample size and design.</p>
 </div>
 <div class="leftB">
-<p>Data sources may include confidence intervals</p>
+<p>data sources may include confidence intervals…</p>
 </div>
 <div class="rightA">
 <p>Distributions can also be created using what you know about error from previous models. Consider the performance of previous forecasts against outturn results. The distribution of previous errors can provide the uncertainty distribution for the current forecast. Additionally, you might be able to use one source to validate another or to help estimate the uncertainty in the original source.</p>
 </div>
 <div class="leftB">
-<p>Analyse past model performance to create distribution</p>
+<p>or analysis of past model performance to create distributions…</p>
 </div>
 <div class="rightA">
-<p>If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, the Delphi Method (a structured facilitation method, which relies on a panel of experts to build a combined judgement, for example, about a particular number) can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.</p>
+<p>If no quantitative data on the underlying population is available, you may be able to elicit this information from experts . For example, using the Delphi Method, a structured facilitation method, which relies on a panel of experts to build a combined judgement, for example, about a particular number. This method can be used to ask a panel of experts to estimate the range of uncertainty and use the aggregated responses to produce a distribution.</p>
 </div>
 <div class="leftB">
 <p>Without quantitative data, use expert judgement</p>
@@ -605,22 +579,22 @@ float: right;
 <p>A range is similar to a probability distribution, in that it considers the possible outcomes but does not consider the probability of each outcome occurring. If there are data or resource limitations a range can be a simple way to illustrate the uncertainty in a parameter.</p>
 </div>
 <div class="leftB">
-<p>Ranges can work in absence of distributions</p>
+<p>Ranges can work in absence of distributions…</p>
 </div>
 <div class="rightA">
 <p>Historical data can be used to quantify a range. Consider how the parameter has changed over a suitable time period. The maximum and minimum values could provide a sensible range. When using historical data be aware that you will only be able to assess ‘business as usual’ uncertainty. If there are future shocks to the system this may fall outside your historic range.</p>
 </div>
 <div class="leftB">
-<p>Historical data can inform the range</p>
+<p>Historical data can inform the range,</p>
 </div>
 <div class="rightA">
 <p>For parameters that have been the subject of academic studies a literature review can be used to create a range. Consider why different studies may result in different outcomes, and which studies are the most suitable for what you are trying to measure.</p>
 </div>
 <div class="leftB">
-<p>You can also use a literature review</p>
+<p>You can also use a literature review…</p>
 </div>
 <div class="rightA">
-<p>If no quantitative data is available, consider whether there are relevant policy constraints that will limit your range. Judgement from experts can be also be used to create sensible ranges.</p>
+<p>If no quantitative data is available, consider whether there are relevant policy/operational constraints that will limit your range. Judgement from experts can be also be used to create sensible ranges.</p>
 </div>
 <div class="leftB">
 <p>Expert steers can inform the range</p>
@@ -629,7 +603,7 @@ float: right;
 <p>In some situations, it is not possible to create a probability distribution or a range. In such cases, make a qualitative assessment of uncertainty. This is still useful to analysts and customers to consider the magnitude of uncertainty.</p>
 </div>
 <div class="rightA">
-<p>You can make qualitative assessments yourself, and by using expert judgement. A simple approach is to Red Amber Green (RAG) rate the likelihood and impact of uncertainty in your parameters. This qualitative assessment should be considered when thinking about the analytical results. If data is categorised as highly uncertain and having a large impact on results, then final outputs will be subject to large uncertainty. Care in presentation is needed when using these more qualitative methods, however, as it’s potentially easier for decision makers to misunderstand the relevance of qualitative assessments of uncertainty for their decision as compared to quantitative assessments. It is particularly important to explain the impact of uncertainty on the analytical result and the decision to be made when using these types of qualitative assessment.</p>
+<p>You can make qualitative assessments yourself, and by using expert judgement. A simple approach is to RAG rate the likelihood and impact of uncertainty in your parameters. This qualitative assessment should be considered when thinking about the analytical results. If data is categorised as highly uncertain and having a large impact on results, then final outputs will be subject to large uncertainty. Care in presentation is needed when using these more qualitative methods, however, as it’s potentially easier for decision makers to misunderstand the relevance of qualitative assessments of uncertainty for their decision compared to quantitative assessments. It is particularly important to explain the impact of uncertainty on the analytical result and the decision to be made when using these types of qualitative assessment.</p>
 </div>
 <div class="leftB">
 <p>RAG rate your parameters</p>
@@ -665,9 +639,8 @@ float: right;
 <p>Now that we have explored how to assess uncertainties in individual analytical inputs, we turn to commonly used techniques for analysing overall uncertainty in analytical outputs, moving from approaches to use when we have a good numerical understanding of input uncertainties, though to approaches which can be used when we know less about how input uncertainties are quantified.</p>
 </div>
 <p><br><br></p>
-</div>
-<div id="monte-carlo-techniques" class="section level2">
-<h2>Monte Carlo Techniques</h2>
+<div id="monte-carlo-techniques" class="section level3">
+<h3>Monte Carlo Techniques</h3>
 <div style="clear: both;">
 
 </div>
@@ -678,7 +651,6 @@ float: right;
 <p><br><br></p>
 <p>If all significant sources of uncertainty can be quantified, along with the correlations between them, then probabilistic methods can provide a picture of the range of possible outcomes and the likelihood of each.</p>
 <p><br><br></p>
-<div class="fullBoxBlue">
 <b>Outline:</b> <br><br> The basic process for a Monte Carlo simulation is to:
 <ol>
 <li>
@@ -700,10 +672,8 @@ Repeat steps 3) and 4) many (i.e. thousands of) times
 Analyse the distribution of the resulting outputs
 </li>
 </ol>
-<br><br> This should be repeated until the key outputs are stable and reproducible at the level of rounding that will be used when communicating the results
-</div>
+<p><br><br> This should be repeated until the key outputs are stable and reproducible at the level of rounding that will be used when communicating the results</p>
 <p><br><br></p>
-<div class="halfBoxBlueLeft">
 <b>Advantages:</b> <br><br>
 <ul>
 <li>
@@ -719,8 +689,6 @@ Produces a visual representation of the range of possible outcomes, that may aid
 Can be used to assess the impact of removing or reducing a source of uncertainty
 </li>
 </ul>
-</div>
-<div class="halfBoxBlueRight">
 <b>Disadvantages:</b> <br><br>
 <ul>
 <li>
@@ -739,13 +707,11 @@ Can be computationally expensive
 Outputs may not be reproducible if insufficient iterations are used (effectively introducing further uncertainty to the model)
 </li>
 </ul>
-</div>
 <p><br><br></p>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
-<div class="fullBoxBlue">
 <b>Example:</b> <br><br>
 <ul>
 <li>
@@ -761,13 +727,12 @@ Estimate the uncertainty around assumptions used in policy costings
 An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided <a href="https://github.com/RosieA1/UncertaintyWeb/tree/master/Monte%20Carlo%20template">here</a> </b>
 </li>
 </ul>
-</div>
 <p><br><br></p>
 <p><img src="images/Monte_carlo.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br><br></p>
 </div>
-<div id="convolution" class="section level2">
-<h2>Convolution</h2>
+<div id="convolution" class="section level3">
+<h3>Convolution</h3>
 <div style="clear: both;">
 
 </div>
@@ -778,11 +743,10 @@ An example of how MoJ use Monte Carlo analysis to assess uncertainty is provided
 <p><br><br></p>
 <p>If there are a small number of uncertainty sources, then it may be possible to combine them mathematically, which can be quicker than using probabilistic methods</p>
 <p><br><br></p>
-<div class="fullBoxBlue">
-<p><b>Outline:</b> <br><br> In principle uncertainty distributions can be combined to give an exact distribution for the resulting overall uncertainty (known as convolution). <br><br> Consider rolling two dice - the value of each follows a discrete uniform distribution from 1 to 6. If we wanted to know the sum of the two dice, we can combine these uniform distributions to show that the resulting probability profile follows a triangular distribution from 2 to 12. <br><br> This avoids the randomness of probabilistic approaches. However this method tends to get very complicated once more than a few uncertainties are involved, and probabilistic methods may be easier.</p>
+<b>Outline:</b> <br><br> In principle uncertainty distributions can be combined to give an exact distribution for the resulting overall uncertainty (known as convolution). <br><br> Consider rolling two dice - the value of each follows a discrete uniform distribution from 1 to 6. If we wanted to know the sum of the two dice, we can combine these uniform distributions to show that the resulting probability profile follows a triangular distribution from 2 to 12. <br><br> This avoids the randomness of probabilistic approaches. However this method tends to get very complicated once more than a few uncertainties are involved, and probabilistic methods may be easier.
 </div>
 <p><br><br></p>
-<div class="halfBoxBlueLeft">
+<div class = "halfBoxBlueLeft">
 <b>Advantages:</b> <br><br>
 <ul>
 <li>
@@ -792,8 +756,6 @@ Deterministic, so outputs are reproducible and quick to generate
 Works with any input probability distributions (don’t need to assume normality)
 </li>
 </ul>
-</div>
-<div class="halfBoxBlueRight">
 <b>Disadvantages:</b> <br><br>
 <ul>
 <li>
@@ -806,22 +768,19 @@ Generally only feasible if the distributions are combined using simple mathemati
 Assumes that each uncertainty is independent (or correlations must be accounted for)
 </li>
 </ul>
-</div>
 <p><br><br></p>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
-<div class="fullBoxBlue">
 <p><b>Example:</b> <br><br> Any situation where you’re combining two probability distributions using simple mathematical operations (addition, subtraction, multiplication)</p>
-</div>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
 </div>
-<div id="summing-uncorrelated-uncertainties-in-quadrature" class="section level2">
-<h2>Summing Uncorrelated Uncertainties in Quadrature</h2>
+<div id="summing-uncorrelated-uncertainties-in-quadrature" class="section level3">
+<h3>Summing Uncorrelated Uncertainties in Quadrature</h3>
 <div style="clear: both;">
 
 </div>
@@ -832,11 +791,8 @@ Assumes that each uncertainty is independent (or correlations must be accounted 
 <p><br><br></p>
 <p>If multiple components need to be summed, and the uncertainty in each can be assumed to be normal and uncorrelated, then summing in quadrature is a useful shortcut for estimating the total uncertainty</p>
 <p><br><br></p>
-<div class="fullBoxBlue">
 <p><b>Outline:</b> <br><br> If the model is simply summing a number of output components (e.g. a number of different funding forecasts), and the uncertainty is known in each, then the uncertainty in the sum of those values can be given by the square root of the sum of the individual uncertainties squared (assuming that all errors are independent and normally distributed).</p>
-</div>
 <p><br><br></p>
-<div class="halfBoxBlueLeft">
 <b>Advantages:</b> <br><br>
 <ul>
 <li>
@@ -846,8 +802,6 @@ Very simple to calculate
 Can include uncertainties from all sources
 </li>
 </ul>
-</div>
-<div class="halfBoxBlueRight">
 <b>Disadvantages:</b> <br><br>
 <ul>
 <li>
@@ -857,22 +811,68 @@ Only applicable for models where uncertainties can simply be summed - more compl
 Only valid if the individual uncertainty distributions are independent and normally distributed
 </li>
 </ul>
-</div>
 <p><br><br></p>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
-<div class="fullBoxBlue">
 <p><b>Example:</b> <br><br> Useful for financial forecasting, where individual budgets and their uncertainty has been assessed, and these must be summed to give the overall budget. In this situation assuming independence between budget over/underspends is often reasonable. <br><br> Also useful for quickly estimating the uncertainty when changing the timeframe of a forecast e.g. if you have a forecast by month (with quantified uncertainty), then this is quick way of estimating the uncertainty in the annual totals – assuming there is no correlation between the uncertainty from one month to the next.</p>
-</div>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
 </div>
-<div id="focussing-on-the-dominant-uncertainty" class="section level2">
-<h2>Focussing on the Dominant Uncertainty</h2>
+<div id="using-past-variance-to-estimate-future-uncertainty" class="section level3">
+<h3>Using Past Variance to Estimate Future Uncertainty</h3>
+<div style="clear: both;">
+
+</div>
+<hr>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p>If a forecast has been produced repeatedly over many years, it may be possible to use the accuracy of all the previous forecasts to estimate the uncertainty in the new forecast</p>
+<p><br><br></p>
+<p><b>Outline:</b> <br><br> Start by looking at the variance of all of the previous forecasts after one time period, and create a distribution of these variances. This distribution can be used to estimate the uncertainty of the new forecast after one time period. <br><br> Repeat for the variance at each subsequent time period to produce e.g. a fan forecast (smoothing if needed).</p>
+<p><br><br></p>
+<b>Advantages:</b> <br><br>
+<ul>
+<li>
+Captures all sources of uncertainty
+</li>
+<li>
+Avoids the need to identify, quantify and combine individual sources of uncertainty
+</li>
+<li>
+Based on real-world performance, so avoids optimism/pessimism bias (the estimated uncertainty may be asymmetric as a result)
+</li>
+</ul>
+<b>Disadvantages:</b> <br><br>
+<ul>
+<li>
+Needs the system to be stable over time (i.e. there’s no reason to think that the system is more/less predictable than in past years).
+</li>
+<li>
+Needs the approach to forecasting to have been consistent over the years (i.e. there’s no reason to think that our forecasts will be more/less accurate than in previous years).
+</li>
+<li>
+The forecasts must have been produced for a sufficiently long time so that we have enough historical data on the variance to capture the full range of plausible variances
+</li>
+</ul>
+<p><br><br></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+<p><b>Example:</b> <br><br> <b><a href="https://rosiea1.github.io/UncertaintyWeb/case_studies.html#estimating_uncertainty_in_prison_population_projections">MoJ prison population forecasting</a></b></p>
+<div style="clear: both;">
+
+</div>
+<p><br><br></p>
+</div>
+<div id="focussing-on-the-dominant-uncertainty" class="section level3">
+<h3>Focussing on the Dominant Uncertainty</h3>
 <div style="clear: both;">
 
 </div>
@@ -883,11 +883,8 @@ Only valid if the individual uncertainty distributions are independent and norma
 <p><br><br></p>
 <p>If one source of uncertainty has a much greater impact than all the others, then the uncertainty due to this one factor might be a reasonable proxy for the overall uncertainty</p>
 <p><br><br></p>
-<div class="fullBoxBlue">
 <p><b>Outline:</b> <br><br> Consider all the sources of uncertainty affecting the analysis and quantify the impact that each has on the overall uncertainty (even if this is approximate or subjective – see section on ‘Defining and Identifying Uncertainty’). If one source has substantially more impact that the others, then simply looking at the uncertainty in this one factor might be a pragmatic approximation for the overall uncertainty measure, ignoring other sources. <br><br> This is not a robust way of estimating overall uncertainty, as it ignores all but one source. It should only be used if previous techniques are inappropriate, and there is genuinely one source of uncertainty that has an impact that is an order of magnitude larger than the others. However, when time is tight this may be a pragmatic way of estimating uncertainty.</p>
-</div>
 <p><br><br></p>
-<div class="halfBoxBlueLeft">
 <b>Advantages:</b> <br><br>
 <ul>
 <li>
@@ -900,8 +897,6 @@ No need to combine uncertainties
 Focusses attention on the key driver of uncertainty, avoiding unnecessary discussion of relatively minor elements
 </li>
 </ul>
-</div>
-<div class="halfBoxBlueRight">
 <b>Disadvantages:</b> <br><br>
 <ul>
 <li>
@@ -911,21 +906,19 @@ Will always underestimate the overall uncertainty as most sources of uncertainty
 Can dramatically underestimate uncertainty if the source of uncertainty assumed to be dominant isn’t as dominant as believed
 </li>
 </ul>
-</div>
 <p><br><br></p>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
-<div class="fullBoxBlue">
 <p><b>Example:</b> <br><br> The Accuracy Tracking Tool <b>link to DfE Accuracy tracking tool</b> can be used to estimate the residual uncertainty once the dominant uncertainty has been modelled. This tool assesses the accuracy of different forecast elements and allows you to see the percentage which both the dominant and residual uncertainty contribute to the total error.</p>
-</div>
 <p><br><br></p>
 <p><img src="images/Dominant.png" width="100%" style="display: block; margin: auto;" /></p>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
+</div>
 </div>
 <div id="scenario-analysis" class="section level2">
 <h2>Scenario Analysis</h2>
@@ -937,16 +930,15 @@ Can dramatically underestimate uncertainty if the source of uncertainty assumed 
 
 </div>
 <p><br></p>
-<p>If there are many sources of uncertainty with complex correlations between them, then it may be more sensible to use a set of scenarios to illustrate the range of plausible outcomes.</p>
+<p>If there are many sources of uncertainty with complex correlations between them and the likelihood of them occurring is unknown, then it may be more sensible to use a set of scenarios to illustrate the range of plausible outcomes.</p>
 <p><br><br></p>
-<div class="fullBoxBlue">
 <b>Outline:</b>
 <ul>
 <li>
 Identify the individual sources of uncertainty, and the range of possible values for each.
 </li>
 <li>
-Create a set of coherent scenarios, setting each source of uncertainty to a value that could realistically occur in parallel with the others (e.g. a crimewave is unlikely to occur if the economy is booming).
+Create a set of coherent scenarios (jointly agreed with the decision maker), setting each source of uncertainty to a value that could realistically occur in parallel with the others (e.g. a crimewave is unlikely to occur if the economy is booming).
 </li>
 <li>
 Try to ensure that the chosen scenarios cover the full range of possible outcomes, from highly optimistic to highly pessimistic, with equal attention given to each to avoid bias in presenting the results.
@@ -955,9 +947,7 @@ Try to ensure that the chosen scenarios cover the full range of possible outcome
 Then quantify the overall uncertainty in each scenario, combining uncertainties using other methods in this section (the benefit is that this combining can be done manually for a small number of specific cases, rather than having to formulate the combinations mathematically for all possible inputs).
 </li>
 </ul>
-</div>
 <p><br><br></p>
-<div class="halfBoxBlueLeft">
 <b>Advantages:</b> <br><br>
 <ul>
 <li>
@@ -970,8 +960,6 @@ Gives ‘real-world’ explanations to the range of possible outcomes, which may
 Can include low-probability, high-impact events (i.e. system shocks) without needing to define their probability.
 </li>
 </ul>
-</div>
-<div class="halfBoxBlueRight">
 <b>Disadvantages:</b> <br><br>
 <ul>
 <li>
@@ -987,79 +975,18 @@ Provides no information about the likelihood of each scenario occurring
 Needs input from a range of knowledgeable people
 </li>
 </ul>
-</div>
 <p><br><br></p>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
-<div class="fullBoxBlue">
-<p><b>Example:</b> <br><br> Forecasting where a range of policy options are being considered, particularly where the likelihood of an event occurring is unknown, for example early analysis on Brexit scenarios</p>
-</div>
+<p><b>Example:</b> <br><br> Forecasting where a range of policy options are being considered, particularly where the likelihood of an event occurring is unknown, for example early analysis on Exiting the EU scenarios</p>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
-</div>
-<div id="using-past-variance-to-estimate-future-uncertainty" class="section level2">
-<h2>Using Past Variance to Estimate Future Uncertainty</h2>
-<div style="clear: both;">
-
-</div>
-<hr>
-<div style="clear: both;">
-
-</div>
-<p><br><br></p>
-<p>If a forecast has been produced repeatedly over many years, it may be possible to use the accuracy of all the previous forecasts to estimate the uncertainty in the new forecast</p>
-<p><br><br></p>
-<div class="fullBoxBlue">
-<p><b>Outline:</b> <br><br> Start by looking at the variance of all of the previous forecasts after one time period, and create a distribution of these variances. This distribution can be used to estimate the uncertainty of the new forecast after one time period. <br><br> Repeat for the variance at each subsequent time period to produce e.g. a fan forecast (smoothing if needed).</p>
-</div>
-<p><br><br></p>
-<div class="halfBoxBlueLeft">
-<b>Advantages:</b> <br><br>
-<ul>
-<li>
-Captures all sources of uncertainty
-</li>
-<li>
-Avoids the need to identify, quantify and combine individual sources of uncertainty
-</li>
-<li>
-Based on real-world performance, so avoids optimism/pessimism bias (the estimated uncertainty may be asymmetric as a result)
-</li>
-</ul>
-</div>
-<div class="halfBoxBlueRight">
-<b>Disadvantages:</b> <br><br>
-<ul>
-<li>
-Needs the system to be stable over time (i.e. there’s no reason to think that the system is more/less predictable than in past years).
-</li>
-<li>
-Needs the approach to forecasting to have been consistent over the years (i.e. there’s no reason to think that our forecasts will be more/less accurate than in previous years).
-</li>
-<li>
-The forecasts must have been produced for a sufficiently long time so that we have enough historical data on the variance to capture the full range of plausible variances
-</li>
-</ul>
-</div>
-<p><br><br></p>
-<div style="clear: both;">
-
-</div>
-<p><br><br></p>
-<div class="fullBoxBlue">
-<p><b>Example:</b> <br><br> <b><a href="https://rosiea1.github.io/UncertaintyWeb/case_studies.html#estimating_uncertainty_in_prison_population_projections">MoJ prison population forecasting</a></b></p>
-</div>
-<div style="clear: both;">
-
-</div>
-<p><br><br></p>
-</div>
-<div id="judgement" class="section level2">
-<h2>Judgement</h2>
+<div id="judgement" class="section level3">
+<h3>Judgement</h3>
 <div style="clear: both;">
 
 </div>
@@ -1070,11 +997,8 @@ The forecasts must have been produced for a sufficiently long time so that we ha
 <p><br><br></p>
 <p>If the previous methods are unfeasible then you could make a subjective estimate of the overall uncertainty using expert elicitation techniques.</p>
 <p><br><br></p>
-<div class="fullBoxBlue">
 <p><b>Outline:</b> <br><br> If the previous methods are unfeasible, then adding a subjective estimate of the overall of uncertainty is an option. Where there is too little information or time to do a quantified analysis, it may be better to provide a judgement on the uncertainty than nothing at all. <br><br> Ideally this should be a group decision, using formal expert elicitation methods (e.g. Delphi) to avoid group-think and arrive at a consensus, agreement, or an average (depending on the technique used). If formal expert elicitation isn’t possible, then the judgement of an individual is better than nothing, though less rigorous. <br><br> However the uncertainty is estimated, make sure that it is clear that it is a subjective opinion rather than results of analysis to prevent it being misused.</p>
-</div>
 <p><br><br></p>
-<div class="halfBoxBlueLeft">
 <b>Advantages:</b> <br><br>
 <ul>
 <li>
@@ -1093,8 +1017,6 @@ Do not need to consider all sources of uncertainty individually
 Do not need to mathematically combine uncertainties
 </li>
 </ul>
-</div>
-<div class="halfBoxBlueRight">
 <b>Disadvantages:</b> <br><br>
 <ul>
 <li>
@@ -1104,21 +1026,19 @@ Highly subjective
 Needs a group of knowledgeable experts, who can reasonably be expected to have a grasp of the range of possible outcomes
 </li>
 </ul>
-</div>
 <p><br><br></p>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
-<div class="fullBoxBlue">
 <p><b>Example:</b> <br><br> Providing context around a high priority figure that needs to be submitted quickly. <br><br> Analysis based on a data source of unknown reliability <br><br> Analysis where the expected range of results would lead to the same outcome</p>
-</div>
 <p><br><br></p>
 <p><img src="images/Judgement.png" width="100%" style="display: block; margin: auto;" /></p>
 <div style="clear: both;">
 
 </div>
 <p><br><br></p>
+</div>
 </div>
 <div id="quality-assuring-uncertainty-analysis-and-accounting-for-wider-uncertainties" class="section level2">
 <h2>Quality assuring uncertainty analysis and accounting for wider uncertainties</h2>

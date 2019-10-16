@@ -101,7 +101,7 @@ We now consider how to choose <i>what</i> messages about uncertainty we should c
 <br>
 
 <div class = "rightA">
-The analysis of uncertainty is often complex. We need to choose carefully which messages about uncertainty to communicate to decision makers – ensuring they receive enough information to understand the key points, without receiving so much that it clouds the central issue. <br><br> You should also consider the onward communication of your message to ensure that when your work is passed on to others its core message and integrity are maintained.
+The analysis of uncertainty is often complex. We need to choose carefully the key messages about uncertainty to communicate to decision makers – ensuring they receive enough information to understand the key points, without receiving so much that it clouds the central issue. <br><br> You should also consider the onward communication of your message to ensure that when your work is passed on to others its core message and integrity are maintained. Consider what decision makers <i>must</i>, <i>should</i>, or <i>could</i> know.
 </div>
 
 ```{r fig.align="center", echo=FALSE}
@@ -110,13 +110,6 @@ knitr::include_graphics("images/Odd_tulip.png")
 
 ```
 
-<div style="clear: both;"></div>
-
-## Uncertainty improves the quality of the analytical communication
-
-<div style="clear: both;"></div>
-
-<hr>
 
 <div style="clear: both;"></div>
 
@@ -140,7 +133,7 @@ If uncertainty means that a straightforward conclusion is not possible, focus yo
 
 <div style="clear: both;"></div>
 
-## What is the key message?
+## Presenting caveats
 
 <div style="clear: both;"></div>
 
@@ -155,11 +148,11 @@ If most uncertainty is quantified, then present this prominently
 </div>
 
 <div class = "rightA">
-If most of the overall uncertainty has been quantified, and you are confident that there are no unknowns which are likely to have a major impact on the results then this should be the most prominent message. Discussion of the unquantified uncertainties and risks should be included but should be positioned so that it doesn’t reduce confidence in the main results when this is not appropriate.
+If most of the overall uncertainty has been quantified, and you are confident that there are no unknowns which are likely to have a major impact on the results then this should be the most prominent message. Discussion of the unquantified uncertainties and risks can be included but should be positioned so that it doesn’t reduce confidence in the main results when this is not appropriate.
 </div>
 
 <div class = "rightA">
-If there are substantial unquantified uncertainties, then presenting the uncertainty that has been quantified without this important context will give a misleading impression of precision and underestimate the uncertainty. Do not present a range with incomplete coverage if you know that there are substantial uncertainties that are not accounted for in that range.
+If there are substantial unquantified uncertainties, then presenting the uncertainty that has been quantified without this important context will give a misleading impression of precision and underestimate the uncertainty. Do not present a range with incomplete coverage as final analysis if you know that there are substantial uncertainties that are not accounted for in that range.
 </div>
 
 <div class = "leftB"> 
@@ -171,7 +164,7 @@ If the largest source of uncertainty is the potential for a risk outside of the 
 </div>
 
 <div class = "rightA">
-Think about how caveats are presented. A long list is unhelpful, but two or three upfront that have the most impact on the results are likely to be more helpful and easily understood. You should explain what the caveats mean for decision makers who want to use the analysis, rather than simply setting out what they are.
+Think about how caveats are presented. A long list is unhelpful, but two or three upfront that have the most impact on the results are likely to be more helpful and easily understood. Consider which caveats have the greater impact on the final decision that is being made. You should explain what the caveats mean for decision makers who want to use the analysis, rather than simply setting out what they are.
 </div>
 
 <div class = "leftB"> 
@@ -191,14 +184,11 @@ Front load the important caveats and explain why they matter.
 <br>
 
 <div class = "leftB">
-Consider the audience when choosing appropriate communication methods
+Understand your audience when choosing appropriate communication methods
 </div>
 
 <div class = "rightA">
-People respond differently to different communication methods. We need to assess the intended audience to understand the best way to share information with them. The audience might be: 
-<ul><li> Analytical - may respond better to a technical explanation of the uncertainty </li>
-<li> Non-analytical - may respond better to non-technical language</li>
-<li> Mixed - a combination of both </li></ul>
+Before communicating your analysis you must consider who your audience is, why they should be interested in your work, what they know already, and what key message you need to convey to them to make their decision. People respond differently to different communication methods. It is good practice to always use Plain English, avoid analytical jargon with non analysts, and frame your results in terms of the decision being made and how it is useful for them. 
 </div>
 
 <div class = "rightA">
@@ -236,7 +226,7 @@ A good relationship with colleagues will minimise this risk. Work collaborativel
 <div style="clear: both;"></div>
 
 <div class = "rightA">
-Now you have determined what the message is you need to consider how to communicate with your decision makers. Firstly, think about how you will be communicating your results. Will this be via a written report, presentation, or an oral briefing with or without visuals? Any constraints on format may steer you to an approach.
+Now you have determined who your audience is and what the message is you need to consider how to communicate with your decision makers. Firstly, think about how you will be communicating your results. Will this be via a written report, presentation, or an oral briefing with or without visuals? Any constraints on format may steer you to an approach.
 </div>
 
 <div class = "rightA">
@@ -255,12 +245,20 @@ This section considers a range of approaches based on your understanding of the 
 
 <br>
 
-<div class = "leftB">
-Assess whether to describe uncertainty in words or attach figures
+<div clas = "leftB">
+Identify who your audience is
+</div>
+
+<div class = "rightA">
+As mentioned earlier, knowing who your audience is, what their interest is in this analysis, and how they interpret evidence will determine how you communicate. Test your communication with the audience, do they understand the key message from your prose or visualisations?
 </div>
 
 <div class = "rightA">
 How something is written has a major impact on how people perceive the uncertainty. [Research shows](https://www.tandfonline.com/doi/abs/10.1080/17457289.2018.1465061) that analysis is seen as less reliable if the outputs are conveyed only in words.  Numbers should be presented within a sentence if possible as this helps give context, making them easier to read and understand.
+</div>
+
+<div class = "leftB">
+Assess whether to describe uncertainty in words or attach figures
 </div>
 
 <div class = "rightA">
@@ -288,7 +286,7 @@ Use positive and negative framing
 </div>
 
 <div class = "rightA">
-There is no clear preference for choosing between probabilities and fractions (e.g. 10% probability, or 1 out of 10). Given this, [the usual preferences of the audience or the ‘norm’ within the organisation should be followed](https://www.annualreviews.org/doi/pdf/10.1146/annurev-statistics-010814-020148).
+Research shows that there is no clear preference for choosing between probabilities and fractions (e.g. 10% probability, or 1 out of 10). Given this, [the usual preferences of the audience or the ‘norm’ within the organisation should be followed](https://www.annualreviews.org/doi/pdf/10.1146/annurev-statistics-010814-020148). Note, that some people are more familiar with percentages than fractions or ratios.
 </div>
 
 <div class = "leftB">
@@ -331,12 +329,12 @@ Use ranges wherever possible
 Commissioners may request a ‘best estimate’ for ease of onward use, but you must consider the risks in providing this. Try to understand how they intend to use the analysis, so you can provide something that meets their needs while also acknowledging the uncertainty.
 </div>
 
-<div class = "rightA">
-Stating a range may be perceived as a uniform distribution across the range. Conversely, stating a range around a best estimate may be perceived as a triangular distribution (or Normal with analytical audiences). The output distribution could of course also be asymmetric or bi-modal. Consider which of these best reflects the actual uncertainty when deciding what to present. 
-</div>
-
 <div class = "leftB">
 Consider whether to include a ‘best estimate’ within the range
+</div>
+
+<div class = "rightA">
+Stating a range may be perceived as a uniform distribution across the range. Conversely, stating a range around a best estimate may be perceived as a triangular distribution (or Normal with analytical audiences). The output distribution could of course also be asymmetric or bi-modal. Consider which of these best reflects the actual uncertainty when deciding what to present. 
 </div>
 
 <div class = "rightA">
@@ -349,6 +347,14 @@ Choose appropriate confidence/prediction intervals and be clear
 
 <div class = "rightA">
 Be clear what confidence level you are using and ensure your audience understands what this means (avoiding precise statistical definitions if it will increase comprehension).
+</div>
+
+<div class = "rightA">
+People interpret visualisations differently. Always have a title with the key message, otherwise people may not have the time to interpret the visualisation or misinterpret the key message.
+</div>
+
+<div class = "leftB">
+Always label and pull out the key message from a visualisation
 </div>
 
 <div style="clear: both;"></div>
@@ -386,23 +392,23 @@ Some graph types cannot be used to show uncertainty clearly
 </div>
 
 <div class = "rightA">
-Some simple graphs
+Some simple graphs e.g. 
 <br>
 <i>Pie charts, donut charts, stacked charts</i>
 </div>
 
 <div class = "rightA">
-These charts may not always be useful when presenting uncertain analysis as they only show a single value for each data point. People can also find it difficult to compare angles or sizes of different sections.
+May not always be useful when presenting uncertain analysis as they only show a single value for each data point. People can also find it difficult to compare angles or sizes of different sections.
 </div>
 
 <div class = "rightA">
-More complex graphs
+Avoid more complex graphs e.g.
 <br>
 <i>Heat and Choropleth maps, Treemaps, Sankey diagrams</i>
 </div>
 
 <div class = "rightA">
-As a general rule, it can be difficult to communicate uncertainty in very information dense visualisations such as those above. There is not space to include the necessary extra information among the colours of heatmaps, the densely packed rectangles of Treemaps or the detailed flow lines of Sankey diagram.
+as it can be difficult to communicate uncertainty in very information dense visualisations. There is not space to include the necessary extra information among the colours of heatmaps, the densely packed rectangles of Treemaps or the detailed flow lines of Sankey diagram.
 </div>
 
 <div class = "rightA">
@@ -414,11 +420,7 @@ Decide what level of detail to include on uncertainty
 </div>
 
 <div class = "rightA">
-For representing numerical uncertainty, scatter plots with 2d error bars, line graphs with a range, bar or line graphs with error bars and single point graphs with error bars can be useful when representing an uncertain range. Box plots or box plot series can be useful when representing summary statistics. Probability (or Cumulative) Distribution functions are helpful if you have full knowledge of the distribution around a result. 
-</div>
-
-<div class = "rightA">
-For representing uncertainty due to alternative scenarios, multiple line graphs and descriptions in prose may be most helpful 
+For representing numerical uncertainty, scatter plots with 2-dimensional error bars, line graphs with a range, bar or line graphs with error bars and single point graphs with error bars can be useful when representing an uncertain range. Box plots or box plot series can be useful when representing summary statistics. Probability (or Cumulative) Distribution functions are helpful if you have full knowledge of the distribution around a result. 
 </div>
 
 <div class = "rightA">
@@ -442,24 +444,16 @@ Error bars are a simple way to illustrate a range around a data point
 </div>
 
 <div class = "rightA">
-Error bars can be added to bar graphs, line graphs and scatter graphs to illustrate a range around a central estimate, within which we expect the value to lie with a given probability.
+Error bars can be added to bar graphs, line graphs and scatter graphs to illustrate a range around a central estimate, within which we expect the value to lie with a given probability. Be aware that a non analytical audience may be less familiar with error bars.
 </div>
 
 <div style="clear: both;"></div>
-
-<div class = "leftB">
-Choose an appropriate probability level based on the context
-</div>
 
 <div class = "rightA">
 As referred to previously, consider the situation and decide on an appropriate level to display.  E.g., don’t apply 95% confidence/prediction intervals by default. 
 </div>
 
 <div style="clear: both;"></div>
-
-<div class = "leftB">
-Be clear about what the error bars represent
-</div>
 
 <div class = "rightA">
 State what probability the error bars represent, and describe in prose how the viewer should ‘read’ the error bar.
@@ -476,10 +470,6 @@ Error bars can be added easily to a data series or time series. However, if the 
 </div>
 
 <div style="clear: both;"></div>
-
-<div class = "leftB">
-2-dimensional error bars can be used where necessary 
-</div>
 
 <div class = "rightA">
 If the output data are 2-dimensional, then you can apply error bars in 2 dimensions. Be careful to ensure that the resulting graph does not become illegible due to clutter.
@@ -519,10 +509,6 @@ Box plots can help the audience understand the underlying distribution of possib
 
 <div style="clear: both;"></div>
 
-<div class = "leftB">
-A series of box plots can be used to compare distributions 
-</div>
-
 <div class = "rightA">
 Box plots can be arranged in parallel to show the distributions for a range of measures, and can help compare the different shapes.
 </div>
@@ -534,7 +520,7 @@ Think about whether the audience will be familiar with the format
 </div>
 
 <div class = "rightA">
-Box plots may not be widely understood by non-analysts, so think carefully about whether the added information will be effective, or whether a simple range would be sufficient. A labelled example can be used to help the audience interpret the format.
+Box plots may not be widely understood by non-analysts, so think carefully about whether the added information will be effective, or whether a simple range would be sufficient. Remember that most non analysts do not use the terms mean, median, inter quartile range frequently and may not know what they are. A labelled example can be used to help the audience interpret the format.
 </div>
 
 
@@ -575,21 +561,17 @@ Think about whether the audience needs this much information
 </div>
 
 <div class = "rightA">
-While presenting complete information may seem ideal, it may be more information than the audience actually needs. Would a prose description of the mean and range be sufficient?
+While presenting complete information may seem ideal, it may be more information than the audience actually needs. Would a prose description of the mean and range be sufficient? If the PDF is approximately normal, then there may be little value in displaying it, as the essential features can be described in a few words.
 </div>
 
 <div style="clear: both;"></div>
 
-<div class = "leftB">
-PDFs can be useful when the distribution of outcomes is multimodal, or otherwise complex 
-</div>
-
-<div class = "rightA">
-If the PDF is approximately normal, then there may be little value in displaying it, as the essential features can be described in a few words.
-</div>
-
 <div class = "rightA">
 The distribution could be multimodal – for example the marks for students passing a university module may have a peak for a number who don’t study very hard, and a peak for those who worked really hard. In this case it could be misleading to present the mean, so a graphical illustration   of the distribution may be more effective.
+</div>
+
+<div class = "leftB">
+PDFs can be useful when the distribution of outcomes is multimodal, or otherwise complex 
 </div>
 
 <div style="clear: both;"></div>
@@ -646,17 +628,7 @@ A CDF may be more helpful than a PDF if there is a specific threshold of interes
 </div>
 
 <div class = "rightA">
-A cumulative density function essentially shows the same information as a probability density function. However a CDF may be more helpful when the audience is primarily concerned with how likely it is that the value will be below (or above) a particular point (rather than the range within which we expect the value to fall). For example, how likely is it that our costs exceed our budget? (rather than what are our costs going to be?
-</div>
-
-<div style="clear: both;"></div>
-
-<div class = "leftB">
-The most likely value is less clear on a CDF 
-</div>
-
-<div class = "rightA">
-However, features such as the mode are less clear on a CDF (shown by the steepest part of the graph), as they are harder to read by eye.
+A cumulative density function shows similar information as a probability density function, but cumulatively. A CDF may be more helpful when the audience is primarily concerned with how likely it is that the value will be below (or above) a particular point (rather than the range within which we expect the value to fall). For example, how likely is it that our costs exceed our budget? Rather than, what are our costs going to be?
 </div>
 
 <div style="clear: both;"></div>
@@ -666,8 +638,10 @@ Labelling can be used to highlight the key features
 </div>
 
 <div class = "rightA">
-Drawing gridlines intersecting at key points of the function can help the viewer understand how to ‘read’ the graph.
+However, features such as the mode are less clear on a CDF (shown by the steepest part of the graph), as they are harder to read by eye.
 </div>
+
+<div style="clear: both;"></div>
 
 
 ```{r fig.align="center", echo=FALSE}
@@ -743,28 +717,14 @@ Multiple line charts with time series data to show a quantified range around a �
 
 <div style="clear: both;"></div>
 
-<div class = "leftB">
-Alternative scenarios can be illustrated with multiple line graphs
-</div>
-
 <div class = "rightA">
-With scenario analysis, a series of line charts can be used to show the projections from each scenario.
+With scenario analysis, a series of line charts can be used to show the projections from each scenario. Generally, with scenario analysis each scenario should be presented with equal prominence, to avoid suggesting that one is more likely than another (unless analysis has been carried out to quantify the likelihoods of each).
 </div>
 
 <div style="clear: both;"></div>
 
 <div class = "leftB">
-Give equal prominence to each scenario
-</div>
-
-<div class = "rightA">
-Generally with scenario analysis each scenario should be presented with equal prominence, to avoid suggesting that one is more likely than another (unless analysis has been carried out to quantify the likelihoods of each).
-</div>
-
-<div style="clear: both;"></div>
-
-<div class = "leftB">
-Try to have an even number of scenarios 
+Avoid a middle "most likely" scenario 
 </div>
 
 <div class = "rightA">
@@ -867,10 +827,6 @@ When done well they will grab the reader’s attention from become a very powerf
 
 <div style="clear: both;"></div>
 
-<div class = "leftB">
-Information on uncertainty can be included 
-</div>
-
 <div class = "rightA">
 Not all infographics communicate uncertainty, but uncertainty information can be included within the infographic. In the example below, confidence intervals are included as part of the infographic . 
 </div>
@@ -878,11 +834,11 @@ Not all infographics communicate uncertainty, but uncertainty information can be
 <div style="clear: both;"></div>
 
 <div class = "leftB">
-However, watch out for common pitfalls and follow best practice for the design
+Watch out for common pitfalls and follow best practice for the design
 </div>
 
 <div class = "rightA">
-Like all graphs and visualisation you should ensure the information is presented clearly and truthfully. With infographics there is additional the risk that visual design elements detract from the key message. Consider the final audience for the information to determine if an infographic is the right choice and [follow best practice](https://www.nngroup.com/articles/designing-effective-infographics/).
+Like all graphs and visualisation you should ensure the information is presented clearly and truthfully. With infographics there is additional the risk that visual design elements detract from the key message. Consider the final audience for the information to determine if an infographic is the right choice and [follow best practice](https://gss.civilservice.gov.uk/wp-content/uploads/2012/12/infographics-guidelines.pdf).
 </div>
 
 ```{r fig.align="center", echo=FALSE}
@@ -912,7 +868,7 @@ Interactive tools can be used to immerse your reader on complex matters
 </div>
 
 <div class = "rightA">
-An interactive tool can help make analysis more accessible to non-specialists. They can create an immersive experience that is easier for them to understand and is highly memorable.
+An interactive tool can help make analysis more accessible to non-specialists, assuming the non-specialists have the time to interact with the data. They can create an immersive experience that is easier for them to understand and is highly memorable. Note, that they often take longer to create and sometimes the key message may be lost.
 </div>
 
 <div style="clear: both;"></div>
@@ -922,7 +878,7 @@ Focus on specific messages
 </div>
 
 <div class = "rightA">
-Consider the overall message and where the uncertainties lie. Which aspects will the audience be interested in and what do they need to know? Use this understanding to bring focus to which interactive elements to create. 
+Consider the overall message and where the uncertainties lie. Which aspects will the audience be interested in and what do they need to know? Remember with interactivity the user chooses what to look at. Will they find all your key messages in the tool or should these be highlighted somewhere? Use this understanding to bring focus to which interactive elements to create.
 </div>
 
 <div class = "rightA">
@@ -944,7 +900,7 @@ Or, if there are several key assumptions that impact the result a chart may be c
 </div>
 
 <div class = "rightA">
-Being able to see what would happen if an underlying assumption was to change is a powerful way to demonstrate the level of uncertainty we may have in a given result.
+Being able to see what would happen if an underlying assumption was to change is a powerful way to demonstrate the level of uncertainty in a given result.
 </div>
 
 ```{r fig.align="center", echo=FALSE}
