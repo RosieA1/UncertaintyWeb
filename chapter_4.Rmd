@@ -27,12 +27,12 @@ counter-reset : h3;
 }
 
 h1:before{
-  content : "4" ". ";
+  content : "5" ". ";
   counter-increment: h1;
 }
 
 h2:before {
-content : "4" "." counter(h2,decimal) ". ";
+content : "5" "." counter(h2,decimal) ". ";
 counter-increment : h2;
 }
 
@@ -80,7 +80,7 @@ width: 23%;
 }
 </style>
 
-# 5. Presenting and communicating uncertainty
+# Presenting and communicating uncertainty
 
 <br><br>
 

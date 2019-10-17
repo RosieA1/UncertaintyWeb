@@ -27,12 +27,12 @@ counter-reset : h3;
 }
 
 h1:before{
-  content : "1" ". ";
+  content : "2" ". ";
   counter-increment: h1;
 }
 
 h2:before {
-content : "1" "." counter(h2,decimal) ". ";
+content : "2" "." counter(h2,decimal) ". ";
 counter-increment : h2;
 }
 
@@ -81,7 +81,7 @@ width: 23%;
 .
 </style>
 
-# 2. Jointly agreeing how uncertainty should be used
+# Jointly agreeing how uncertainty should be used
 
 <br>
 

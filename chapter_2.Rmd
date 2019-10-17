@@ -27,12 +27,12 @@ counter-reset : h3;
 }
 
 h1:before{
-  content : "2" ". ";
+  content : "3" ". ";
   counter-increment: h1;
 }
 
 h2:before {
-content : "2" "." counter(h2,decimal) ". ";
+content : "3" "." counter(h2,decimal) ". ";
 counter-increment : h2;
 }
 
@@ -86,7 +86,7 @@ width: 23%;
 </style>
 
 
-# 3. Defining and Identifying Uncertainty
+# Defining and Identifying Uncertainty
 
 <br>
 

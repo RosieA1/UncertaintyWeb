@@ -28,12 +28,12 @@ counter-reset : h3;
 }
 
 h1:before{
-  content : "3" ". ";
+  content : "4" ". ";
   counter-increment: h1;
 }
 
 h2:before {
-content : "3" "." counter(h2,decimal) ". ";
+content : "4" "." counter(h2,decimal) ". ";
 counter-increment : h2;
 }
 
@@ -92,7 +92,7 @@ colour: white;
 </style>
 
 
-# 4. Understanding and Measuring Uncertainty
+# Understanding and Measuring Uncertainty
 
 <br>
 
