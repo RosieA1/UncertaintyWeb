@@ -41,10 +41,6 @@ content : "";
 counter-increment : none;
 }
 
-.section h1{
-padding-top: 200px;
-} 
-
 .section h2{
 padding-top: 200px;
 float:right;
@@ -77,6 +73,7 @@ width: 75%;
 .leftB{
 float: left;
 width: 23%;
+text-align: right;
 }
 </style>
 
@@ -235,7 +232,7 @@ This section considers a range of approaches based on your understanding of the 
 
 <div style="clear: both;"></div>
 
-## Communication Basics
+## Communication basics
 
 <div style="clear: both;"></div>
 
@@ -656,7 +653,7 @@ knitr::include_graphics("images/cdf.png")
 
 <div style="clear: both;"></div>
 
-## Fan Charts
+## Fan charts
 
 <div style="clear: both;"></div>
 
@@ -697,7 +694,7 @@ knitr::include_graphics("images/fan_chart.png")
 
 <div style="clear: both;"></div>
 
-## Multiple Line Charts
+## Multiple line charts
 
 <div style="clear: both;"></div>
 
@@ -743,7 +740,7 @@ knitr::include_graphics("images/multiple_line.png")
 
 <div style="clear: both;"></div>
 
-## Tornado Diagrams
+## Tornado diagrams
 
 <div style="clear: both;"></div>
 
@@ -853,7 +850,7 @@ knitr::include_graphics("images/infographic.png")
 
 <div style="clear: both;"></div>
 
-## Interactive Tools
+## Interactive tools
 
 <div style="clear: both;"></div>
 

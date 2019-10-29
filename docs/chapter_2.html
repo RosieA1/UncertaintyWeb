@@ -410,13 +410,13 @@ div.tocify {
   <a href="Conclusion.html">6. Conclusion</a>
 </li>
 <li>
-  <a href="case_studies.html">7. Case Studies</a>
+  <a href="case_studies.html">7. Case studies</a>
 </li>
 <li>
-  <a href="further_reading.html">8. Further Reading</a>
+  <a href="further_reading.html">8. Further reading</a>
 </li>
 <li>
-  <a href="exec.html">9. Decision Maker Summary</a>
+  <a href="exec.html">9. Decision maker summary</a>
 </li>
 <li>
   <a href="Download_pdf.html">Download pdf</a>
@@ -471,10 +471,6 @@ content : "";
 counter-increment : none;
 }
 
-.section h1{
-padding-top: 200px;
-} 
-
 .section h2{
 padding-top: 200px;
 float:right;
@@ -512,10 +508,11 @@ width: 75%;
 .leftB{
 float: left;
 width: 23%;
+text-align: right;
 }
 </style>
 <div id="defining-and-identifying-uncertainty" class="section level1">
-<h1>Defining and Identifying Uncertainty</h1>
+<h1>Defining and identifying uncertainty</h1>
 <p><br></p>
 <div class="leftB">
 <p>Analytical uncertainty can feed through into analysis and subsequent decision making from many different sources</p>
@@ -549,12 +546,12 @@ width: 23%;
 <p>Understanding the characteristics of different classifications of uncertainty can help you to identify sources of uncertainty in your own analysis. Further, categorising the types of uncertainty provides a framework for the next steps of analysis.</p>
 </div>
 <div class="rightA">
-<p>A common classification divides uncertainty into known knowns, known unknowns, and unknown unknowns. We explain these in Table 2.1.</p>
+<p>A common classification divides uncertainty into known knowns, known unknowns, and unknown unknowns. We explain these in Table 3.1.</p>
 </div>
 <p><img src="images/magnify.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br><br></p>
 <div class="leftA">
-<p>Table 2.1: Classifications of Uncertainty</p>
+<p>Table 3.1: Classifications of Uncertainty</p>
 </div>
 <table>
 <colgroup>
@@ -618,53 +615,37 @@ width: 23%;
 <p>To gain a full picture of the impact of data uncertainty on your analysis you should think through what you know about where your data has come from. You should use a data log with quality and impact Red Amber Green (RAG) ratings. Consider the following questions:</p>
 </div>
 <div class="rightA">
-<ul>
-<li>
-How well do the definitions and concepts in the data chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another. For example, you might want to analyse London &amp; South East but only have data for the whole of the UK.
-</li>
-</ul>
+<p>How well do the definitions and concepts in the data chosen fit with what you are trying to measure? Differences between the data and your target group can mean that a dataset captured for one purpose is inappropriate for another. For example, you might want to analyse London &amp; South East but only have data for the whole of the UK.</p>
 </div>
 <div class="leftB">
-<p><b> How your data source compares with your analysis objective: </b></p>
+<p>How your data source compares with your analysis objective:</p>
 </div>
 <div class="rightA">
-<ul>
-<li>
-How rigorous was the data collection process? Was the data owner’s quality assurance sufficiently robust? For survey data, would respondents have fully understood the question intent? Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics. <br><br> When considering uncertainty in input data, you should think about whether the data being used was gathered for an alternative purpose and if it has been manipulated and how you can adjust or account for this. Accompanying data descriptions (or a quick exploration of the source data if these don’t exist) can be helpful in understanding data limitations of the data and whether any adjustments made could conflict with or bias your analysis. Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertainty.
-</li>
-</ul>
+<p>How rigorous was the data collection process? Was the data owner’s quality assurance sufficiently robust? For survey data, would respondents have fully understood the question intent? Some datasets are subject to regulation and compliance with standards or other codes of practice. In such cases, quality should be well documented and assured like in National Statistics. <br><br> When considering uncertainty in input data, you should think about whether the data being used was gathered for an alternative purpose and if it has been manipulated and how you can adjust or account for this. Accompanying data descriptions (or a quick exploration of the source data if these don’t exist) can be helpful in understanding data limitations of the data and whether any adjustments made could conflict with or bias your analysis. Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertaint.</p>
 </div>
 <div class="leftB">
-<p><b> Where the data come from and how they have been collected: </b></p>
+<p>Where the data come from and how they have been collected:</p>
 </div>
 <div class="rightA">
-<ul>
-<li>
-More uncertainty will occur if either the data don’t match the time period of interest and/or if the data are volatile.
-</li>
-</ul>
+<p>More uncertainty will occur if either the data don’t match the time period of interest and/or if the data are volatile.</p>
 </div>
 <div class="leftB">
-<p><b> What period the data covers: </b></p>
+<p>What period the data covers:</p>
 </div>
 <div class="rightA">
-<ul>
-<li>
-For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. For example, missing values may have been imputed, survey data may have been weighted to make survey results representative of a wider population, extreme values and outliers may have been removed, data sets may have been combined (possibly resulting in false positive or false negative matches), disclosure controls may have been applied (potentially biasing the data set). Consider how the retention or exclusion of an outlier will affect your results. Truncation or removal of outliers will typically introduce bias but this may be tolerated in exchange for reduced variance.
-</li>
-</ul>
+<p>For data obtained in a processed state from others you may need to explore what processing steps were taken to determine how that may affect the data you are using. For example, missing values may have been imputed, survey data may have been weighted to make survey results representative of a wider population, extreme values and outliers may have been removed, data sets may have been combined (possibly resulting in false positive or false negative matches), disclosure controls may have been applied (potentially biasing the data set). Consider how the retention or exclusion of an outlier will affect your results. Truncation or removal of outliers will typically introduce bias but this may be tolerated in exchange for reduced variance.</p>
 </div>
 <div class="leftB">
-<p><b> Whether your data has been subjected to any pre-processing: </b></p>
+<p>Whether your data has been subjected to any pre-processing:</p>
 </div>
 <div class="rightA">
 <p>Statistical sources often come with supporting information about accuracy and reliability. You can sometimes find information on variance (or standard errors, confidence intervals, coefficients of variation) and you may find indications of likely bias, from special studies comparing or linking sources. These direct measures of quality, together with indirect measures such as response and coverage rates can tell you a lot about the uncertainty. In the absence of direct measure of variance, be aware that small sample sizes will increase the margin of error in your results.</p>
 </div>
-<div style="clear: both;">
-
-</div>
 <div class="leftB">
 <p>Check whether there is any bias or uncertainty in the data</p>
+</div>
+<div style="clear: both;">
+
 </div>
 </div>
 <div id="sources-of-analytical-uncertainty---assumptions" class="section level2">

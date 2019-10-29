@@ -16,11 +16,11 @@ navbar:
       href: chapter_4.html
     - text: "6. Conclusion"
       href: Conclusion.html
-    - text: "7. Case Studies"
+    - text: "7. Case studies"
       href: case_studies.html
-    - text: "8. Further Reading"
+    - text: "8. Further reading"
       href: further_reading.html
-    - text: "9. Decision Maker Summary"
+    - text: "9. Decision maker summary"
       href: exec.html
     - text: "Download pdf"
       href: Download_pdf.html

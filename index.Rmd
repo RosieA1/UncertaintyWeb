@@ -21,6 +21,7 @@ width: 75%;
 
 .leftB{
 float: left;
+text-align: right;
 width: 23%;
 }
 </style>

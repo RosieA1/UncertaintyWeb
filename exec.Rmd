@@ -1,5 +1,5 @@
 ---
-title: <br><br><br> 9. Decision Maker Summary
+title: <br><br><br> 9. Decision maker summary
 ---
 
 <style type="text/css">
@@ -22,6 +22,7 @@ width: 75%;
 .leftB{
 float: left;
 width: 23%;
+text-align: right;
 }
 </style>
 
